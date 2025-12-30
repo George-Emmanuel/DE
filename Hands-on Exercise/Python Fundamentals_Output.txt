@@ -1,0 +1,79 @@
+******************** Data Types ********************
+123 -> <class 'int'>
+3.14 -> <class 'float'>
+Hello World -> <class 'str'>
+[1, 2, 3] -> <class 'list'>
+(1, 2, 3) -> <class 'tuple'>
+{'key1': 'value1', 'key2': 'value2'} -> <class 'dict'>
+(1+2j) -> <class 'complex'>
+Scalar Values: int, float, string
+Aggregated Values: list, tuple, dict
+
+
+******************** Reference ********************
+var_a = 123
+id_a = 140706597655272
+
+
+******************** Operators ********************
+******************** 1. Arithmetic Operators ********************
+x = 12
+y = 15
+addition = 27
+subtraction = -3
+multiplication = 180
+division = 0.8
+modulo = 12
+integer_division = 0
+exponentiation = 15407021574586368
+******************** 2. Comparison Operators ********************
+x == y -> False
+x != y -> True
+x > y -> False
+x < y -> True
+x >= y -> False
+x <= y -> True
+******************** 3. Logical Operators ********************
+x == y and x < y -> False
+x != y and x > y -> False
+x < y or x > y -> True
+x > y or x < y -> True
+not x -> False
+not y -> False
+******************** 4. Identity & Membership Operators ********************
+1 in X -> True
+1 in Y -> False
+1 not in X -> False
+1 not in Y -> True
+[1,2,3] is X -> False
+[1,2,3] is Y -> False
+[1,2,3] is not X -> True
+[1,2,3] is not Y -> True
+
+
+******************** String Functions ********************
+Upper -> HELLO WORLD
+Lower -> hello world
+Capitalize -> Hello world
+Strip -> Hello World
+Split -> ['Hello', 'World']
+Join -> Hello World
+
+
+******************** File Handling Functions ********************
+content ->  
+First Line
+Second Line
+Third Line
+
+
+readline() ->  
+First Line
+
+
+
+readlines() ->  
+['First Line\n', 'Second Line\n', 'Third Line']
+
+
+Process finished with exit code 0
