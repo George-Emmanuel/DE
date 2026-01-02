@@ -26,6 +26,7 @@ class PyroCharacter(GenshinCharacter):
 diluc = GenshinCharacter("Diluc", "Pyro", 1000, 100, 100)
 ayaka = GenshinCharacter("Ayaka", "Cryo", 800, 200, 50)
 mavuika = GenshinCharacter("Mavuika", "Pyro", 1800, 200, 50)
+columbina = GenshinCharacter("Columbina", "Hydro", 400, 1200, 500)
 
 # Accessing the Objects Attributes
 print("<-- Accessing the Objects Attributes -->")
