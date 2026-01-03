@@ -1,15 +1,15 @@
 C:\Users\georg\PycharmProjects\DataEngineering\.venv\Scripts\python.exe C:\Users\georg\PycharmProjects\DataEngineering\OOPS.py 
 <-- Accessing the Objects Attributes -->
-Diluc's Element: Pyro
-Ayaka's ATK: 200
+Diluc's ATK: 1200
+Ayaka's Element: Cryo
 
 ********************************************
 
 <-- Utilising methods inside the class -->
-Diluc attacks an enemy with 100 DMG
+Diluc attacks an enemy with 1200 DMG
 Ayaka skills an enemy with 400 DMG
 Ayaka ultimates an enemy with 2000 DMG
-Diluc skills an enemy with 200 DMG
+Diluc skills an enemy with 2400 DMG
 
 ********************************************
 

@@ -1,10 +1,14 @@
 class GenshinCharacter:
     def __init__(self, name, element, hp, atk, defense):
         self.name = name
-        self.element = element
+        self._element = element
         self.hp = hp
         self.atk = atk
         self.defense = defense
+
+    @property
+    def element(self):
+        return self._element
 
     def normal_attack(self):
         print(f"{self.name} attacks an enemy with {self.atk} DMG")
@@ -86,8 +90,12 @@ widsith = Weapon("Widsith", "120")
 
 # Accessing the Objects Attributes
 print("<-- Accessing the Objects Attributes -->")
-print("Diluc's Element: " + str(diluc.element))
-print("Ayaka's ATK: " + str(ayaka.atk))
+diluc.atk = 1200
+print("Diluc's ATK: " + str(diluc.atk))
+
+# ayaka.element = "Electro"
+# You get an error for above line since it's protected attribute
+print("Ayaka's Element: " + str(ayaka.element))
 
 print("\n********************************************\n")
 
