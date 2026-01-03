@@ -7,11 +7,24 @@ Ayaka's ATK: 200
 
 <-- Utilising methods inside the class -->
 Diluc attacks an enemy with 100 DMG
-Ayaka attacks an enemy with 400 DMG
-Ayaka attacks an enemy with 2000 DMG
-Diluc attacks an enemy with 200 DMG
+Ayaka skills an enemy with 400 DMG
+Ayaka ultimates an enemy with 2000 DMG
+Diluc skills an enemy with 200 DMG
 
 ********************************************
 
+<-- Utilising methods by inheriting the methods from parent class -->
+Bennett skills an enemy with 10000 DMG
+
+
+<-- Utilising same method name but in diff class thereby different behaviour -->
+Durin unleashes a Pyro burst!
+Charlotte unleashes a Cryo burst!
+
+********************************************
+
+Pyro reacts with Cryo to get Melt --> 2 Reaction Multiplier
+Attack Number of Trial Xiangling --> 1
+Attack Number of Banner Xiangling --> 125
 
 Process finished with exit code 0
