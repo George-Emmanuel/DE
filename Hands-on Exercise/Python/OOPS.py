@@ -108,7 +108,7 @@ diluc.elemental_skill()
 
 print("\n********************************************\n")
 
-# 1. INHERITANCE
+# 1. INHERITANCE - Single, Multiple, Multi-level & Hierarchical
 # Even though Pyro character does not have elemental skill method,
 # we were able to use it as PyroCharacter "INHERITS" all the methods
 # from GenshinCharacter
@@ -117,13 +117,21 @@ bennett.elemental_skill()
 
 print("\n")
 
-# 2. POLYMORPHISM - same method name but different behavior because of different way of initialisation
+# 2. POLYMORPHISM - Method Overloading & Method Overriding
 # Here burst is same method name, but it behaves differently (unleashes cryo burst instead of pyro burst)
 print("<-- Utilising same method name but in diff class thereby different behaviour -->")
 team = [PyroCharacter("Durin", "Pyro", 10, 6000, 50),
         CryoCharacter("Charlotte", "Cryo", 200, 20, 50)]
 for char in team:
     char.burst()
+
+# 3. ENCAPSULATION -
+# Access Modifiers --> Public, Protected & Private
+# Method Modifiers --> @classmethod, @staticmethod & @property
+
+# 4. ABSTRACTION -
+# An abstract class can only be inherited.
+# Only an object of the derived class can access the features of the abstract class.
 
 print("\n********************************************\n")
 
