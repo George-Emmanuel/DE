@@ -53,7 +53,7 @@ class Weapon:
 class Reaction:
     @staticmethod
     def get_reaction(element1, element2):
-        if (element1 in ["Pyro", "Cryo"] or element2 in ["Pyro", "Cryo"]) and (element1 != element2):
+        if {element1, element2} == {"Pyro", "Cryo"}:
             return "Melt"
         elif (element1 in ["Pyro", "Hydro"] or element2 in ["Pyro", "Hydro"]) and (element1 != element2):
             return "Vaporize"
@@ -64,14 +64,14 @@ class Reaction:
         elif element2 == "Anemo" and element1 not in ["Geo", "Dendro"]:
             return "Swirl"
         elif element2 == "Geo" and element1 not in ["Geo", "Anemo"]:
-            return "Swirl"
+            return "Crystallize"
         return None
 
     @staticmethod
     def get_multiplier(element1, element2):
         if element1 == "Pyro" and element2 == "Cryo":
             return 2
-        elif element1 == "Pyro" and element2 == "Cryo":
+        elif element1 == "Cryo" and element2 == "Pyro":
             return 1.5
         elif element1 == element2:
             return 0
@@ -86,7 +86,7 @@ bennett = PyroCharacter("Bennett", "Pyro", 10, 5000, 50)
 ganyu = CryoCharacter("Ganyu", "Cryo", 10000, 20, 50)
 
 # Creating Character Objects using GenshinCharacter class
-widsith = Weapon("Widsith", "120")
+widsith = Weapon("Widsith", 120)
 
 # Accessing the Objects Attributes
 print("<-- Accessing the Objects Attributes -->")
