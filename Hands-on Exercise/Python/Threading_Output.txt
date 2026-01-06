@@ -1,0 +1,142 @@
+C:\Users\georg\PycharmProjects\DataEngineering\.venv\Scripts\python.exe C:\Users\georg\PycharmProjects\DataEngineering\Threading.py 
+
+==============================
+1️⃣ WHAT IS A THREAD?
+==============================
+Main thread name: MainThread
+
+==============================
+2️⃣ CREATING A THREAD
+==============================
+[Thread-1 (simple_task)] Task started
+[Thread-1 (simple_task)] Task finished
+Main thread continues...
+
+
+==============================
+3️⃣ THREAD WITH ARGUMENTS
+==============================
+[Thread-2 (greet)] Hello Alice
+[Thread-3 (greet)] Hello Bob
+
+==============================
+4️⃣ DAEMON vs NON-DAEMON THREADS
+==============================
+[Daemon] Running in background...
+[Daemon] Running in background...
+[Daemon] Running in background...
+[Daemon] Running in background...
+Main thread exiting → daemon thread will stop
+
+
+==============================
+5️⃣ RACE CONDITION (PROBLEM)
+==============================
+[Daemon] Running in background...
+Counter value (WRONG): 200000
+
+==============================
+6️⃣ LOCK (SOLUTION)
+==============================
+Counter value (CORRECT): 200000
+
+==============================
+7️⃣ RLOCK (RE-ENTRANT LOCK)
+==============================
+Lock acquired at level 3
+Lock acquired at level 2
+Lock acquired at level 1
+Lock acquired at level 0
+
+==============================
+8️⃣ EVENT (THREAD COMMUNICATION)
+==============================
+Waiting for event...
+[Daemon] Running in background...
+[Daemon] Running in background...
+[Daemon] Running in background...
+[Daemon] Running in background...
+Setting event
+Event received!
+[Daemon] Running in background...
+[Daemon] Running in background...
+
+==============================
+9️⃣ CONDITION (WAIT / NOTIFY)
+==============================
+Consumer waiting...
+[Daemon] Running in background...
+[Daemon] Running in background...
+Produced item
+Consumed: Item
+[Daemon] Running in background...
+[Daemon] Running in background...
+
+==============================
+🔟 SEMAPHORE (LIMIT THREADS)
+==============================
+Task 0 running
+Task 1 running
+[Daemon] Running in background...
+[Daemon] Running in background...
+[Daemon] Running in background...
+[Daemon] Running in background...
+Task 1 doneTask 0 done
+Task 2 running
+
+Task 3 running
+[Daemon] Running in background...
+[Daemon] Running in background...
+[Daemon] Running in background...
+[Daemon] Running in background...
+Task 3 doneTask 2 done
+
+Task 4 running
+[Daemon] Running in background...
+[Daemon] Running in background...
+[Daemon] Running in background...
+[Daemon] Running in background...
+
+==============================
+1️⃣1️⃣ QUEUE (THREAD-SAFE)
+==============================
+Task 4 done
+Produced 0
+Consumed 0
+
+==============================
+1️⃣2️⃣ THREAD NAMING
+==============================
+Running in Worker-1
+[Daemon] Running in background...
+Produced 1Consumed 1
+
+[Daemon] Running in background...
+Produced 2
+Consumed 2
+
+==============================
+1️⃣3️⃣ EXCEPTIONS IN THREADS
+==============================
+Caught exception: Something went wrong!
+[Daemon] Running in background...
+Produced 3
+Consumed 3
+[Daemon] Running in background...
+Produced 4
+
+==============================
+1️⃣4️⃣ THE GIL (IMPORTANT)
+==============================
+
+==============================
+1️⃣5️⃣ WHEN TO USE THREADING
+==============================
+
+==============================
+✅ END OF THREADING
+==============================
+Consumed 4
+[Daemon] Running in background...
+
+Process finished with exit code 0
