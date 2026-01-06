@@ -1,0 +1,131 @@
+SQL Introduction — compact but comprehensive overview
+
+1. What is SQL?
+- SQL (Structured Query Language) is a declarative language used to define, manipulate, query, and control relational data stored in RDBMS.
+- ANSI/ISO standardized; dialects include PostgreSQL, MySQL/MariaDB, SQL Server (T-SQL), Oracle (PL/SQL), SQLite.
+
+2. Statement categories
+- DDL (Data Definition Language): CREATE, ALTER, DROP, TRUNCATE.
+- DML (Data Manipulation Language): SELECT, INSERT, UPDATE, DELETE, MERGE.
+- DCL (Data Control Language): GRANT, REVOKE.
+- TCL (Transaction Control): BEGIN/START TRANSACTION, COMMIT, ROLLBACK, SAVEPOINT.
+
+3. Basic SELECT
+- Structure: SELECT <columns> FROM <table> WHERE <predicate> GROUP BY <cols> HAVING <cond> ORDER BY <cols> LIMIT/OFFSET;
+- Example:
+  SELECT id, name FROM users WHERE active = TRUE ORDER BY created_at DESC LIMIT 10;
+
+4. Filtering & predicates
+- Comparison: =, <>, >, >=, <, <=
+- NULL handling: IS NULL / IS NOT NULL (NULL != any value)
+- Pattern matching: LIKE, ILIKE (Postgres), regex (SIMILAR TO, RLIKE)
+- Boolean logic: AND, OR, NOT
+- IN, BETWEEN, EXISTS (often more performant than IN with subqueries when correlated)
+
+5. Joins
+- INNER JOIN: rows matching in both tables
+- LEFT (LEFT OUTER) JOIN: all left rows, matched right or NULLs
+- RIGHT (RIGHT OUTER) JOIN: symmetric
+- FULL OUTER JOIN: all rows from both, unmatched filled with NULLs
+- CROSS JOIN: Cartesian product
+- SELF JOIN: joining a table to itself
+- Example:
+  SELECT a.id, b.total FROM orders a LEFT JOIN payments b ON a.id = b.order_id;
+
+6. Aggregation
+- Aggregate functions: COUNT, SUM, AVG, MIN, MAX
+- GROUP BY to aggregate by columns; HAVING to filter groups.
+- Example:
+  SELECT customer_id, SUM(amount) total FROM invoices GROUP BY customer_id HAVING SUM(amount) > 1000;
+
+7. Window functions
+- Provide aggregates over partitions without collapsing rows.
+- Syntax: <func>() OVER (PARTITION BY ... ORDER BY ... ROWS BETWEEN ...)
+- Example:
+  SELECT id, amount, SUM(amount) OVER (PARTITION BY customer_id ORDER BY created_at) running_total FROM payments;
+
+8. Subqueries & CTEs
+- Subqueries: in SELECT, FROM, WHERE; can be correlated (refer to outer query).
+- CTE (WITH): named subqueries for readability; can be recursive.
+- Example:
+  WITH recent AS (SELECT * FROM events WHERE created_at > NOW() - INTERVAL '7 days') SELECT * FROM recent;
+
+9. Set operations
+- UNION (removes duplicates), UNION ALL (keeps duplicates), INTERSECT, EXCEPT/MINUS.
+
+10. Data types
+- Numeric: INTEGER, BIGINT, DECIMAL/NUMERIC, FLOAT
+- Character: CHAR, VARCHAR, TEXT
+- Date/Time: DATE, TIMESTAMP, TIMESTAMPTZ (time zones)
+- Boolean, JSON/JSONB (Postgres), BLOB/BYTEA
+
+11. Constraints & schema design
+- Primary Key, Foreign Key, UNIQUE, CHECK, NOT NULL
+- Normalization: 1NF/2NF/3NF to reduce redundancy; denormalization for read performance (analytics).
+- Use foreign keys to maintain referential integrity where appropriate.
+
+12. Indexes
+- Types: B-tree (default), Hash, GiST, GIN (for arrays/text/search), BRIN (large, append-only datasets).
+- Composite indexes, covering indexes (include columns used in SELECT), partial indexes.
+- Trade-offs: speed reads vs slower writes + storage. Monitor index usage and bloat.
+
+13. Transactions & concurrency
+- ACID model: Atomicity, Consistency, Isolation, Durability.
+- Isolation levels: READ UNCOMMITTED, READ COMMITTED, REPEATABLE READ, SERIALIZABLE. Lower isolation -> higher concurrency, potential anomalies.
+- Locks and deadlocks: detect and design for minimal lock contention; short transactions.
+
+14. Performance & tuning
+- Use EXPLAIN / EXPLAIN ANALYZE to inspect query plans.
+- Avoid SELECT *, fetch only needed columns.
+- Proper indexing, partitioning (range/list/hash), query refactoring, caching.
+- For large analytics, consider columnar stores or OLAP engines.
+
+15. Advanced features
+- Stored procedures & functions (PL/pgSQL, T-SQL, PL/SQL)
+- Views and materialized views (refresh strategies)
+- Triggers for reactive logic (use sparingly)
+- Full-text search capabilities (tsearch in Postgres, MATCH...AGAINST in MySQL)
+- JSON querying & indexing
+- Spatial types (PostGIS)
+
+16. Security & best practices
+- Principle of least privilege: grant only necessary permissions.
+- Prevent SQL injection: use parameterized queries / prepared statements; never concatenate user input into SQL.
+- Encrypt data at rest and in transit where necessary; use role-based access and auditing.
+- Backup & restore, point-in-time recovery, regular testing of backups.
+
+17. Scaling & availability
+- Read replicas for read scaling; master-master or clustering for writes (varies by DB).
+- Sharding for massive scale (complex application-level routing).
+- Use connection pooling to manage database connections.
+
+18. Dialect notes
+- PostgreSQL: advanced features (CTEs, window functions, JSONB), strict SQL conformance.
+- MySQL: different defaults (e.g., default engine InnoDB), slightly different SQL syntax/optimizations.
+- SQL Server: T-SQL extensions, TOP for limiting rows.
+- Oracle: PL/SQL, proprietary features.
+- SQLite: lightweight embedded DB, slight syntax and function differences.
+
+19. Common pitfalls
+- Misunderstanding NULL semantics.
+- Lack of proper indexes or too many indexes.
+- Long-running transactions causing bloat or blocking.
+- Using ORM-generated queries without understanding produced SQL.
+
+20. Practical tips & style
+- Write readable SQL: consistent casing, explicit JOINs, meaningful aliases, comments on complex logic.
+- Test queries on realistic datasets.
+- Use EXPLAIN to verify performance before deploying.
+- Version control database schema migrations (Flyway, Liquibase, Alembic).
+
+21. Quick cheatsheet (examples)
+- Select distinct: SELECT DISTINCT col FROM table;
+- Limit/offset: SELECT ... LIMIT 10 OFFSET 20;
+- Upsert (Postgres): INSERT ... ON CONFLICT (key) DO UPDATE SET ...;
+- Pagination: use keyset pagination for large datasets for better performance.
+- Full-text: to_tsvector(text) @@ plainto_tsquery('search term') (Postgres).
+
+22. Resources
+- Official docs for your RDBMS (Postgres, MySQL, SQL Server, Oracle)
+- "SQL Antipatterns" — covers practical pitfalls
+- Online: Mode SQL tutorial, LeetCode SQL problems, SQLZoo, W3Schools (basic)
