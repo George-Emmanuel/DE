@@ -9,6 +9,8 @@ SQL Introduction — compact but comprehensive overview
 - DML (Data Manipulation Language): SELECT, INSERT, UPDATE, DELETE, MERGE.
 - DCL (Data Control Language): GRANT, REVOKE.
 - TCL (Transaction Control): BEGIN/START TRANSACTION, COMMIT, ROLLBACK, SAVEPOINT.
+- Utility: EXPLAIN, DESCRIBE/SHOW, ANALYZE.
+- Comments: -- single line, /* multi-line */
 
 3. Basic SELECT
 - Structure: SELECT <columns> FROM <table> WHERE <predicate> GROUP BY <cols> HAVING <cond> ORDER BY <cols> LIMIT/OFFSET;
@@ -129,3 +131,4 @@ SQL Introduction — compact but comprehensive overview
 - Official docs for your RDBMS (Postgres, MySQL, SQL Server, Oracle)
 - "SQL Antipatterns" — covers practical pitfalls
 - Online: Mode SQL tutorial, LeetCode SQL problems, SQLZoo, W3Schools (basic)
+
