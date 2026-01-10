@@ -12,7 +12,7 @@ print("==============================")
 """
 A thread is a lightweight unit of execution inside a process.
 
-• A process has its own memory
+• A process has its own memory.
 • Threads SHARE the same memory inside a process
 • Threads run "concurrently" (not truly parallel for CPU-bound work due to GIL)
 
