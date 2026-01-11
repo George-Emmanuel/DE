@@ -12,11 +12,11 @@ print("==============================")
 """
 A thread is a lightweight unit of execution inside a process.
 
-• A process has its own memory.
-• Threads SHARE the same memory inside a process.
-• Threads run "concurrently". (not truly parallel for CPU-bound work due to GIL)
+• A process has its own memory
+• Threads SHARE the same memory inside a process
+• Threads run "concurrently" (not truly parallel for CPU-bound work due to GIL)
 
-Main thread = the thread that starts your program.
+Main thread = the thread that starts your program
 """
 
 print(f"Main thread name: {threading.current_thread().name}")
@@ -310,3 +310,44 @@ DON'T USE THREADING WHEN:
 print("\n==============================")
 print("✅ END OF THREADING")
 print("==============================")
+
+print("\n==============================")
+print("✅ EXAMPLE OF THREADING")
+print("==============================")
+
+user_database = [
+    ["Alice", "Female", 22],
+    ["Bob", "Male", 25],
+    ["Catherine", "Female", 23],
+    ["Daniel", "Male", 26]
+]
+
+q = Queue()
+name_length_array = []
+
+def func_1():   # Producer
+    for user in user_database:
+        name = user[0]
+        q.put(name)         # send data to consumer
+        print("Produced:", name)
+        time.sleep(1)
+
+    q.put(None)             # stop signal
+
+def func_2():   # Consumer
+    while True:
+        name = q.get()      # blocks until data is available
+        if name is None:
+            break
+
+        name_length_array.append(len(name))
+        print("Consumed:", name, "→", name_length_array)
+
+t1 = threading.Thread(target=func_1)
+t2 = threading.Thread(target=func_2)
+
+t1.start()
+t2.start()
+
+t1.join()
+t2.join()
