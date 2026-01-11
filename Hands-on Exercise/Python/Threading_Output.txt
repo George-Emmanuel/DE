@@ -32,12 +32,12 @@ Main thread exiting → daemon thread will stop
 ==============================
 5️⃣ RACE CONDITION (PROBLEM)
 ==============================
-[Daemon] Running in background...
 Counter value (WRONG): 200000
 
 ==============================
 6️⃣ LOCK (SOLUTION)
-==============================
+==============================[Daemon] Running in background...
+
 Counter value (CORRECT): 200000
 
 ==============================
@@ -81,9 +81,9 @@ Task 1 running
 [Daemon] Running in background...
 [Daemon] Running in background...
 [Daemon] Running in background...
-Task 1 doneTask 0 done
-Task 2 running
+Task 0 doneTask 1 done
 
+Task 2 running
 Task 3 running
 [Daemon] Running in background...
 [Daemon] Running in background...
@@ -100,7 +100,6 @@ Task 4 running
 ==============================
 1️⃣1️⃣ QUEUE (THREAD-SAFE)
 ==============================
-Task 4 done
 Produced 0
 Consumed 0
 
@@ -108,25 +107,27 @@ Consumed 0
 1️⃣2️⃣ THREAD NAMING
 ==============================
 Running in Worker-1
+Task 4 done
 [Daemon] Running in background...
 Produced 1Consumed 1
 
 [Daemon] Running in background...
 Produced 2
-Consumed 2
-
 ==============================
 1️⃣3️⃣ EXCEPTIONS IN THREADS
+Consumed 2
 ==============================
+
 Caught exception: Something went wrong!
 [Daemon] Running in background...
-Produced 3
-Consumed 3
-[Daemon] Running in background...
-Produced 4
+Produced 3Consumed 3
 
+[Daemon] Running in background...
+Produced 4Consumed 4
 ==============================
+
 1️⃣4️⃣ THE GIL (IMPORTANT)
+
 ==============================
 
 ==============================
@@ -136,7 +137,25 @@ Produced 4
 ==============================
 ✅ END OF THREADING
 ==============================
-Consumed 4
+
+==============================
+✅ EXAMPLE OF THREADING
+==============================
+Produced: Alice
+Consumed: Alice → [5]
+[Daemon] Running in background...
+[Daemon] Running in background...
+Produced: Bob
+Consumed: Bob → [5, 3]
+[Daemon] Running in background...
+[Daemon] Running in background...
+Produced: Catherine
+Consumed: Catherine → [5, 3, 9]
+[Daemon] Running in background...
+[Daemon] Running in background...
+Produced:Consumed:  DanielDaniel
+ → [5, 3, 9, 6]
+[Daemon] Running in background...
 [Daemon] Running in background...
 
 Process finished with exit code 0
