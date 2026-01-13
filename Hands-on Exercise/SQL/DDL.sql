@@ -3,7 +3,7 @@
    Covers:
    - ANSI SQL standards.
    - PostgreSQL, MySQL, SQL Server, Oracle extensions.
-   - Historical and modern DDL features
+   - Historical and modern DDL features.
    - Educational examples for every concept
    ============================================================================= */
 
