@@ -119,7 +119,7 @@ lock = threading.Lock()
 def safe_increment():
     global counter
     for _ in range(100000):
-        with lock:  # acquire + release automatically
+        with lock:  # acquire + release automatically.
             counter += 1
 
 
