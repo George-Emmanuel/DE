@@ -25,7 +25,7 @@ def generator_return_first_10_squares():
         yield i ** 2
 
 
-# Calling the function simple_print_function_without_args
+# Calling the function simple_print_function_without_args.
 simple_print_function_without_args()
 
 # Calling the function simple_print_function_with_args
