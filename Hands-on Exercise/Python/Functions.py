@@ -43,7 +43,7 @@ print("Function with Return -> " + str(global_var_c_with_return))
 global_var_d_function = function_return_first_10_squares()
 print("Function for First 10 Squares -> " + str(global_var_d_function))
 
-# Calling generator_return_first_10_squares
+# Calling generator_return_first_10_squares.
 global_var_d_generator = generator_return_first_10_squares()
 print("Generator for First 10 Squares -> " + str(global_var_d_generator))
 print("First Value == " + str(global_var_d_generator.__next__()))
