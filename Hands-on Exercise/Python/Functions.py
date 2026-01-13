@@ -39,7 +39,7 @@ print("Function without return -> ", global_var_c_without_return)
 global_var_c_with_return = function_with_return(global_var_a, global_var_b)
 print("Function with Return -> " + str(global_var_c_with_return))
 
-# Calling function_return_first_10_squares
+# Calling function_return_first_10_squares.
 global_var_d_function = function_return_first_10_squares()
 print("Function for First 10 Squares -> " + str(global_var_d_function))
 
