@@ -2,7 +2,7 @@
    UNIVERSAL SQL DDL REFERENCE FILE
    Covers:
    - ANSI SQL standards.
-   - PostgreSQL, MySQL, SQL Server, Oracle extensions
+   - PostgreSQL, MySQL, SQL Server, Oracle extensions.
    - Historical and modern DDL features
    - Educational examples for every concept
    ============================================================================= */
