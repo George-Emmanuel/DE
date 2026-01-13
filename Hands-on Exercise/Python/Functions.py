@@ -28,7 +28,7 @@ def generator_return_first_10_squares():
 # Calling the function simple_print_function_without_args.
 simple_print_function_without_args()
 
-# Calling the function simple_print_function_with_args
+# Calling the function simple_print_function_with_args.
 simple_print_function_with_args(global_var_a, global_var_b)
 
 # Calling the function without return
