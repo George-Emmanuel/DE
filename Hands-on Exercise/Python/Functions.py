@@ -31,7 +31,7 @@ simple_print_function_without_args()
 # Calling the function simple_print_function_with_args.
 simple_print_function_with_args(global_var_a, global_var_b)
 
-# Calling the function without return
+# Calling the function without return.
 global_var_c_without_return = function_without_return(global_var_a, global_var_b)
 print("Function without return -> ", global_var_c_without_return)
 
