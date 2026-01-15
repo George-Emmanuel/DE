@@ -2,7 +2,7 @@
 CREATE DATABASE demo_db;
 DROP DATABASE IF EXISTS demo_db;
 
--- DDL: create table with constraints
+-- DDL: create table with constraints.
 CREATE TABLE customers (
     id INT PRIMARY KEY,
     email VARCHAR(255) UNIQUE NOT NULL,
