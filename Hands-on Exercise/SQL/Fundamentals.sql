@@ -12,7 +12,7 @@ CREATE TABLE customers (
     CHECK (CHAR_LENGTH(name) > 0)
 );
 
--- ALTER TABLE
+-- ALTER TABLE.
 ALTER TABLE customers ADD COLUMN phone VARCHAR(20);
 ALTER TABLE customers DROP COLUMN phone;
 ALTER TABLE customers ADD CONSTRAINT fk_example FOREIGN KEY (id) REFERENCES orders(customer_id);
