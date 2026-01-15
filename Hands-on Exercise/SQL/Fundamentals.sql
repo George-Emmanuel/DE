@@ -17,7 +17,7 @@ ALTER TABLE customers ADD COLUMN phone VARCHAR(20);
 ALTER TABLE customers DROP COLUMN phone;
 ALTER TABLE customers ADD CONSTRAINT fk_example FOREIGN KEY (id) REFERENCES orders(customer_id);
 
--- DML: INSERT / UPDATE / DELETE
+-- DML: INSERT / UPDATE / DELETE.
 INSERT INTO customers (id, email, name) VALUES (1, 'a@example.com', 'Alice');
 INSERT INTO customers (id, email, name) VALUES (2, 'b@example.com', 'Bob'), (3, 'c@example.com', 'Carol');
 
