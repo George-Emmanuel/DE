@@ -27,7 +27,7 @@ SELECT id, 100.00, NOW() FROM customers WHERE country = 'USA';
 UPDATE customers SET name = 'Robert' WHERE id = 2;
 DELETE FROM customers WHERE id = 3;
 
--- SELECT basics
+-- SELECT basics.
 SELECT * FROM customers;
 SELECT id, name, email FROM customers;
 
