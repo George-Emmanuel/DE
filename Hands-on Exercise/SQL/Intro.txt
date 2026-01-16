@@ -4,7 +4,7 @@ SQL Introduction — compact but comprehensive overview:
 - SQL (Structured Query Language) is a declarative language used to define, manipulate, query, and control relational data stored in RDBMS.
 - ANSI/ISO standardized; dialects include PostgreSQL, MySQL/MariaDB, SQL Server (T-SQL), Oracle (PL/SQL), SQLite.
 
-2. Statement categories
+2. Statement categories:
 - DDL (Data Definition Language): CREATE, ALTER, DROP, TRUNCATE.
 - DML (Data Manipulation Language): SELECT, INSERT, UPDATE, DELETE, MERGE.
 - DCL (Data Control Language): GRANT, REVOKE.
