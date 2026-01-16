@@ -24,7 +24,7 @@ SQL Introduction — compact but comprehensive overview:
 - Boolean logic: AND, OR, NOT
 - IN, BETWEEN, EXISTS (often more performant than IN with subqueries when correlated)
 
-5. Joins
+5. Joins:
 - INNER JOIN: rows matching in both tables
 - LEFT (LEFT OUTER) JOIN: all left rows, matched right or NULLs
 - RIGHT (RIGHT OUTER) JOIN: symmetric
