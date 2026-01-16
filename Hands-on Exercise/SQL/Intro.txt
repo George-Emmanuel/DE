@@ -1,4 +1,4 @@
-SQL Introduction — compact but comprehensive overview
+SQL Introduction — compact but comprehensive overview:
 
 1. What is SQL?
 - SQL (Structured Query Language) is a declarative language used to define, manipulate, query, and control relational data stored in RDBMS.
