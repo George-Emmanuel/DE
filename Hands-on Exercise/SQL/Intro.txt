@@ -17,7 +17,7 @@ SQL Introduction — compact but comprehensive overview:
 - Example:
   SELECT id, name FROM users WHERE active = TRUE ORDER BY created_at DESC LIMIT 10;
 
-4. Filtering & predicates
+4. Filtering & predicates:
 - Comparison: =, <>, >, >=, <, <=
 - NULL handling: IS NULL / IS NOT NULL (NULL != any value)
 - Pattern matching: LIKE, ILIKE (Postgres), regex (SIMILAR TO, RLIKE)
