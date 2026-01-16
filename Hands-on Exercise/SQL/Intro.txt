@@ -12,7 +12,7 @@ SQL Introduction — compact but comprehensive overview:
 - Utility: EXPLAIN, DESCRIBE/SHOW, ANALYZE.
 - Comments: -- single line, /* multi-line */
 
-3. Basic SELECT
+3. Basic SELECT:
 - Structure: SELECT <columns> FROM <table> WHERE <predicate> GROUP BY <cols> HAVING <cond> ORDER BY <cols> LIMIT/OFFSET;
 - Example:
   SELECT id, name FROM users WHERE active = TRUE ORDER BY created_at DESC LIMIT 10;
