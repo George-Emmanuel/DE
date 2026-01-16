@@ -34,7 +34,7 @@ SQL Introduction — compact but comprehensive overview:
 - Example:
   SELECT a.id, b.total FROM orders a LEFT JOIN payments b ON a.id = b.order_id;
 
-6. Aggregation
+6. Aggregation:
 - Aggregate functions: COUNT, SUM, AVG, MIN, MAX
 - GROUP BY to aggregate by columns; HAVING to filter groups.
 - Example:
