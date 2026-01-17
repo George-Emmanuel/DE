@@ -86,7 +86,7 @@ print("==============================")
 """
 Race condition occurs when:
 • Multiple threads modify shared data.
-• Final result depends on timing
+• Final result depends on timing.
 """
 
 counter = 0
