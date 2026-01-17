@@ -85,7 +85,7 @@ print("5️⃣ RACE CONDITION (PROBLEM)")
 print("==============================")
 """
 Race condition occurs when:
-• Multiple threads modify shared data
+• Multiple threads modify shared data.
 • Final result depends on timing
 """
 
