@@ -63,7 +63,7 @@ print("\n==============================")
 print("4️⃣ DAEMON vs NON-DAEMON THREADS")
 print("==============================")
 """
-• Non-daemon threads keep the program alive
+• Non-daemon threads keep the program alive.
 • Daemon threads die when main thread exits
 """
 
