@@ -92,3 +92,6 @@ SQL:
 
     11. AI & SQL
     12. SQL Projects
+        Data Warehousing Project
+        Exploratory Data Analysis (EDA) project
+        Advanced Data Analytics Project
