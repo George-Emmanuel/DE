@@ -26,6 +26,12 @@ SQL:
         TRUNCATE
     
     4. Data Manipulation (DML)
+        INSERT
+        UPDATE
+        DELETE
+        MERGE
+        Transactions & Concurrency Control
+
     5. Filtering Data
     6. Combining Data
     7. Row-Level Functions
