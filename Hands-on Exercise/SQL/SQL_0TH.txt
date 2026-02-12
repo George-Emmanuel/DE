@@ -22,6 +22,13 @@ SQL:
                     ii. Column Based - Store data in columns for efficient querying (e.g., Cassandra, HBase).
                     iii. Graph Based - Store data in graph structures to represent relationships (e.g., Neo4j). 
                     iv. Document Based - Store data as documents, often in JSON format (e.g., MongoDB, CouchDB).
+        Database Structure-
+            Server: The physical machine or virtual environment where the database is hosted.
+            Database: A collection of related data organized in a structured way.
+            Schema: A logical container within a database that holds tables, views, and other database objects.
+            Table: A collection of rows and columns that store data in a structured format.
+            Row: A single record in a table, representing a specific instance of data.
+            Column: A specific attribute or field in a table that holds data of a particular type.
         SQL Commands
         SQL Components
         SQL Coding Style
