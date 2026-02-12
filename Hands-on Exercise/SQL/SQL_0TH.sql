@@ -1,6 +1,24 @@
 SQL:
     1. Introduction
+        What is SQL
+        Why learn SQL
+        What is Database & Types
+        SQL Commands
+        SQL Components
+        SQL Coding Style
+        Setup Your Environment
+
     2. Query Data (SELECT)
+        SELECT
+        FROM
+        WHERE
+        ORDER BY
+        GROUP BY
+        HAVING
+        DISTINCT
+        TOP
+        Query Order & Execution
+
     3. Data Definition (DDL)
     4. Data Manipulation (DML)
     5. Filtering Data
