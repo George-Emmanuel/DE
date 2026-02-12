@@ -1,6 +1,7 @@
 SQL:
     1. Introduction
-        What is SQL
+        What is SQL?
+            SQL - Structured Query Language is a programming language designed for managing and manipulating relational databases. It allows users to create, read, update, and delete data stored in a database. SQL is widely used in various applications, from web development to data analysis, making it an essential skill for anyone working with data.
         Why learn SQL
         What is Database & Types
         SQL Commands
