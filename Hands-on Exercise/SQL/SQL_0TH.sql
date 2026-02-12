@@ -33,6 +33,12 @@ SQL:
         Transactions & Concurrency Control
 
     5. Filtering Data
+        Comparison Operators
+        Logical Operators
+        BETWEEN
+        IN
+        LIKE
+
     6. Combining Data
     7. Row-Level Functions
     8. Aggregation & Analytical Functions
