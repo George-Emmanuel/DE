@@ -56,7 +56,12 @@ SQL:
             c. How to Choose The Right Join
             
             d. How To Join Multiple Tables
+        
         Set Operations
+            Union
+            Union All
+            Except
+            Intersect
     
     7. Row-Level Functions
     8. Aggregation & Analytical Functions
