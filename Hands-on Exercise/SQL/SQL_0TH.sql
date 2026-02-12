@@ -1,4 +1,4 @@
-SQL 
+SQL:
     1. Introduction
     2. Query Data (SELECT)
     3. Data Definition (DDL)
