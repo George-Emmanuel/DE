@@ -41,6 +41,21 @@ SQL:
 
     6. Combining Data
         Joining Data
+            a. Basic Joins
+                INNER Join
+                LEFT Join
+                RIGHT Join
+                FULL Join
+
+            b. Advanced Joins
+                LEFT Anti Join
+                Right Anti Join
+                FULL Anti Join
+                Cross Join
+            
+            c. How to Choose The Right Join
+            
+            d. How To Join Multiple Tables
         Set Operations
     
     7. Row-Level Functions
