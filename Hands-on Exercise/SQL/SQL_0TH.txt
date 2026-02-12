@@ -18,10 +18,10 @@ SQL:
                 SQL DB:
                     i. Relational Database - Store data in tables with rows and columns (e.g., MySQL, PostgreSQL).
                 No SQL DB:
-                    i. Key-Value Store
-                    ii. Column Based
+                    i. Key-Value Store - Store data as key-value pairs (e.g., Redis, DynamoDB).
+                    ii. Column Based - Store data in columns for efficient querying (e.g., Cassandra, HBase).
                     iii. Graph Based - Store data in graph structures to represent relationships (e.g., Neo4j). 
-                    iv. Document Based
+                    iv. Document Based - Store data as documents, often in JSON format (e.g., MongoDB, CouchDB).
         SQL Commands
         SQL Components
         SQL Coding Style
