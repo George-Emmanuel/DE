@@ -86,5 +86,9 @@ SQL:
         Triggers
 
     10. Performance Optimization
+        Indexes
+        Partitions
+        Performance Tips
+
     11. AI & SQL
     12. SQL Projects
