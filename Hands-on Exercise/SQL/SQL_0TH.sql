@@ -64,6 +64,12 @@ SQL:
             Intersect
     
     7. Row-Level Functions
+        String Functions
+        Number Functions
+        Date & Time Functions
+        Null Functions
+        Case Statement
+
     8. Aggregation & Analytical Functions
     9. Advanced SQL Techniques
     10. Performance Optimization
