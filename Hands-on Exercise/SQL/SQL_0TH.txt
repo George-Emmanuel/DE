@@ -35,6 +35,9 @@ SQL:
             Data Query Language (DQL): Commands used to query and retrieve data from the database (e.g., SELECT).
             Data Control Language (DCL): Commands used to control access to the database (e.g., GRANT, REVOKE).
         Setup Your Environment
+            1. Download and Install SQL Server
+            2. Datasets and Create Databases
+            3. GIT Repo
 
     2. Query Data (SELECT)
         SELECT
