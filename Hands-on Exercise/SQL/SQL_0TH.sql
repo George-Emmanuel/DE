@@ -20,6 +20,11 @@ SQL:
         Query Order & Execution
 
     3. Data Definition (DDL)
+        CREATE
+        ALTER
+        DROP
+        TRUNCATE
+    
     4. Data Manipulation (DML)
     5. Filtering Data
     6. Combining Data
