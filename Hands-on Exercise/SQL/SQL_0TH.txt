@@ -34,8 +34,6 @@ SQL:
             Data Manipulation Language (DML): Commands used to manipulate data within the database (e.g., INSERT, UPDATE, DELETE).
             Data Query Language (DQL): Commands used to query and retrieve data from the database (e.g., SELECT).
             Data Control Language (DCL): Commands used to control access to the database (e.g., GRANT, REVOKE).
-        SQL Components
-        SQL Coding Style
         Setup Your Environment
 
     2. Query Data (SELECT)
