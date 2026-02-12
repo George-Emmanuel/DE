@@ -12,7 +12,14 @@ SQL:
             DBMS - Database Management System is software that allows users to create, manage, and interact with databases. 
             It provides an interface for users to perform various operations on the data, such as querying, updating, and administering the database. 
             Examples of popular DBMS include MySQL, PostgreSQL, Oracle Database, and Microsoft SQL Server.
-        What is Database & Types
+        What is Database & Types?
+            A database is an organized collection of data that can be easily accessed, managed, and updated. Databases can be categorized into several types based on their structure and use cases: a. Relational Databases: Store data in tables with rows and columns (e.g., MySQL, PostgreSQL). b. NoSQL Databases: Designed for unstructured data and can store data in various formats (e.g., MongoDB, Cassandra). c. In-Memory Databases: Store data in memory for faster access (e.g., Redis). d. Graph Databases: Store data in graph structures to represent relationships (e.g., Neo4j). e. Time-Series Databases: Optimized for time-stamped data (e.g., InfluxDB).
+            Types:
+                i. Relational Database
+                ii. Key-Value Store
+                iii. Column Based
+                iv. Graph Based
+                v. Document Based
         SQL Commands
         SQL Components
         SQL Coding Style
