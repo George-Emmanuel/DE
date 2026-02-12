@@ -40,6 +40,9 @@ SQL:
         LIKE
 
     6. Combining Data
+        Joining Data
+        Set Operations
+    
     7. Row-Level Functions
     8. Aggregation & Analytical Functions
     9. Advanced SQL Techniques
