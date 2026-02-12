@@ -4,7 +4,10 @@ SQL:
             SQL - Structured Query Language is a programming language designed for managing and manipulating relational databases. 
             It allows users to create, read, update, and delete data stored in a database. 
             SQL is widely used in various applications, from web development to data analysis, making it an essential skill for anyone working with data.
-        Why learn SQL
+        Why learn SQL?
+            SQL is a fundamental tool for data management and analysis. 
+            It enables you to efficiently query and manipulate large datasets, making it easier to extract insights and make informed decisions. 
+            Learning SQL can enhance your career prospects, as it is a highly sought-after skill in many industries, including technology, finance, healthcare, and more.
         What is Database & Types
         SQL Commands
         SQL Components
