@@ -71,7 +71,20 @@ SQL:
         Case Statement
 
     8. Aggregation & Analytical Functions
+        Aggregate Functions
+        Window Basics
+        Window Aggregate Functions
+        Window Ranking Functions
+        Window Value Functions
+
     9. Advanced SQL Techniques
+        Subqueries
+        CTE
+        Views
+        CTAS Table & Temp Tables
+        Stored Procedure
+        Triggers
+
     10. Performance Optimization
     11. AI & SQL
     12. SQL Projects
