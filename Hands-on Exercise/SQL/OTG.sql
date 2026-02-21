@@ -36,3 +36,9 @@ CREATE TABLE table_name (
     column2 datatype,
     ...
 );
+
+ALTER TABLE table_name
+ADD column_name datatype;
+
+DROP TABLE table_name;
+DROP COLUMN column_name;
