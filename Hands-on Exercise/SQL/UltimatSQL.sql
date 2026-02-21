@@ -52,6 +52,21 @@ ADD column_name datatype;
 DROP TABLE table_name;
 DROP COLUMN column_name;
 
+-- Example:
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    email VARCHAR(100),
+    hire_date DATE
+);
+
+ALTER TABLE employees
+ADD salary DECIMAL(10, 2);
+
+DROP TABLE employees;
+DROP COLUMN salary;
+
 -- DML - Data Manipulation Language
 -- DML is a subset of SQL that focuses on manipulating data within a database.
 -- It includes statements for inserting, updating, and deleting data.
