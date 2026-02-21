@@ -28,4 +28,11 @@ ORDER BY column_name ASC|DESC;
 GROUP BY column_name;
 HAVING condition;
 
--- DDL
+-- DDL - Data Definition Language
+-- DDL is a subset of SQL that focuses on defining and managing the structure of a database. 
+-- It includes statements for creating, altering, and dropping database objects such as tables, indexes, and views.
+CREATE TABLE table_name (
+    column1 datatype,
+    column2 datatype,
+    ...
+);
