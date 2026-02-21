@@ -16,6 +16,8 @@
 -- 4. Graph Databases: These databases are designed to store and query data in the form of graphs. Examples include Neo4j and Amazon Neptune.
 -- 5. Object-Oriented Databases: These databases store data in the form of objects, similar to object-oriented programming. Examples include ObjectDB and db4o.
 
+-- DQL - Data Query Language
+-- DQL is a subset of SQL that focuses on querying data from a database. It includes
 -- QUERY DATA
 -- The SELECT statement is used to retrieve data from a database. It allows you to specify which columns you want to retrieve and from which table.
 -- Example:
@@ -26,4 +28,4 @@ ORDER BY column_name ASC|DESC;
 GROUP BY column_name;
 HAVING condition;
 
--- 
+-- DDL
