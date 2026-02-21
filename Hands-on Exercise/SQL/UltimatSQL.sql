@@ -29,12 +29,13 @@ GROUP BY column_name;
 HAVING condition;
 
 -- Example:
-SELECT TOP 3 *
+SELECT 
+	country,
+	SUM(score)
 FROM customers
-WHERE country = 'USA'
-ORDER BY last_name ASC;
-GROUP BY city
-HAVING COUNT(*) > 5;
+GROUP BY country
+HAVING SUM(score) > 800
+ORDER BY SUM(score) DESC;
 
 -- DDL - Data Definition Language
 -- DDL is a subset of SQL that focuses on defining and managing the structure of a database. 
