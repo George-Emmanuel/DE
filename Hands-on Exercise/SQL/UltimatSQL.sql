@@ -39,6 +39,7 @@ HAVING COUNT(*) > 5;
 -- DDL - Data Definition Language
 -- DDL is a subset of SQL that focuses on defining and managing the structure of a database. 
 -- It includes statements for creating, altering, and dropping database objects such as tables, indexes, and views.
+-- Syntax:
 CREATE TABLE table_name (
     column1 datatype,
     column2 datatype,
