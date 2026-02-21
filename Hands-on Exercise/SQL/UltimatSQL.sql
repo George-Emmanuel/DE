@@ -42,3 +42,16 @@ ADD column_name datatype;
 
 DROP TABLE table_name;
 DROP COLUMN column_name;
+
+-- DML - Data Manipulation Language
+-- DML is a subset of SQL that focuses on manipulating data within a database.
+-- It includes statements for inserting, updating, and deleting data.
+INSERT INTO table_name (column1, column2, ...)
+VALUES (value1, value2, ...);
+
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;
+
+DELETE FROM table_name
+WHERE condition;
