@@ -95,3 +95,5 @@ WHERE employee_id = 1;
 
 DELETE FROM employees
 WHERE employee_id = 1;
+
+TRUNCATE TABLE persons;
