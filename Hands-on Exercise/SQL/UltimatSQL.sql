@@ -70,6 +70,7 @@ DROP COLUMN salary;
 -- DML - Data Manipulation Language
 -- DML is a subset of SQL that focuses on manipulating data within a database.
 -- It includes statements for inserting, updating, and deleting data.
+-- Syntax:
 INSERT INTO table_name (column1, column2, ...)
 VALUES (value1, value2, ...);
 
@@ -79,3 +80,14 @@ WHERE condition;
 
 DELETE FROM table_name
 WHERE condition;
+
+-- Example:
+INSERT INTO employees (employee_id, first_name, last_name, email, hire_date)
+VALUES (1, 'John', 'Doe', 'john12doe@gmail.com', '2020-01-15');
+
+UPDATE employees
+SET salary = 60000
+WHERE employee_id = 1;
+
+DELETE FROM employees
+WHERE employee_id = 1;
