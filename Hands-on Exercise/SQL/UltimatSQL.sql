@@ -81,9 +81,13 @@ WHERE condition;
 DELETE FROM table_name
 WHERE condition;
 
--- Example:
+-- Example to insert Static Data:
 INSERT INTO employees (employee_id, first_name, last_name, email, hire_date)
 VALUES (1, 'John', 'Doe', 'john12doe@gmail.com', '2020-01-15');
+
+-- Example to insert Data from another table:
+INSERT INTO persons
+SELECT id, first_name, NULL, 'Unknown' FROM customers;
 
 UPDATE employees
 SET salary = 60000
