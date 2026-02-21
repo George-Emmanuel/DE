@@ -21,12 +21,19 @@
 -- QUERY DATA
 -- The SELECT statement is used to retrieve data from a database. It allows you to specify which columns you want to retrieve and from which table.
 -- Example:
-SELECT TOP 3 column1, column2
+SELECT column1, column2
 FROM table_name;
 WHERE condition;
 ORDER BY column_name ASC|DESC;
 GROUP BY column_name;
 HAVING condition;
+
+SELECT TOP 3 *
+FROM customers
+WHERE country = 'USA'
+ORDER BY last_name ASC;
+GROUP BY city
+HAVING COUNT(*) > 5;
 
 -- DDL - Data Definition Language
 -- DDL is a subset of SQL that focuses on defining and managing the structure of a database. 
