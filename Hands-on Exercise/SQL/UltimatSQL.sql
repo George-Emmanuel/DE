@@ -106,4 +106,6 @@ TRUNCATE TABLE persons;
 -- BETWEEN -> "WHERE salary BETWEEN 50000 AND 70000"
 -- IN -> "WHERE country IN ('USA', 'Canada', 'UK')"
 -- LIKE -> "WHERE first_name LIKE 'J%'" (starts with J)
+--         "WHERE first_name LIKE '%n'" (ends with n)
+--         "WHERE first_name LIKE '%oh%'" (contains oh)
 -- IS NULL -> "WHERE email IS NULL"
