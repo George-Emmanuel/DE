@@ -102,3 +102,8 @@ TRUNCATE TABLE persons;
 -- Filtering Data
 -- The WHERE clause is used to filter records based on specified conditions. 
 -- It allows you to retrieve only the data that meets certain criteria.
+-- > , <, >=, <=, != are as usual
+-- BETWEEN -> "WHERE salary BETWEEN 50000 AND 70000"
+-- IN -> "WHERE country IN ('USA', 'Canada', 'UK')"
+-- LIKE -> "WHERE first_name LIKE 'J%'" (starts with J)
+-- IS NULL -> "WHERE email IS NULL"
