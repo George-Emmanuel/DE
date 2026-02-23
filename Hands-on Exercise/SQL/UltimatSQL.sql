@@ -98,3 +98,7 @@ DELETE FROM employees
 WHERE employee_id = 1;
 
 TRUNCATE TABLE persons;
+
+-- Filtering Data
+-- The WHERE clause is used to filter records based on specified conditions. 
+-- It allows you to retrieve only the data that meets certain criteria.
