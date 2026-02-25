@@ -109,3 +109,15 @@ TRUNCATE TABLE persons;
 --         "WHERE first_name LIKE '%n'" (ends with n)
 --         "WHERE first_name LIKE '%oh%'" (contains oh)
 -- IS NULL -> "WHERE email IS NULL"
+
+-- 6. Joining Data
+-- Joins are used to combine rows from two or more tables based on a related column between them.
+-- Types of Joins:
+-- 1. INNER JOIN: Returns records that have matching values in both tables.
+-- 2. LEFT JOIN: Returns all records from the left table and the matched records from the right table. 
+--               If there is no match, the result is NULL on the right side.
+-- 3. RIGHT JOIN: Returns all records from the right table and the matched records from the left table.
+--                If there is no match, the result is NULL on the left side.
+-- 4. FULL OUTER JOIN: Returns all records when there is a match in either left or right table.
+-- 5. CROSS JOIN: Returns the Cartesian product of the two tables, i.e., it returns all possible combinations of rows from both tables.
+-- 6. SELF JOIN: A self join is a regular join but the table is joined with itself.
