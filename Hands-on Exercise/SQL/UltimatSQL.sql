@@ -121,3 +121,8 @@ TRUNCATE TABLE persons;
 -- 4. FULL JOIN: Returns all records when there is a match.
 -- 5. CROSS JOIN: Returns the Cartesian product of the two tables, i.e., it returns all possible combinations of rows from both tables.
 -- 6. SELF JOIN: A self join is a regular join but the table is joined with itself.
+
+-- No JOIN
+-- Returns data without combining the two tables.
+SELECT * FROM customers;
+SELECT * FROM orders;
