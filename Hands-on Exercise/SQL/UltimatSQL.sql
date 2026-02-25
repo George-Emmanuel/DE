@@ -118,6 +118,6 @@ TRUNCATE TABLE persons;
 --               If there is no match, the result is NULL on the right side.
 -- 3. RIGHT JOIN: Returns all records from the right table and the matched records from the left table.
 --                If there is no match, the result is NULL on the left side.
--- 4. FULL OUTER JOIN: Returns all records when there is a match in either left or right table.
+-- 4. FULL JOIN: Returns all records when there is a match in either left or right table.
 -- 5. CROSS JOIN: Returns the Cartesian product of the two tables, i.e., it returns all possible combinations of rows from both tables.
 -- 6. SELF JOIN: A self join is a regular join but the table is joined with itself.
