@@ -126,3 +126,9 @@ TRUNCATE TABLE persons;
 -- Returns data without combining the two tables.
 SELECT * FROM customers;
 SELECT * FROM orders;
+
+-- INNER JOIN
+-- Returns only matching rows from both tables
+SELECT * FROM customers
+INNER JOIN orders
+ON customers.id = orders.customer_id;
