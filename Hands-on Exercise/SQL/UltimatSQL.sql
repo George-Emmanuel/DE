@@ -147,3 +147,6 @@ ON c.id = o.customer_id;
 
 -- FULL JOIN
 -- Returns all rows when there is a match in either left or right table.
+SELECT * FROM customers
+FULL JOIN orders 
+ON customers.id = orders.customer_id;
