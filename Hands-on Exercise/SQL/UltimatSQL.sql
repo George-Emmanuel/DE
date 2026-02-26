@@ -177,6 +177,7 @@ WHERE c.id IS NULL OR o.customer_id IS NULL;
 SELECT * FROM customers
 CROSS JOIN orders;
 
+-- Example of Joining Multiple Tables
 SELECT 
 	o.OrderID AS 'Order No.',
 	c.FirstName AS 'Customer Name',
