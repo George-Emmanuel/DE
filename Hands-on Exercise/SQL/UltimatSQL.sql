@@ -138,3 +138,9 @@ ON customers.id = orders.customer_id;
 SELECT * FROM customers AS c
 LEFT JOIN orders as o
 ON c.id = o.customer_id;
+
+-- RIGHT JOIN
+-- Returns all rows from the right table and matching rows from the left table.
+SELECT * FROM customers AS c
+RIGHT JOIN orders as o
+ON c.id = o.customer_id;
