@@ -157,3 +157,10 @@ SELECT * FROM customers AS c
 LEFT JOIN orders as o
 ON c.id = o.customer_id
 WHERE o.customer_id IS NULL;
+
+-- RIGHT OUTER JOIN
+-- Returns all rows from the right table and matching rows from the left table.
+SELECT * FROM customers AS c
+RIGHT JOIN orders as o
+ON c.id = o.customer_id
+WHERE c.id IS NULL;
