@@ -171,3 +171,8 @@ SELECT * FROM customers AS c
 FULL JOIN orders AS o
 ON c.id = o.customer_id
 WHERE c.id IS NULL OR o.customer_id IS NULL;
+
+-- CROSS JOIN
+-- Returns the Cartesian product of the two tables.
+SELECT * FROM customers
+CROSS JOIN orders;
