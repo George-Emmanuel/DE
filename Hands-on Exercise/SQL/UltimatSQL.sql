@@ -176,3 +176,15 @@ WHERE c.id IS NULL OR o.customer_id IS NULL;
 -- Returns the Cartesian product of the two tables.
 SELECT * FROM customers
 CROSS JOIN orders;
+
+SELECT 
+	o.OrderID AS 'Order No.',
+	c.FirstName AS 'Customer Name',
+	p.Product AS 'Product',
+	o.Sales AS 'Number of Products',
+	p.Price AS 'Price',
+	e.FirstName AS 'Sales Person Name'
+FROM Sales.Orders AS o
+LEFT JOIN Sales.Customers AS c ON c.CustomerID = o.CustomerID
+LEFT JOIN Sales.Products AS p ON o.ProductID = p.ProductID
+LEFT JOIN Sales.Employees AS e ON o.SalesPersonID = e.EmployeeID;
