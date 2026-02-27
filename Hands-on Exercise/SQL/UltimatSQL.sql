@@ -227,3 +227,12 @@ SELECT
 FROM Sales.Employees;
 
 -- 4. EXCEPT: Returns the records from the first SELECT statement that are not present in the second SELECT statement.
+SELECT
+	FirstName,
+	LastName
+FROM Sales.Customers
+UNION
+SELECT
+	FirstName,
+	LastName
+FROM Sales.Employees;
