@@ -203,6 +203,17 @@ SELECT
 	FirstName,
 	LastName
 FROM Sales.Employees;
+
 -- 2. UNION ALL: Combines the results of two SELECT statements and returns all values, including duplicates.
+SELECT
+	FirstName,
+	LastName
+FROM Sales.Customers
+UNION
+SELECT
+	FirstName,
+	LastName
+FROM Sales.Employees;
+
 -- 3. INTERSECT: Returns the common records from both SELECT statements.
 -- 4. EXCEPT: Returns the records from the first SELECT statement that are not present in the second SELECT statement.
