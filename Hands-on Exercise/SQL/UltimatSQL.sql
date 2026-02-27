@@ -209,7 +209,7 @@ SELECT
 	FirstName,
 	LastName
 FROM Sales.Customers
-UNION
+UNION ALL
 SELECT
 	FirstName,
 	LastName
