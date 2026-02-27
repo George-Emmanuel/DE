@@ -220,7 +220,7 @@ SELECT
 	FirstName,
 	LastName
 FROM Sales.Customers
-UNION
+INTERSECT
 SELECT
 	FirstName,
 	LastName
