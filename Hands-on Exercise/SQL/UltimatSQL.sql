@@ -189,3 +189,20 @@ FROM Sales.Orders AS o
 LEFT JOIN Sales.Customers AS c ON c.CustomerID = o.CustomerID
 LEFT JOIN Sales.Products AS p ON o.ProductID = p.ProductID
 LEFT JOIN Sales.Employees AS e ON o.SalesPersonID = e.EmployeeID;
+
+-- SET Operations
+-- SET operations are used to combine the results of two or more SELECT statements.
+-- Types of SET Operations:
+-- 1. UNION: Combines the results of two SELECT statements and returns distinct values.
+SELECT
+	FirstName,
+	LastName
+FROM Sales.Customers
+EXCEPT
+SELECT
+	FirstName,
+	LastName
+FROM Sales.Employees;
+-- 2. UNION ALL: Combines the results of two SELECT statements and returns all values, including duplicates.
+-- 3. INTERSECT: Returns the common records from both SELECT statements.
+-- 4. EXCEPT: Returns the records from the first SELECT statement that are not present in the second SELECT statement.
