@@ -198,7 +198,7 @@ SELECT
 	FirstName,
 	LastName
 FROM Sales.Customers
-EXCEPT
+UNION
 SELECT
 	FirstName,
 	LastName
