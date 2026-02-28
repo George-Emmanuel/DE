@@ -310,7 +310,7 @@ FROM Sales.Employees;
 		-- DATENAME: Returns the name of a specified part of a date.
 			SELECT CreationTime, DATENAME(month, CreationTime) FROM Sales.Orders;
 			SELECT CreationTime, DATENAME(weekday, CreationTime) FROM Sales.Orders;
-		-- DATETRUNC: Truncates a date to a specified part.
+		-- DATETRUNC: Resets Time part of a date to the specified part.
 			SELECT CreationTime, DATETRUNC(month, CreationTime) AS Date_Trunc FROM Sales.Orders;
 		-- EOMONTH: Returns the last day of the month for a given date.
 			SELECT EOMONTH(hire_date) AS Hire_Month_End FROM employees;
