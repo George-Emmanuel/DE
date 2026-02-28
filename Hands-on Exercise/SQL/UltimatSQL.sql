@@ -312,6 +312,9 @@ FROM Sales.Employees;
 			SELECT CreationTime, DATENAME(weekday, CreationTime) FROM Sales.Orders;
 		-- DATETRUNC: Resets Time part of a date to the specified part.
 			SELECT CreationTime, DATETRUNC(month, CreationTime) AS Date_Trunc FROM Sales.Orders;
+			-- USE CASE:
+				SELECT DATETRUNC(month, CreationTime), COUNT(*) AS ORDER_Count FROM Sales.Orders
+				GROUP BY DATETRUNC(month, CreationTime);
 		-- EOMONTH: Returns the last day of the month for a given date.
 			SELECT CreationTime, EOMONTH(CreationTime) AS End_Of_Month FROM Sales.Orders;
 		-- GETDATE: Returns the current date and time.
