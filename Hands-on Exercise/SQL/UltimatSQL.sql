@@ -262,6 +262,7 @@ FROM Sales.Employees;
 			SELECT REPLACE(first_name, ' ', '_') AS Trailing_Space_Check FROM customers
 	-- Calculation
 		-- LEN: Returns the length of a string.
+			SELECT LEN(first_name) AS First_Two_Letters FROM customers
 	-- String Extraction
 		-- SUBSTRING: Extracts a substring from a string based on specified starting position and length.
 			SELECT LEFT(first_name, 2) AS First_Two_Letters FROM customers
