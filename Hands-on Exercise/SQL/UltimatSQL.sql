@@ -259,6 +259,7 @@ FROM Sales.Employees;
 			SELECT * FROM customers
 			WHERE TRIM(first_name) != first_name;
 		-- REPLACE: Replaces occurrences of a specified string with another string.
+			SELECT REPLACE(first_name, ' ', '_') AS Trailing_Space_Check FROM customers
 	-- Calculation
 		-- LEN: Returns the length of a string.
 	-- String Extraction
