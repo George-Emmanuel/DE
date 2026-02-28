@@ -295,7 +295,7 @@ FROM Sales.Employees;
 	-- SIGN: Returns the sign of a number.
 		SELECT SIGN(Sales) AS Sales_Sign FROM Sales.Orders;
 	
--- Date & Time Functions
+-- Date & Time Functions --> Deafualt Format: YYYY-MM-DD HH:MM:SS
 	-- GETDATE: Returns the current date and time.
 		SELECT GETDATE() AS Current_DateTime;
 	-- DATEADD: Adds a specified number of units to a date.
