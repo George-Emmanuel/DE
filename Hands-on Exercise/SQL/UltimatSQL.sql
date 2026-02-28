@@ -317,3 +317,5 @@ FROM Sales.Employees;
 			SELECT DATE_TRUNC('month', hire_date) AS Hire_Month_Start FROM employees;
 		-- EOMONTH: Returns the last day of the month for a given date.
 			SELECT EOMONTH(hire_date) AS Hire_Month_End FROM employees;
+		-- GETDATE: Returns the current date and time.
+			SELECT *, GETDATE() AS Date FROM orders
