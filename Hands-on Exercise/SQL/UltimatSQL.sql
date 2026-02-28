@@ -274,4 +274,5 @@ FROM Sales.Employees;
 -- Number Functions
 	-- ROUND: Rounds a number to a specified number of decimal places.
 		SELECT ROUND(Sales, 2) AS Rounded_Sales FROM Sales.Orders;
-	--
+	-- ABS: Returns the absolute value of a number.
+		SELECT ABS(Sales) AS Absolute_Sales FROM Sales.Orders;
