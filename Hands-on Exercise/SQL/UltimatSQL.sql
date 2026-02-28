@@ -250,6 +250,7 @@ FROM Sales.Employees;
 -- String Functions
 	-- Manipulate string data
 		-- CONCAT: Concatenates two or more strings.
+			SELECT CONCAT(FirstName, ' ', Country) AS Custom_Country_Info FROM Sales.Customers;
 		-- UPPER: Converts a string to uppercase.
 		-- LOWER: Converts a string to lowercase.
 		-- TRIM: Removes leading and trailing spaces from a string.
