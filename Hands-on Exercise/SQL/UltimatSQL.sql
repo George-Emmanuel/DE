@@ -305,6 +305,8 @@ FROM Sales.Employees;
 			SELECT DAY(hire_date) AS Hire_Day FROM employees;
 		-- DATEPART: Extracts a specified part of a date.
 			SELECT DATEPART(quarter, hire_date) AS Hire_Quarter FROM employees;
+			SELECT DATEPART(week, hire_date) AS Hire_Quarter FROM employees;
+			SELECT DATEPART(month, hire_date) AS Hire_Quarter FROM employees;
 		-- DATENAME: Returns the name of a specified part of a date.
 			SELECT DATENAME(month, hire_date) AS Hire_Month_Name FROM employees;
 		-- DATETRUNC: Truncates a date to a specified part.
