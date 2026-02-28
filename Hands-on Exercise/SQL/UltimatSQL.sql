@@ -288,3 +288,9 @@ FROM Sales.Employees;
 		SELECT LOG(Sales) AS Sales_Log FROM Sales.Orders;
 	-- EXP: Returns the value of e raised to the power of a number.
 		SELECT EXP(Sales) AS Sales_Exp FROM Sales.Orders;
+	-- MOD: Returns the remainder of a division operation.
+		SELECT MOD(Sales, 10) AS Sales_Mod_10 FROM Sales.Orders;
+	-- RAND: Returns a random number between 0 and 1.
+		SELECT RAND() AS Random_Number FROM Sales.Orders;
+	-- SIGN: Returns the sign of a number.
+		SELECT SIGN(Sales) AS Sales_Sign FROM Sales.Orders;
