@@ -303,12 +303,6 @@ FROM Sales.Employees;
 			SELECT MONTH(hire_date) AS Hire_Month FROM employees;
 		-- DAY: Extracts the day from a date.
 			SELECT DAY(hire_date) AS Hire_Day FROM employees;
-		-- HOUR: Extracts the hour from a datetime.
-			SELECT HOUR(hire_date) AS Hire_Hour FROM employees;
-		-- MINUTE: Extracts the minute from a datetime.
-			SELECT MINUTE(hire_date) AS Hire_Minute FROM employees;
-		-- SECOND: Extracts the second from a datetime.
-			SELECT SECOND(hire_date) AS Hire_Second FROM employees;
 		-- DATEPART: Extracts a specified part of a date.
 			SELECT DATEPART(quarter, hire_date) AS Hire_Quarter FROM employees;
 		-- DATENAME: Returns the name of a specified part of a date.
