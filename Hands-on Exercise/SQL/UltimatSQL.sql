@@ -296,13 +296,24 @@ FROM Sales.Employees;
 		SELECT SIGN(Sales) AS Sales_Sign FROM Sales.Orders;
 	
 -- Date & Time Functions --> Deafualt Format: YYYY-MM-DD
-	-- GETDATE: Returns the current date and time.
-		SELECT GETDATE() AS Current_DateTime;
-	-- DATEADD: Adds a specified number of units to a date.
-		SELECT DATEADD(DAY, 7, GETDATE()) AS Date_After_7_Days;
-	-- DATEDIFF: Returns the difference between two dates in specified units.
-		SELECT DATEDIFF(DAY, '2020-01-01', GETDATE()) AS Days_Since_2020;
-	-- DATEPART: Returns a specified part of a date (e.g., year, month, day).
-		SELECT DATEPART(YEAR, GETDATE()) AS Current_Year;
-	-- DATENAME: Returns the name of a specified part of a date (e.g., month name).
-		SELECT DATENAME(MONTH, GETDATE()) AS Current_Month_Name;
+	-- Part Extraction
+		-- YEAR: Extracts the year from a date.
+			SELECT YEAR(hire_date) AS Hire_Year FROM employees;
+		-- MONTH: Extracts the month from a date.
+			SELECT MONTH(hire_date) AS Hire_Month FROM employees;
+		-- DAY: Extracts the day from a date.
+			SELECT DAY(hire_date) AS Hire_Day FROM employees;
+		-- HOUR: Extracts the hour from a datetime.
+			SELECT HOUR(hire_date) AS Hire_Hour FROM employees;
+		-- MINUTE: Extracts the minute from a datetime.
+			SELECT MINUTE(hire_date) AS Hire_Minute FROM employees;
+		-- SECOND: Extracts the second from a datetime.
+			SELECT SECOND(hire_date) AS Hire_Second FROM employees;
+		-- DATEPART: Extracts a specified part of a date.
+			SELECT DATEPART(quarter, hire_date) AS Hire_Quarter FROM employees;
+		-- DATENAME: Returns the name of a specified part of a date.
+			SELECT DATENAME(month, hire_date) AS Hire_Month_Name FROM employees;
+		-- DATETRUNC: Truncates a date to a specified part.
+			SELECT DATE_TRUNC('month', hire_date) AS Hire_Month_Start FROM employees;
+		-- EOMONTH: Returns the last day of the month for a given date.
+			SELECT EOMONTH(hire_date) AS Hire_Month_End FROM employees;
