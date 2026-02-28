@@ -267,4 +267,6 @@ FROM Sales.Employees;
 		-- SUBSTRING: Extracts a substring from a string based on specified starting position and length.
 			SELECT LEFT(first_name, 2) AS First_Two_Letters FROM customers
 		-- LEFT: Extracts a specified number of characters from the left side of a string.
+			SELECT LEFT(first_name, 2) AS First_Two_Letters FROM customers
 		-- RIGHT: Extracts a specified number of characters from the right side of a string.
+			SELECT RIGHT(first_name, 2) AS Last_Two_Letters FROM customers
