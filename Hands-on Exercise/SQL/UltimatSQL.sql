@@ -272,3 +272,5 @@ FROM Sales.Employees;
 			SELECT RIGHT(first_name, 2) AS Last_Two_Letters FROM customers
 
 -- Number Functions
+	--ROUND: Rounds a number to a specified number of decimal places.
+		SELECT ROUND(Sales, 2) AS Rounded_Sales FROM Sales.Orders;
