@@ -254,3 +254,9 @@ FROM Sales.Employees;
 		-- LOWER: Converts a string to lowercase.
 		-- TRIM: Removes leading and trailing spaces from a string.
 		-- REPLACE: Replaces occurrences of a specified string with another string.
+	-- Calculation
+		-- LEN: Returns the length of a string.
+	-- String Extraction
+		-- SUBSTRING: Extracts a substring from a string based on specified starting position and length.
+		-- LEFT: Extracts a specified number of characters from the left side of a string.
+		-- RIGHT: Extracts a specified number of characters from the right side of a string.
