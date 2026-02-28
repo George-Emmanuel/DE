@@ -319,3 +319,11 @@ FROM Sales.Employees;
 			SELECT CreationTime, EOMONTH(CreationTime) AS End_Of_Month FROM Sales.Orders;
 		-- GETDATE: Returns the current date and time.
 			SELECT *, GETDATE() AS Date FROM orders
+	
+	--Formatting & Casting
+		-- FORMAT: Formats a date according to a specified format.
+			SELECT CreationTime, FORMAT(CreationTime, 'MM/dd/yyyy') AS Formatted_CreationTime FROM Sales.Orders;
+		-- CAST: Converts a value from one data type to another.
+			SELECT CreationTime, CAST(CreationTime AS DATE) AS Creation_Date FROM Sales.Orders;
+		-- CONVERT: Converts a value from one data type to another with more control over the formatting.
+			SELECT CreationTime, CONVERT(VARCHAR(10), CreationTime, 101) AS Formatted_CreationTime FROM Sales.Orders;
