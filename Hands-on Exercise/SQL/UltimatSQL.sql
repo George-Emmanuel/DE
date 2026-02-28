@@ -239,6 +239,10 @@ FROM Sales.Employees;
 
 -- Functions in SQL
 -- Single Row Functions: These functions operate on a single row and return a single value.
+	-- String Functions
+	-- Numeric Functions
+	-- Date Functions
+	-- NULL Functions
 -- Multi Row Functions: These functions operate on multiple rows and return a single value.
 	-- Aggregate Functions: These functions perform a calculation on a set of values and return a single value.
 -- Nested Functions: These functions are used within another function to perform a calculation.
