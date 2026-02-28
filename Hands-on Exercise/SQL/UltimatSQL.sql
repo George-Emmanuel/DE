@@ -308,9 +308,10 @@ FROM Sales.Employees;
 			SELECT DATEPART(week, hire_date) AS Hire_Quarter FROM employees;
 			SELECT DATEPART(month, hire_date) AS Hire_Quarter FROM employees;
 		-- DATENAME: Returns the name of a specified part of a date.
-			SELECT DATENAME(month, hire_date) AS Hire_Month_Name FROM employees;
+			SELECT CreationTime, DATENAME(month, CreationTime) FROM Sales.Orders;
+			SELECT CreationTime, DATENAME(weekday, CreationTime) FROM Sales.Orders;
 		-- DATETRUNC: Truncates a date to a specified part.
-			SELECT DATE_TRUNC('month', hire_date) AS Hire_Month_Start FROM employees;
+			SELECT CreationTime, DATETRUNC(month, CreationTime) AS Date_Trunc FROM Sales.Orders;
 		-- EOMONTH: Returns the last day of the month for a given date.
 			SELECT EOMONTH(hire_date) AS Hire_Month_End FROM employees;
 		-- GETDATE: Returns the current date and time.
