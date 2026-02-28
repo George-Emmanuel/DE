@@ -270,3 +270,5 @@ FROM Sales.Employees;
 			SELECT LEFT(first_name, 2) AS First_Two_Letters FROM customers
 		-- RIGHT: Extracts a specified number of characters from the right side of a string.
 			SELECT RIGHT(first_name, 2) AS Last_Two_Letters FROM customers
+
+-- Number Functions
