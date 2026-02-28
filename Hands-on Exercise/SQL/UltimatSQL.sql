@@ -237,4 +237,6 @@ SELECT
 	LastName
 FROM Sales.Employees;
 
--- Functions
+-- Functions in SQL
+-- Single Row Functions: These functions operate on a single row and return a single value.
+-- Multi Row Functions: These functions operate on multiple rows and return a single value.
