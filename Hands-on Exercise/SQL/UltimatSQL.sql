@@ -276,3 +276,15 @@ FROM Sales.Employees;
 		SELECT ROUND(Sales, 2) AS Rounded_Sales FROM Sales.Orders;
 	-- ABS: Returns the absolute value of a number.
 		SELECT ABS(Sales) AS Absolute_Sales FROM Sales.Orders;
+	-- CEILING: Rounds a number up to the nearest integer.
+		SELECT CEILING(Sales) AS Ceiling_Sales FROM Sales.Orders;
+	-- FLOOR: Rounds a number down to the nearest integer.
+		SELECT FLOOR(Sales) AS Floor_Sales FROM Sales.Orders;
+	-- POWER: Returns the value of a number raised to the power of another number.
+		SELECT POWER(Sales, 2) AS Sales_Squared FROM Sales.Orders;
+	-- SQRT: Returns the square root of a number.
+		SELECT SQRT(Sales) AS Sales_Square_Root FROM Sales.Orders;
+	-- LOG: Returns the natural logarithm of a number.
+		SELECT LOG(Sales) AS Sales_Log FROM Sales.Orders;
+	-- EXP: Returns the value of e raised to the power of a number.
+		SELECT EXP(Sales) AS Sales_Exp FROM Sales.Orders;
