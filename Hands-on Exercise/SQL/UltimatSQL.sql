@@ -313,6 +313,6 @@ FROM Sales.Employees;
 		-- DATETRUNC: Resets Time part of a date to the specified part.
 			SELECT CreationTime, DATETRUNC(month, CreationTime) AS Date_Trunc FROM Sales.Orders;
 		-- EOMONTH: Returns the last day of the month for a given date.
-			SELECT CreationTime, EOMONTH(hire_date) AS End_Of_Month FROM Sales.Orders;	
+			SELECT CreationTime, EOMONTH(CreationTime) AS End_Of_Month FROM Sales.Orders;
 		-- GETDATE: Returns the current date and time.
 			SELECT *, GETDATE() AS Date FROM orders
