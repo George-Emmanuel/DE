@@ -245,5 +245,6 @@ FROM Sales.Employees;
 	-- NULL Functions
 -- Multi Row Functions: These functions operate on multiple rows and return a single value.
 	-- Aggregate Functions: These functions perform a calculation on a set of values and return a single value.
+	-- Window Functions: These functions perform a calculation across a set of table rows that are somehow related to the current row.
 -- Nested Functions: These functions are used within another function to perform a calculation.
 -- Scalar Functions: These functions operate on a single value and return a single value.
