@@ -333,3 +333,8 @@ FROM Sales.Employees;
 			SELECT DATEDIFF(day, hire_date, GETDATE()) AS Days_Since_Hire FROM employees;
 		-- DATEADD: Adds a specified number of units to a date.
 			SELECT DATEADD(year, 1, hire_date) AS One_Year_After_Hire FROM employees;
+	
+	-- Date Validation
+		-- ISDATE: Returns 1 if the expression is a valid date, otherwise returns 0.
+			SELECT '2020-01-01' AS Date_String, ISDATE('2020-01-01') AS Is_Valid_Date;
+			SELECT 'Invalid Date' AS Date_String, ISDATE('Invalid Date') AS Is_Valid_Date;
