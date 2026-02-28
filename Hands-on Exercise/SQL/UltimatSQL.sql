@@ -248,3 +248,9 @@ FROM Sales.Employees;
 	-- Window Functions: These functions perform a calculation across a set of table rows that are somehow related to the current row.
 
 -- String Functions
+	-- Manipulate string data
+		-- CONCAT: Concatenates two or more strings.
+		-- UPPER: Converts a string to uppercase.
+		-- LOWER: Converts a string to lowercase.
+		-- TRIM: Removes leading and trailing spaces from a string.
+		-- REPLACE: Replaces occurrences of a specified string with another string.
