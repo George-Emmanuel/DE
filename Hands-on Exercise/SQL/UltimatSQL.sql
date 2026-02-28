@@ -294,3 +294,15 @@ FROM Sales.Employees;
 		SELECT RAND() AS Random_Number FROM Sales.Orders;
 	-- SIGN: Returns the sign of a number.
 		SELECT SIGN(Sales) AS Sales_Sign FROM Sales.Orders;
+	
+-- Date & Time Functions
+	-- GETDATE: Returns the current date and time.
+		SELECT GETDATE() AS Current_DateTime;
+	-- DATEADD: Adds a specified number of units to a date.
+		SELECT DATEADD(DAY, 7, GETDATE()) AS Date_After_7_Days;
+	-- DATEDIFF: Returns the difference between two dates in specified units.
+		SELECT DATEDIFF(DAY, '2020-01-01', GETDATE()) AS Days_Since_2020;
+	-- DATEPART: Returns a specified part of a date (e.g., year, month, day).
+		SELECT DATEPART(YEAR, GETDATE()) AS Current_Year;
+	-- DATENAME: Returns the name of a specified part of a date (e.g., month name).
+		SELECT DATENAME(MONTH, GETDATE()) AS Current_Month_Name;
