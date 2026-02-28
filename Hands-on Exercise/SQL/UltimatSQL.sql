@@ -256,6 +256,8 @@ FROM Sales.Employees;
 		-- LOWER: Converts a string to lowercase.
 			SELECT LOWER(FirstName) AS Lower_FirstName FROM Sales.Customers;
 		-- TRIM: Removes leading and trailing spaces from a string.
+			SELECT * FROM customers
+			WHERE TRIM(first_name) != first_name;
 		-- REPLACE: Replaces occurrences of a specified string with another string.
 	-- Calculation
 		-- LEN: Returns the length of a string.
