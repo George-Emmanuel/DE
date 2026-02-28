@@ -236,3 +236,5 @@ SELECT
 	FirstName,
 	LastName
 FROM Sales.Employees;
+
+-- Functions
