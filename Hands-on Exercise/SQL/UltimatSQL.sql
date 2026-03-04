@@ -342,5 +342,7 @@ FROM Sales.Employees;
 -- NULL Functions
 	-- ISNULL: Replaces NULL with a specified replacement value.
 	-- COALESCE: Returns the first non-NULL value from a list of expressions.
+		SELECT AVG(Score) AS Average_Score FROM Sales.Customers;
+		SELECT AVG(ISNULL(Score, 0)) AS Averag_Score_Null_Also FROM Sales.Customers;
 	-- NULLIF: Returns NULL if the two expressions are equal, otherwise returns the first expression.
 	-- IFNULL: Similar to ISNULL, but specific to certain database systems like MySQL
