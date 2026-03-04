@@ -345,6 +345,14 @@ FROM Sales.Employees;
 		SELECT AVG(Score) AS Average_Score FROM Sales.Customers;
 		SELECT AVG(ISNULL(Score, 0)) AS Averag_Score_Null_Also FROM Sales.Customers;
 
+		/* 
+			Use Cases:
+			1. Handling NUL Values before Mathematical calculations
+			2. Handling NULL Values before String Manipulation
+			3. Handling NULL Values before JOINS or AGGREGATIONS
+			4. Handling NULL Values before Sorting
+		*/
+
 		SELECT
 			CustomerID,
 			FirstName,
@@ -361,14 +369,6 @@ FROM Sales.Employees;
 		--CASE WHEN Score IS NULL THEN 1 ELSE 0 END Flag
 		FROM Sales.Customers
 		ORDER BY CASE WHEN Score IS NULL THEN 1 ELSE 0 END;
-
-		/* 
-			Use Cases:
-			1. Handling NUL Values before Mathematical calculations
-			2. Handling NULL Values before String Manipulation
-			3. Handling NULL Values before JOINS or AGGREGATIONS
-			4. Handling NULL Values before Sorting
-		*/
 
 	-- NULLIF: Returns NULL if the two expressions are equal, otherwise returns the first expression.
 	-- IFNULL: Similar to ISNULL, but specific to certain database systems like MySQL
