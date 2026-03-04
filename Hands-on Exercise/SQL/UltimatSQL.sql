@@ -354,6 +354,14 @@ FROM Sales.Employees;
 			ISNULL(FirstName, '') + ISNULL(LastName, '') AS FullName
 		FROM Sales.Customers;
 
+		SELECT * FROM Sales.Customers
+		ORDER BY ISNULL(Score, 999999999);
+
+		SELECT *
+		--CASE WHEN Score IS NULL THEN 1 ELSE 0 END Flag
+		FROM Sales.Customers
+		ORDER BY CASE WHEN Score IS NULL THEN 1 ELSE 0 END;
+
 		/* 
 			Use Cases:
 			1. Handling NUL Values before Mathematical calculations
