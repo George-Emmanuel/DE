@@ -353,6 +353,12 @@ FROM Sales.Employees;
 			ISNULL(Score, 0) + 10 AS Score_Plus_10,
 			ISNULL(FirstName, '') + ISNULL(LastName, '') AS FullName
 		FROM Sales.Customers;
+
+		/* 
+			Use Cases:
+			1. Handling NUL Values before Mathematical calculations
+			2. Handling NULL Values before String Manipulation
+			3. Handling NULL Values before JOINS or AGGREGATIONS
 	
 	-- NULLIF: Returns NULL if the two expressions are equal, otherwise returns the first expression.
 	-- IFNULL: Similar to ISNULL, but specific to certain database systems like MySQL
