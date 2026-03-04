@@ -374,3 +374,4 @@ FROM Sales.Employees;
 	-- DATA Policies
 		-- 1. Only use NULL or Empty String and avoid using Blank Spaces.
 		-- 2. Only use NULL and avoid using Empty String or Blank Spaces.
+		-- 3. Only use 'unknown' or 'not specified' and avoid using NULL, Empty String, or Blank Spaces.
