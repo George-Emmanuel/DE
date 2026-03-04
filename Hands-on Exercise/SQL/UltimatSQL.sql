@@ -349,7 +349,8 @@ FROM Sales.Employees;
 			CustomerID,
 			FirstName,
 			LastName,
-			ISNULL(Score, 0) + 10,
+			Score,
+			ISNULL(Score, 0) + 10 AS Score_Plus_10,
 			ISNULL(FirstName, '') + ISNULL(LastName, '') AS FullName
 		FROM Sales.Customers;
 	
