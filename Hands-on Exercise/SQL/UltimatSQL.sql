@@ -370,3 +370,7 @@ FROM Sales.Employees;
 
 	-- NULLIF: Returns NULL if the two expressions are equal, otherwise returns the first expression.
 	-- IFNULL: Similar to ISNULL, but specific to certain database systems like MySQL
+
+	-- DATA Policies
+		-- 1. Only use NULL or Empty String and avoid using Blank Spaces.
+		-- 2. Only use NULL and avoid using Empty String or Blank Spaces.
