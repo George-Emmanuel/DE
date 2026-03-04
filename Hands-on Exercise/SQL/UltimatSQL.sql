@@ -365,9 +365,7 @@ FROM Sales.Employees;
 		SELECT * FROM Sales.Customers
 		ORDER BY ISNULL(Score, 999999999);
 
-		SELECT *
-		--CASE WHEN Score IS NULL THEN 1 ELSE 0 END Flag
-		FROM Sales.Customers
+		SELECT * FROM Sales.Customers
 		ORDER BY CASE WHEN Score IS NULL THEN 1 ELSE 0 END;
 
 	-- NULLIF: Returns NULL if the two expressions are equal, otherwise returns the first expression.
