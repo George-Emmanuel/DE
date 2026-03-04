@@ -338,3 +338,9 @@ FROM Sales.Employees;
 		-- ISDATE: Returns 1 if the expression is a valid date, otherwise returns 0.
 			SELECT '2020-01-01' AS Date_String, ISDATE('2020-01-01') AS Is_Valid_Date;
 			SELECT 'Invalid Date' AS Date_String, ISDATE('Invalid Date') AS Is_Valid_Date;
+
+-- NULL Functions
+	-- ISNULL: Replaces NULL with a specified replacement value.
+	-- COALESCE: Returns the first non-NULL value from a list of expressions.
+	-- NULLIF: Returns NULL if the two expressions are equal, otherwise returns the first expression.
+	-- IFNULL: Similar to ISNULL, but specific to certain database systems like MySQL
