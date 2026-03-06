@@ -375,3 +375,25 @@ FROM Sales.Employees;
 		-- 1. Only use NULL or Empty String and avoid using Blank Spaces.
 		-- 2. Only use NULL and avoid using Empty String or Blank Spaces.
 		-- 3. Only use 'unknown' or 'not specified' and avoid using NULL, Empty String, or Blank Spaces.
+
+-- CASE Statements
+	-- CASE statements are used to perform conditional logic in SQL. They allow you to return different values based on specified conditions.
+	-- Syntax:
+		CASE 
+			WHEN condition1 THEN result1
+			WHEN condition2 THEN result2
+			...
+			ELSE resultN
+		END
+
+	SELECT 
+		FirstName,
+		LastName,
+		Country,
+		CASE 
+			WHEN Country = 'USA' THEN 'North America'
+			WHEN Country = 'Canada' THEN 'North America'
+			WHEN Country = 'UK' THEN 'Europe'
+			ELSE 'Other'
+		END AS Region
+	FROM Sales.Customers;
