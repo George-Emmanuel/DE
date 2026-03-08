@@ -392,6 +392,7 @@ FROM Sales.Employees;
 	FROM Sales.Employees;
 
 	-- Quick Form:
+	-- Here only one column is being evaluated, so we can use the quick form of CASE statement.
 	SELECT 
 		FirstName,
 		LastName,
