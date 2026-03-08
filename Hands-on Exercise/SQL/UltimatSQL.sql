@@ -404,3 +404,14 @@ FROM Sales.Employees;
 			ELSE 'Other'
 		END AS Region
 	FROM Sales.Customers;
+
+	SELECT 
+		CustomerID, 
+		LastName,
+		Score,
+		--AVG(ISNULL(Score,0)) OVER() AvgScore
+		AVG(CASE
+			WHEN Score IS NULL THEN 0
+			ELSE Score
+		END) OVER() AvgScore
+	FROM Sales.Customers;
