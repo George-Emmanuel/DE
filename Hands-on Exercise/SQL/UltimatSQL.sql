@@ -157,27 +157,6 @@ SELECT * FROM customers
 FULL JOIN orders 
 ON customers.id = orders.customer_id;
 
--- LEFT OUTER JOIN
--- Returns all rows from the left table and matching rows from the right table.
-SELECT * FROM customers AS c
-LEFT JOIN orders as o
-ON c.id = o.customer_id
-WHERE o.customer_id IS NULL;
-
--- RIGHT OUTER JOIN
--- Returns all rows from the right table and matching rows from the left table.
-SELECT * FROM customers AS c
-RIGHT JOIN orders as o
-ON c.id = o.customer_id
-WHERE c.id IS NULL;
-
--- FULL OUTER JOIN
--- Returns all rows when there is a match in either left or right table.
-SELECT * FROM customers AS c
-FULL JOIN orders AS o
-ON c.id = o.customer_id
-WHERE c.id IS NULL OR o.customer_id IS NULL;
-
 -- CROSS JOIN
 -- Returns the Cartesian product of the two tables.
 SELECT * FROM customers
