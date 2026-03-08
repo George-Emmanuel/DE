@@ -382,3 +382,11 @@ FROM Sales.Employees;
 			ELSE 'Other'
 		END AS Region
 	FROM Sales.Customers;
+
+	SELECT 
+		*,
+		CASE
+			WHEN Gender = 'M' THEN 'Male'
+			ELSE 'Female'
+		END AS full_Gender
+	FROM Sales.Employees;
