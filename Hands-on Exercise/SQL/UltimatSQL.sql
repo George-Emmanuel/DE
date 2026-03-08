@@ -402,3 +402,4 @@ FROM Sales.Employees;
 			WHEN 'UK' THEN 'Europe'
 			ELSE 'Other'
 		END AS Region
+	FROM Sales.Customers;
