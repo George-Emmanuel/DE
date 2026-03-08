@@ -74,6 +74,8 @@ ADD salary DECIMAL(10, 2);
 DROP TABLE employees;
 DROP COLUMN salary;
 
+TRUNCATE TABLE persons;
+
 -- DML - Data Manipulation Language
 -- DML is a subset of SQL that focuses on manipulating data within a database.
 -- It includes statements for inserting, updating, and deleting data.
@@ -102,8 +104,6 @@ WHERE employee_id = 1;
 
 DELETE FROM employees
 WHERE employee_id = 1;
-
-TRUNCATE TABLE persons;
 
 -- Filtering Data
 -- The WHERE clause is used to filter records based on specified conditions. 
