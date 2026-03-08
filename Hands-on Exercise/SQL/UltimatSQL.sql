@@ -415,3 +415,14 @@ FROM Sales.Employees;
 			ELSE Score
 		END) OVER() AvgScore
 	FROM Sales.Customers;
+
+	SELECT 
+		CustomerID,
+		COUNT(
+			CASE
+				WHEN Sales > 30 THEN 1
+				ELSE NULL
+			END
+		)
+	FROM Sales.Orders
+	GROUP BY CustomerID;
