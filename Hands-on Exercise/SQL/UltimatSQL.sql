@@ -390,3 +390,15 @@ FROM Sales.Employees;
 			ELSE 'Female'
 		END AS full_Gender
 	FROM Sales.Employees;
+
+	-- Quick Form:
+	SELECT 
+		FirstName,
+		LastName,
+		Country,
+		CASE Country
+			WHEN 'USA' THEN 'North America'
+			WHEN 'Canada' THEN 'North America'
+			WHEN 'UK' THEN 'Europe'
+			ELSE 'Other'
+		END AS Region
