@@ -463,4 +463,5 @@ FROM Sales.Employees;
 	FROM Sales.Orders
 
 -- Window Syntax: (2 Parts)
-	Window Function
+	-- 1st Part
+		-- Window Function
