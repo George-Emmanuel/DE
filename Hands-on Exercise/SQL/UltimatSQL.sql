@@ -453,7 +453,7 @@ FROM Sales.Employees;
 	-- Definition: Window functions perform a calculation across a set of table rows that are somehow related to the current row. 
 	-- They are used to calculate running totals, moving averages, and other cumulative statistics without collapsing the result 
 	-- set like aggregate functions do.
-	
+
 	--Ex: 
 	SELECT
 		OrderID,
@@ -461,3 +461,6 @@ FROM Sales.Employees;
 		ProductID,
 		SUM(Sales) OVER(PARTITION BY ProductID) AS Total_Sales
 	FROM Sales.Orders
+
+-- Window Syntax:
+	Window Function
