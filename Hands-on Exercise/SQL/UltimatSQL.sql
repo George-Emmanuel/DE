@@ -467,5 +467,5 @@ FROM Sales.Employees;
 		-- Window Function
 	-- 2nd Part:
 		-- PARTITION Clause
-		-- OVER() -> Defines the window or set of rows the function should operate on.
+		-- ORDER Clause
 		-- ORDER BY -> Specifies the order of rows within each partition for functions that depend on order.
