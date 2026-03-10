@@ -472,3 +472,14 @@ FROM Sales.Employees;
 	
 	--EXAMPLE:
 	AVG(Sales) OVER(PARTITION BY ProductID ORDER BY OrderDate ROWS UNBOUNDED PRECEDING)
+
+	-- Partition:
+	SELECT
+		OrderID,
+		OrderDate,
+		SUM(Sales) OVER() AS Total_Sales,
+		ProductID,
+		SUM(Sales) OVER(PARTITION BY ProductID) AS Sales_By_Product,
+		OrderStatus,
+		SUM(Sales) OVER(PARTITION BY ProductID, OrderStatus) AS Sales_By_Product_Status
+	FROM Sales.Orders
