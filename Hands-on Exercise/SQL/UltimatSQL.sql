@@ -462,5 +462,5 @@ FROM Sales.Employees;
 		SUM(Sales) OVER(PARTITION BY ProductID) AS Total_Sales
 	FROM Sales.Orders
 
--- Window Syntax:
+-- Window Syntax: (2 Parts)
 	Window Function
