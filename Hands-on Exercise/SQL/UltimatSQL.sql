@@ -483,3 +483,11 @@ FROM Sales.Employees;
 		OrderStatus,
 		SUM(Sales) OVER(PARTITION BY ProductID, OrderStatus) AS Sales_By_Product_Status
 	FROM Sales.Orders
+
+	-- Order:
+	SELECT
+		OrderID,
+		OrderDate,
+		Sales,
+		RANK() OVER(ORDER BY Sales DESC) AS RankSales
+	FROM Sales.Orders
