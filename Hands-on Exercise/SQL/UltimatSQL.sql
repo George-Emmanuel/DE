@@ -500,3 +500,10 @@ FROM Sales.Employees;
 		-- 2. Nesting of Window functions is not allowed.
 		-- 3. SQL execution order is FROM -> WHERE -> GROUP BY/Window Funcs -> HAVING -> SELECT -> ORDER BY.
 		-- 4. Window functions can be used with GROUP BY in the same query, ONLY if same columns are used.
+	
+	SELECT 
+		CustomerId,
+		SUM(Sales) AS Total_sales,
+		RANK() OVER(ORDER BY SUM(Sales) DESC) AS Customer_Ranks
+	FROM Sales.Orders
+	GROUP BY CustomerID
