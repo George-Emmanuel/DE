@@ -426,3 +426,15 @@ FROM Sales.Employees;
 		)
 	FROM Sales.Orders
 	GROUP BY CustomerID;
+
+-- Aggregate Functions
+	-- COUNT: Returns the number of rows that match a specified condition.
+		SELECT COUNT(*) AS Total_Customers FROM Sales.Customers;
+	-- SUM: Returns the total sum of a numeric column.
+		SELECT SUM(Sales) AS Total_Sales FROM Sales.Orders;
+	-- AVG: Returns the average value of a numeric column.
+		SELECT AVG(Sales) AS Average_Sales FROM Sales.Orders;
+	-- MIN: Returns the minimum value of a column.
+		SELECT MIN(Sales) AS Minimum_Sales FROM Sales.Orders;
+	-- MAX: Returns the maximum value of a column.
+		SELECT MAX(Sales) AS Maximum_Sales FROM Sales.Orders;
