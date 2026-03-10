@@ -466,7 +466,8 @@ FROM Sales.Employees;
 	-- 1st Part:
 		-- Window Function
 	-- 2nd Part:
-		-- PARTITION Clause
+		-- PARTITION Clause: Divides the result set into partitions to which the window function is applied. 
+						-- If not specified, the function treats all rows of the query result set as a single partition.
 		-- ORDER Clause
 		-- FRAME Clause
 	
