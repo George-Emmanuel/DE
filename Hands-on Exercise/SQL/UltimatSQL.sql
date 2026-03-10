@@ -448,3 +448,5 @@ FROM Sales.Employees;
 		MIN(sales) AS Lowest_Sale
 	FROM Orders
 	GROUP BY customer_id
+
+-- Window Functions / Analytical Functions
