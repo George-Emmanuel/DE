@@ -469,3 +469,6 @@ FROM Sales.Employees;
 		-- PARTITION Clause
 		-- ORDER Clause
 		-- FRAME Clause
+	
+	--EXAMPLE:
+	AVG(Sales)
