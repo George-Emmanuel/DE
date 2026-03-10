@@ -499,3 +499,4 @@ FROM Sales.Employees;
 		-- 1. Window functions can be used in SELECT & ORDER BY clauses, but not in WHERE or GROUP BY clauses etc..
 		-- 2. Nesting of Window functions is not allowed.
 		-- 3. SQL execution order is FROM -> WHERE -> GROUP BY/Window Funcs -> HAVING -> SELECT -> ORDER BY.
+		-- 4. Window functions can be used with GROUP BY
