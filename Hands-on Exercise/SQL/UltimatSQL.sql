@@ -468,4 +468,4 @@ FROM Sales.Employees;
 	-- 2nd Part:
 		-- PARTITION Clause
 		-- ORDER Clause
-		-- ORDER BY -> Specifies the order of rows within each partition for functions that depend on order.
+		-- FRAME Clause
