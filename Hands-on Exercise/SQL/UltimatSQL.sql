@@ -438,3 +438,13 @@ FROM Sales.Employees;
 		SELECT MIN(Sales) AS Minimum_Sales FROM Sales.Orders;
 	-- MAX: Returns the maximum value of a column.
 		SELECT MAX(Sales) AS Maximum_Sales FROM Sales.Orders;
+	
+	SELECT
+		customer_id,
+		COUNT(*) AS Total_Order_Count,
+		SUM(sales) AS Total_sales,
+		AVG(sales) AS Average_Sale,
+		MAX(sales) AS Highest_Sale,
+		MIN(sales) AS Lowest_Sale
+	FROM Orders
+	GROUP BY customer_id
