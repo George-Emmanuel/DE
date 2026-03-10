@@ -469,6 +469,9 @@ FROM Sales.Employees;
 		-- PARTITION Clause: Divides the result set into partitions to which the window function is applied. 
 		-- ORDER Clause: Sorts the data within each partition before applying the window function.
 		-- FRAME Clause: Defines the subset of rows within the partition to be used for the calculation.
+		--				Rows, Range
+		--				UNBOUNDED PRECEDING, n PRECEDING, CURRENT ROW
+		--				CURRENT ROW, n FOLLOWING, UNBOUNDED FOLLOWING
 	
 	--EXAMPLE:
 	AVG(Sales) OVER(PARTITION BY ProductID ORDER BY OrderDate ROWS UNBOUNDED PRECEDING)
