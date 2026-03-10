@@ -494,3 +494,8 @@ FROM Sales.Employees;
 		Sales,
 		RANK() OVER(ORDER BY Sales DESC) AS RankSales
 	FROM Sales.Orders
+
+	-- RULES:
+		-- 1. Window functions can be used in SELECT & ORDER BY clauses, but not in WHERE or GROUP BY clauses etc..
+		-- 2. You cannot use window functions in the WHERE clause, but you can use them in the HAVING clause.
+		-- 3. Window functions do not reduce the number of rows returned, unlike aggregate functions.
