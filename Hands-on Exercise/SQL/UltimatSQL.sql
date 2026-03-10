@@ -467,7 +467,7 @@ FROM Sales.Employees;
 		-- Window Function
 	-- 2nd Part:
 		-- PARTITION Clause: Divides the result set into partitions to which the window function is applied. 
-		-- ORDER Clause
+		-- ORDER Clause: Sorts the data within each partition before applying the window function.
 		-- FRAME Clause
 	
 	--EXAMPLE:
