@@ -466,3 +466,6 @@ FROM Sales.Employees;
 	-- 1st Part:
 		-- Window Function
 	-- 2nd Part:
+		-- OVER() -> Defines the window or set of rows the function should operate on.
+		-- PARTITION BY -> Divides the result set into partitions to which the window function is applied.
+		-- ORDER BY -> Specifies the order of rows within each partition for functions that depend on order.
