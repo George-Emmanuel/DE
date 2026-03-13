@@ -570,3 +570,5 @@ FROM Sales.Employees;
 	FROM Sales.Orders
 
 	-- Ranking Window Functions:
+		-- 1. ROW_NUMBER: Assigns a unique sequential integer to rows within a partition of a result set, 
+		--	starting at 1 for the first row in each partition.
