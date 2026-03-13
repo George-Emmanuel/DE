@@ -509,3 +509,12 @@ FROM Sales.Employees;
 	GROUP BY CustomerID
 
 	-- Aggregate Window Functions:
+	SELECT 
+		OrderId,
+		OrderDate,
+		ProductId,
+		Sales,
+		SUM(Sales) OVER() AS Total_Sales,
+		ROUND((CAST(Sales AS Float) / SUM(Sales) OVER()) * 100, 2) AS Sales_Percentage_By_Product
+		--SUM(Sales) OVER(PARTITION BY ProductId) AS Total_Sales_By_Product
+	FROM Sales.Orders
