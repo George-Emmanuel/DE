@@ -601,3 +601,10 @@ FROM Sales.Employees;
 			ROW_NUMBER() OVER(PARTITION BY ProductId ORDER BY Sales DESC) AS ranked_column
 		FROM Sales.Orders)t
 		WHERE ranked_column = 1;
+
+		SELECT TOP 2
+			CustomerId,
+			SUM(Sales) AS Total_Sales,
+			ROW_NUMBER() OVER(ORDER BY SUM(Sales) ASC) AS Customer_rank
+		FROM Sales.Orders
+		GROUP BY CustomerId
