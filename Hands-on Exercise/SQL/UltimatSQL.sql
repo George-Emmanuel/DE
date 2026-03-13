@@ -580,7 +580,7 @@ FROM Sales.Employees;
 		-- 4. NTILE: Divides the rows in an ordered partition into a specified number of groups and assigns a group number to 
 		--			each row.
 
-		-- Example for ROW_NUMBER:
+		-- Example for ROW_NUMBER, RANK, DENSE_RANK:
 			SELECT
 				OrderId,
 				OrderDate,
