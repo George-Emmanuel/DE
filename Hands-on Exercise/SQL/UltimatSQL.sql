@@ -572,10 +572,10 @@ FROM Sales.Employees;
 	-- Ranking Window Functions:
 		-- 1. ROW_NUMBER: Assigns a unique sequential integer to rows within a partition of a result set, 
 		--					starting at 1 for the first row in each partition.
-		SELECT
-			OrderId,
-			OrderDate,
-			ProductId,
-			Sales,
-			ROW_NUMBER() OVER(ORDER BY Sales DESC) AS row_numbered_column
-		FROM Sales.Orders;
+			SELECT
+				OrderId,
+				OrderDate,
+				ProductId,
+				Sales,
+				ROW_NUMBER() OVER(ORDER BY Sales DESC) AS row_numbered_column
+			FROM Sales.Orders;
