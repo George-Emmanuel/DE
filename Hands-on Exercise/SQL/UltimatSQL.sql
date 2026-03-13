@@ -552,10 +552,10 @@ FROM Sales.Employees;
 	WHERE Salary = Highest_Salary;
 
 	SELECT 
-	OrderId,
-	OrderDate,
-	Sales,
-	SUM(Sales) OVER() AS Total_Sales,
-	SUM(Sales) OVER(ORDER BY OrderId ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS Running_Total,
-	SUM(Sales) OVER(ORDER BY OrderId ROWS BETWEEN 2 PRECEDING AND CURRENT ROW) AS Rolling_Total
-FROM Sales.Orders
+		OrderId,
+		OrderDate,
+		Sales,
+		SUM(Sales) OVER() AS Total_Sales,
+		SUM(Sales) OVER(ORDER BY OrderId ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS Running_Total,
+		SUM(Sales) OVER(ORDER BY OrderId ROWS BETWEEN 2 PRECEDING AND CURRENT ROW) AS Rolling_Total
+	FROM Sales.Orders
