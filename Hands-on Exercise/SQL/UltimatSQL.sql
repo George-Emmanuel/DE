@@ -508,7 +508,7 @@ FROM Sales.Employees;
 	FROM Sales.Orders
 	GROUP BY CustomerID
 
-	-- Aggregate Window Functions:
+	-- Window Aggregate Functions:
 	SELECT 
 		OrderId,
 		OrderDate,
