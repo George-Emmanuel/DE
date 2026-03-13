@@ -559,3 +559,12 @@ FROM Sales.Employees;
 		SUM(Sales) OVER(ORDER BY OrderId ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS Running_Total,
 		SUM(Sales) OVER(ORDER BY OrderId ROWS BETWEEN 2 PRECEDING AND CURRENT ROW) AS Rolling_Total
 	FROM Sales.Orders
+
+	SELECT
+		OrderId,
+		OrderDate,
+		ProductId,
+		Sales,
+		AVG(Sales) OVER(PARTITION BY ProductId ORDER BY OrderDate) AS Moving_Average,
+		AVG(Sales) OVER(PARTITION BY ProductId ORDER BY OrderDate ROWS BETWEEN CURRENT ROW AND 1 FOLLOWING) AS Rolling_Average
+	FROM Sales.Orders
