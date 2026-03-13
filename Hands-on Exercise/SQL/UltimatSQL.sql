@@ -631,3 +631,13 @@ FROM Sales.Employees;
 			Sales,
 			CUME_DIST() OVER(ORDER BY Sales) AS Cumulative_Distribution
 		FROM Sales.Orders
+	
+	-- 6. PERCENT_RANK: Calculates the relative rank of a row within a partition of a result set,
+	--					returning a value between 0 and 1, exclusive.
+		SELECT
+			OrderId,
+			OrderDate,
+			ProductId,
+			Sales,
+			PERCENT_RANK() OVER(ORDER BY Sales) AS Percent_Rank
+		FROM Sales.Orders
