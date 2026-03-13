@@ -530,3 +530,14 @@ FROM Sales.Employees;
 	FROM Sales.Orders
 	)t
 	WHERE Sales > Average_Sales;
+
+	SELECT
+		OrderId,
+		OrderDate,
+		ProductId,
+		Sales,
+		MAX(Sales) OVER() AS Highest_Sale,
+		MIN(Sales) OVER() AS Lowest_Sale,
+		MAX(Sales) OVER(PARTITION BY ProductId) AS Highest_Sale_By_Product,
+		MIN(Sales) OVER(PARTITION BY ProductId) AS Lowest_Sale_By_Product
+	FROM Sales.Orders
