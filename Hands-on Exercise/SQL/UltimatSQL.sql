@@ -586,5 +586,7 @@ FROM Sales.Employees;
 				OrderDate,
 				ProductId,
 				Sales,
-				ROW_NUMBER() OVER(ORDER BY Sales DESC) AS row_numbered_column
+				ROW_NUMBER() OVER(ORDER BY Sales DESC) AS row_numbered_column,
+				RANK() OVER(ORDER BY Sales DESC) AS ranked_column,
+				DENSE_RANK() OVER(ORDER BY Sales DESC) AS dense_ranked_column
 			FROM Sales.Orders;
