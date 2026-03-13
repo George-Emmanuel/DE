@@ -568,3 +568,5 @@ FROM Sales.Employees;
 		AVG(Sales) OVER(PARTITION BY ProductId ORDER BY OrderDate) AS Moving_Average,
 		AVG(Sales) OVER(PARTITION BY ProductId ORDER BY OrderDate ROWS BETWEEN CURRENT ROW AND 1 FOLLOWING) AS Rolling_Average
 	FROM Sales.Orders
+
+	-- Ranking Window Functions:
