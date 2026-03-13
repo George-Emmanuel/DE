@@ -590,3 +590,14 @@ FROM Sales.Employees;
 				RANK() OVER(ORDER BY Sales DESC) AS ranked_column,
 				DENSE_RANK() OVER(ORDER BY Sales DESC) AS dense_ranked_column
 			FROM Sales.Orders;
+
+		SELECT * FROM
+		(
+		SELECT
+			OrderId,
+			OrderDate,
+			ProductId,
+			Sales,
+			ROW_NUMBER() OVER(PARTITION BY ProductId ORDER BY Sales DESC) AS ranked_column
+		FROM Sales.Orders)t
+		WHERE ranked_column = 1;
