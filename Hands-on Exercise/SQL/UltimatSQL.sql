@@ -572,6 +572,11 @@ FROM Sales.Employees;
 	-- Ranking Window Functions:
 		-- 1. ROW_NUMBER: Assigns a unique sequential integer to rows within a partition of a result set, 
 		--					starting at 1 for the first row in each partition.
+		
+		-- 2. RANK: Assigns a rank to each row within a partition of a result set, with gaps in the ranking when there are ties.
+		-- 3. DENSE_RANK: Similar to RANK, but without gaps in the ranking when there are ties.
+		-- 4. NTILE: Divides the rows in an ordered partition into a specified number of groups and assigns a group number to 
+		--			each row.
 			SELECT
 				OrderId,
 				OrderDate,
