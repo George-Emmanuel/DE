@@ -507,3 +507,5 @@ FROM Sales.Employees;
 		RANK() OVER(ORDER BY SUM(Sales) DESC) AS Customer_Ranks
 	FROM Sales.Orders
 	GROUP BY CustomerID
+
+	-- Aggregate Window Functions:
