@@ -621,3 +621,13 @@ FROM Sales.Employees;
 				WHEN NTILE(3) OVER(ORDER BY Sales ASC) = 3 THEN 'High'
 			END AS Sales_Pitch
 		FROM Sales.Orders
+	
+	-- 5. CUME_DIST: Calculates the cumulative distribution of a value in a group of values. 
+	--				It returns a value between 0 and 1, inclusive.
+		SELECT
+			OrderId,
+			OrderDate,
+			ProductId,
+			Sales,
+			CUME_DIST() OVER(ORDER BY Sales) AS Cumulative_Distribution
+		FROM Sales.Orders
