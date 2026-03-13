@@ -541,3 +541,12 @@ FROM Sales.Employees;
 		MAX(Sales) OVER(PARTITION BY ProductId) AS Highest_Sale_By_Product,
 		MIN(Sales) OVER(PARTITION BY ProductId) AS Lowest_Sale_By_Product
 	FROM Sales.Orders
+
+	SELECT * FROM
+	(
+	SELECT
+		*,
+		MAX(Salary) OVER() AS Highest_Salary
+	FROM Sales.Employees
+	)t
+	WHERE Salary = Highest_Salary;
