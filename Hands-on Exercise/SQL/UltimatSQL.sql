@@ -608,3 +608,16 @@ FROM Sales.Employees;
 			ROW_NUMBER() OVER(ORDER BY SUM(Sales) ASC) AS Customer_rank
 		FROM Sales.Orders
 		GROUP BY CustomerId
+
+		SELECT
+			OrderId,
+			OrderDate,
+			ProductId,
+			Sales,
+			NTILE(3) OVER(ORDER BY Sales ASC) AS Segmented_By_Sales,
+			CASE
+				WHEN NTILE(3) OVER(ORDER BY Sales ASC) = 1 THEN 'Low'
+				WHEN NTILE(3) OVER(ORDER BY Sales ASC) = 2 THEN 'Medium'
+				WHEN NTILE(3) OVER(ORDER BY Sales ASC) = 3 THEN 'High'
+			END AS Sales_Pitch
+		FROM Sales.Orders
