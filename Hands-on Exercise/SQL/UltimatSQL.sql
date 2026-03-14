@@ -821,6 +821,10 @@ FROM Sales.Employees;
 				-- Note: The above example can also be achieved using JOIN, but it demonstrates the concept of a row subquery.
 			
 			-- Table Subquery: A subquery that returns multiple rows and columns, essentially a result set.
+				-- Example:
+					SELECT *
+					FROM Sales.Orders
+					WHERE ProductID IN (SELECT ProductID FROM Sales.Products WHERE Price > 100);
 		
 		-- BY Location & Clauses:
 			-- Subquery in SELECT Clause
