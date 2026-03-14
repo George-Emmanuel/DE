@@ -1,6 +1,7 @@
 -- What is SQL?
 -- 	SQL stands for Structured Query Language. It is a programming language used to manage and manipulate relational databases. 
--- 	SQL allows users to create, read, update, and delete data in a database, as well as perform various operations such as filtering, sorting, and aggregating data. 
+-- 	SQL allows users to create, read, update, and delete data in a database, as well as 
+--		perform various operations such as filtering, sorting, and aggregating data. 
 -- 	It is widely used in various applications, including web development, data analysis, and business intelligence.
 
 -- Why learn SQL?
