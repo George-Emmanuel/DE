@@ -746,3 +746,18 @@ FROM Sales.Employees;
 		GROUP BY CustomerID
 
 		-- Method 2: Using LEAD
+		SELECT
+			CustomerId,
+			AVG(Days_For_Next_Order) AS Avg_Days_For_Next_Order,
+			RANK() OVER(ORDER BY COALESCE(AVG(Days_For_Next_Order), 1.79e308)) AS Customer_OrderDate_Ranking
+		FROM
+		(
+			SELECT
+				CustomerId,
+				OrderDate,
+				LEAD(OrderDate) OVER(PARTITION BY CustomerId Order BY OrderDate) AS Next_Order_Date,
+				DATEDIFF(DAY, OrderDate, LEAD(OrderDate) OVER(PARTITION BY CustomerId Order BY OrderDate)) AS Days_For_Next_Order
+			FROM Sales.Orders
+		)t
+		GROUP BY CustomerId
+		HAVING NOT AVG(Days_For_Next_Order) IS NULL
