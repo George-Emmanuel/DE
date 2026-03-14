@@ -809,6 +809,8 @@ FROM Sales.Employees;
 		
 		-- BY Result Type:
 			-- Scalar Subquery: A subquery that returns a single value (one row and one column).
+				-- Example: 
+					SELECT (SELECT MAX(Sales) FROM Sales.Orders) AS Max_Sales;
 			
 			-- Row Subquery: A subquery that returns a single row with multiple columns.
 			
