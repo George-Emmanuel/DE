@@ -761,3 +761,11 @@ FROM Sales.Employees;
 		)t
 		GROUP BY CustomerId
 		HAVING NOT AVG(Days_For_Next_Order) IS NULL
+	
+-- DataBase Architecture:
+	-- 1. Database: A structured collection of data that is stored and accessed electronically.
+	-- 2. Table: A collection of related data organized in rows and columns within a database.
+	-- 3. Row: A single record in a table, representing a specific instance of the data.
+	-- 4. Column: A specific field or attribute in a table that holds a particular type of data.
+	-- 5. Primary Key: A unique identifier for each record in a table, ensuring that each row can be uniquely identified.
+	-- 6. Foreign Key: A field in one table that refers to the primary key in another table, establishing a relationship between the two tables.
