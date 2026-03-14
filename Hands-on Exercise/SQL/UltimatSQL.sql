@@ -788,6 +788,9 @@ FROM Sales.Employees;
 	--	require multiple steps of data retrieval or manipulation.
 
 	-- Types of Subqueries:
-		-- 1. Scalar Subquery: Returns a single value (one row and one column).
-		-- 2. Row Subquery: Returns a single row with multiple columns.
-		-- 3. Table Subquery: Returns multiple rows and columns, essentially acting as a temporary table.
+		-- BY Dependancy:
+			-- Correlated Subquery: A subquery that references columns from the outer query. 
+			--						It is executed once for each row processed by the outer query.
+			
+			-- Non-Correlated Subquery: A subquery that does not reference columns from the outer query. 
+			--							It is executed only once and its result is used by the outer query.
