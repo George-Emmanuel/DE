@@ -866,3 +866,11 @@ FROM Sales.Employees;
 			-- Subquery in WHERE Clause
 			    -- Comparison Operators: =, !=, >, <, >=, <=
 				-- Logical Operators: IN, ANY, ALL, EXISTS
+					-- Example with Comparison Operator:
+						SELECT *
+						FROM Sales.Orders
+						WHERE Sales > (SELECT AVG(Sales) FROM Sales.Orders);
+					-- Example with LOGICAL Operator:
+						SELECT *
+						FROM Sales.Orders
+						WHERE ProductID IN (SELECT ProductID FROM Sales.Products WHERE Price > 100);
