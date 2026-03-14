@@ -890,3 +890,8 @@ FROM Sales.Employees;
 
 				SELECT * FROM Sales.Orders
 				WHERE CustomerId NOT IN (SELECT DISTINCT CustomerId FROM Sales.Customers WHERE Country = 'Germany')
+
+				SELECT * FROM Sales.Employees
+				WHERE 
+					Gender = 'F' AND
+					Salary > ANY(SELECT Salary FROM Sales.Employees WHERE Gender = 'M')
