@@ -875,7 +875,7 @@ FROM Sales.Employees;
 						FROM Sales.Orders
 						WHERE ProductID IN (SELECT ProductID FROM Sales.Products WHERE Price > 100);
 			
-			-- Examples
+			-- Example 1
 				SELECT
 					c.*,
 					o.Total_Orders
