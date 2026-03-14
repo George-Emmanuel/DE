@@ -888,6 +888,7 @@ FROM Sales.Employees;
 				GROUP BY CustomerID) AS o
 				ON c.CustomerID = o.CustomerID
 
+			-- Example 2
 				SELECT * FROM Sales.Orders
 				WHERE CustomerId NOT IN (SELECT DISTINCT CustomerId FROM Sales.Customers WHERE Country = 'Germany')
 
