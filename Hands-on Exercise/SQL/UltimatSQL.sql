@@ -373,7 +373,8 @@ FROM Sales.Employees;
 		-- 3. Only use 'unknown' or 'not specified' and avoid using NULL, Empty String, or Blank Spaces.
 
 -- CASE Statements
-	-- CASE statements are used to perform conditional logic in SQL. They allow you to return different values based on specified conditions.
+	-- CASE statements are used to perform conditional logic in SQL. They allow you to return different 
+	--		values based on specified conditions.
 	-- Syntax:
 		CASE 
 			WHEN condition1 THEN result1
