@@ -796,3 +796,8 @@ FROM Sales.Employees;
 			--							It is executed only once and its result is used by the outer query.
 		
 		-- BY Result Type:
+			-- Scalar Subquery: A subquery that returns a single value (one row and one column).
+			
+			-- Row Subquery: A subquery that returns a single row with multiple columns.
+			
+			-- Table Subquery: A subquery that returns multiple rows and columns, essentially a result set.
