@@ -27,7 +27,8 @@
 -- DQL - Data Query Language
 -- DQL is a subset of SQL that focuses on querying data from a database. It includes
 -- QUERY DATA
--- The SELECT statement is used to retrieve data from a database. It allows you to specify which columns you want to retrieve and from which table.
+-- The SELECT statement is used to retrieve data from a database. 
+-- It allows you to specify which columns you want to retrieve and from which table.
 -- Syntax:
 SELECT column1, column2
 FROM table_name;
