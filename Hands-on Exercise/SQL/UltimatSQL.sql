@@ -769,13 +769,13 @@ FROM Sales.Employees;
 		|---- CACHE STORAGE
 		|---- DISK STORAGE
 			|---- USER DATA
-			|-------- DATA FILES
+				|---- DATA FILES
 			|---- CATALOG DATA
 				|---- METADATA
 					|---- SCHEMA
 					|---- TABLE DEFINITIONS
 					|---- INDEX DEFINITIONS
 			|---- TEMP DATA
-			|-------- TEMP TABLES
+				|---- TEMP TABLES
 	
 	**************************  **************************  **************************  **************************/
