@@ -659,6 +659,7 @@ FROM Sales.Employees;
 				Sales,
 				LAG(Sales, 1) OVER(PARTITION BY ProductId ORDER BY OrderDate) AS Previous_Sale_By_Product
 			FROM Sales.Orders
+		
 		-- 2. LEAD: Provides access to a row at a specified physical offset that follows the current row.
 		-- 3. FIRST_VALUE: Returns the first value in an ordered set of values.
 		-- 4. LAST_VALUE: Returns the last value in an ordered set of values.
