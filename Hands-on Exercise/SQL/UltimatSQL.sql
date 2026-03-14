@@ -822,3 +822,5 @@ FROM Sales.Employees;
 			-- Subquery in JOIN Clause 
 			
 			-- Subquery in WHERE Clause
+			    -- Comparison Operators: =, !=, >, <, >=, <=
+				-- Logical Operators: IN, ANY, ALL, EXISTS
