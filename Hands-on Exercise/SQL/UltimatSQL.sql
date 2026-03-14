@@ -813,6 +813,12 @@ FROM Sales.Employees;
 					SELECT (SELECT MAX(Sales) FROM Sales.Orders) AS Max_Sales;
 			
 			-- Row Subquery: A subquery that returns a single row with multiple columns.
+				-- Example:
+					SELECT 
+						(SELECT FirstName FROM Sales.Employees WHERE EmployeeID = 1) AS Employee_First_Name,
+						(SELECT LastName FROM Sales.Employees WHERE EmployeeID = 1) AS Employee_Last_Name;
+			
+				-- Note: The above example can also be achieved using JOIN, but it demonstrates the concept of a row subquery.
 			
 			-- Table Subquery: A subquery that returns multiple rows and columns, essentially a result set.
 		
