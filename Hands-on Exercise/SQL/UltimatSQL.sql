@@ -726,3 +726,18 @@ FROM Sales.Employees;
 		FROM Sales.Orders
 		GROUP BY MONTH(OrderDate)
 		)t
+
+		SELECT
+			CustomerId,
+			AVG(Days_Since_Last_Order) AS Avg_Days_Since_Last_Order,
+			RANK() OVER(ORDER BY COALESCE(AVG(Days_Since_Last_Order), 1.79e308)) AS Avg_Customer_Order_Rank
+		FROM
+		(
+			SELECT
+				OrderId,
+				CustomerId,
+				OrderDate,
+				DATEDIFF(DAY, LAG(OrderDate) OVER(PARTITION BY CustomerId ORDER BY OrderDate), OrderDate) AS Days_Since_Last_Order
+			FROM Sales.Orders
+		)t
+		GROUP BY CustomerID
