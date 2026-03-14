@@ -767,6 +767,7 @@ FROM Sales.Employees;
 
 	DATABASE ENGINE
 		|---- CACHE STORAGE
+		
 		|---- DISK STORAGE
 			|---- USER DATA
 				|---- DATA FILES
