@@ -19,8 +19,10 @@
 --		Examples include MongoDB and Cassandra.
 -- 	3. In-Memory Databases: These databases store data in memory for faster access. 
 --		Examples include Redis and Memcached.
--- 	4. Graph Databases: These databases are designed to store and query data in the form of graphs. Examples include Neo4j and Amazon Neptune.
--- 	5. Object-Oriented Databases: These databases store data in the form of objects, similar to object-oriented programming. Examples include ObjectDB and db4o.
+-- 	4. Graph Databases: These databases are designed to store and query data in the form of graphs. 
+--		Examples include Neo4j and Amazon Neptune.
+-- 	5. Object-Oriented Databases: These databases store data in the form of objects, similar to object-oriented programming. 
+--		Examples include ObjectDB and db4o.
 
 -- DQL - Data Query Language
 -- DQL is a subset of SQL that focuses on querying data from a database. It includes
