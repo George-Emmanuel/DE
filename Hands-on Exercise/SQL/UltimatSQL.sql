@@ -782,3 +782,12 @@ FROM Sales.Employees;
 				1. TEMP TABLES
 	
 	**************************  **************************  **************************  **************************/
+-- SUBQUERIES
+	-- Definition: A subquery is a query nested inside another query. 
+	-- It can be used in various clauses such as SELECT, FROM, WHERE, and HAVING to perform operations that 
+	--	require multiple steps of data retrieval or manipulation.
+
+	-- Types of Subqueries:
+		-- 1. Scalar Subquery: Returns a single value (one row and one column).
+		-- 2. Row Subquery: Returns a single row with multiple columns.
+		-- 3. Table Subquery: Returns multiple rows and columns, essentially acting as a temporary table.
