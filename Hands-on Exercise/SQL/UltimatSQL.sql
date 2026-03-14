@@ -828,10 +828,40 @@ FROM Sales.Employees;
 		
 		-- BY Location & Clauses:
 			-- Subquery in SELECT Clause
+				-- Example:
+					SELECT 
+						OrderID,
+						OrderDate,
+						(SELECT Product FROM Sales.Products WHERE ProductID = Sales.Orders.ProductID) AS Product_Name
+					FROM Sales.Orders;
 			
 			-- Subquery in FROM Clause
+				-- Example:
+					SELECT 
+						ProductID,
+						Total_Sales
+					FROM
+					(
+						SELECT 
+							ProductID,
+							SUM(Sales) AS Total_Sales
+						FROM Sales.Orders
+						GROUP BY ProductID
+					) AS Sales_By_Product
+					WHERE Total_Sales > 1000;
 			
-			-- Subquery in JOIN Clause 
+			-- Subquery in JOIN Clause
+				-- Example:
+					SELECT 
+						o.OrderID,
+						o.OrderDate,
+						p.Product,
+						o.Sales
+					FROM Sales.Orders AS o
+					INNER JOIN
+					(
+						SELECT ProductID, Product FROM Sales.Products WHERE Price > 100
+					) AS p ON o.ProductID = p.ProductID;
 			
 			-- Subquery in WHERE Clause
 			    -- Comparison Operators: =, !=, >, <, >=, <=
