@@ -815,12 +815,10 @@ FROM Sales.Employees;
 			-- Table Subquery: A subquery that returns multiple rows and columns, essentially a result set.
 		
 		-- BY Location & Clauses:
-			-- Subquery in SELECT Clause: A subquery used to compute a value for each row in the result set.
+			-- Subquery in SELECT Clause
 			
-			-- Subquery in FROM Clause: A subquery that serves as a temporary table or view for the outer query.
+			-- Subquery in FROM Clause
 			
-			-- Subquery in JOIN Clause: A subquery used to filter rows based on a condition that involves the results 
-			--	of the subquery.
+			-- Subquery in JOIN Clause 
 			
-			-- Subquery in WHERE Clause: A subquery used to filter groups based on a condition that involves the results 
-			--	of the subquery.
+			-- Subquery in WHERE Clause
