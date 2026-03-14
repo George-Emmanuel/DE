@@ -887,3 +887,6 @@ FROM Sales.Employees;
 				FROM Sales.Orders
 				GROUP BY CustomerID) AS o
 				ON c.CustomerID = o.CustomerID
+
+				SELECT * FROM Sales.Orders
+				WHERE CustomerId NOT IN (SELECT DISTINCT CustomerId FROM Sales.Customers WHERE Country = 'Germany')
