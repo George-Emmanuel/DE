@@ -771,8 +771,10 @@ FROM Sales.Employees;
 			|---- USER DATA
 			|-------- DATA FILES
 			|---- CATALOG DATA
-			|-------- SYSTEM DATABASES
-			|-------- USER DATABASES
+				|---- METADATA
+					|---- SCHEMA
+					|---- TABLE DEFINITIONS
+					|---- INDEX DEFINITIONS
 			|---- TEMP DATA
 			|-------- TEMP TABLES
 	
