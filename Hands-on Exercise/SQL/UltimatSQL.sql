@@ -794,3 +794,5 @@ FROM Sales.Employees;
 			
 			-- Non-Correlated Subquery: A subquery that does not reference columns from the outer query. 
 			--							It is executed only once and its result is used by the outer query.
+		
+		-- BY Result Type:
