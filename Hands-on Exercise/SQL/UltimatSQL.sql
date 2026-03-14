@@ -729,7 +729,7 @@ FROM Sales.Employees;
 
 		-- Practice Question: In order to analyze customer loyalty, rank customers based on the average days between their orders
 
-		-- Method 1: Using LAG for first order
+		-- Method 1: Using LAG
 		SELECT
 			CustomerId,
 			AVG(Days_Since_Last_Order) AS Avg_Days_Since_Last_Order,
