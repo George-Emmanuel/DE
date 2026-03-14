@@ -722,7 +722,7 @@ FROM Sales.Employees;
 		SELECT
 			MONTH(OrderDate) AS Month_Of_Sale,
 			SUM(Sales) AS Total_Sales,
-			LAG(SUM(Sales), 1, 0) OVER(ORDER BY MONTH(OrderDate)) AS Previous_month_Sales
+			LAG(SUM(Sales)) OVER(ORDER BY MONTH(OrderDate)) AS Previous_month_Sales
 		FROM Sales.Orders
 		GROUP BY MONTH(OrderDate)
 		)t
