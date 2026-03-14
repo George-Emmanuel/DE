@@ -803,6 +803,11 @@ FROM Sales.Employees;
 		-- BY Dependancy:
 			-- Correlated Subquery: A subquery that references columns from the outer query. 
 			--						It is executed once for each row processed by the outer query.
+				-- Example:
+				SELECT 
+					*,
+					(SELECT COUNT(*) FROM Sales.Orders AS o WHERE o.CustomerID = c.CustomerId) AS Total_orders_Pre_Customer
+				FROM Sales.Customers AS c
 			
 			-- Non-Correlated Subquery: A subquery that does not reference columns from the outer query. 
 			--							It is executed only once and its result is used by the outer query.
