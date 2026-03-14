@@ -892,6 +892,7 @@ FROM Sales.Employees;
 				SELECT * FROM Sales.Orders
 				WHERE CustomerId NOT IN (SELECT DISTINCT CustomerId FROM Sales.Customers WHERE Country = 'Germany')
 
+			-- Example 3
 				SELECT * FROM Sales.Employees
 				WHERE 
 					Gender = 'F' AND
