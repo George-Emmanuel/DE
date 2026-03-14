@@ -4,9 +4,9 @@
 -- 	It is widely used in various applications, including web development, data analysis, and business intelligence.
 
 -- Why learn SQL?
--- Learning SQL is essential for anyone working with data, as it is the standard language for interacting with relational databases. It enables you to efficiently retrieve and manipulate data, which is crucial for making informed decisions based on data analysis.
--- SQL is also a valuable skill in the job market, as many roles in data science, data analysis, and software development require proficiency in SQL.
--- Additionally, SQL is relatively easy to learn compared to other programming languages, making it accessible for beginners.
+-- 	Learning SQL is essential for anyone working with data, as it is the standard language for interacting with relational databases. It enables you to efficiently retrieve and manipulate data, which is crucial for making informed decisions based on data analysis.
+-- 	SQL is also a valuable skill in the job market, as many roles in data science, data analysis, and software development require proficiency in SQL.
+-- 	Additionally, SQL is relatively easy to learn compared to other programming languages, making it accessible for beginners.
 
 -- What is Database & Types of Database?
 -- A database is an organized collection of data that is stored and accessed electronically. It allows users to efficiently manage and retrieve data. There are several types of databases, including:
