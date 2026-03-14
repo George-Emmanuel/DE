@@ -770,7 +770,7 @@ FROM Sales.Employees;
 		
 		2. DISK STORAGE
 			a. USER DATA
-				1. DATA FILES
+				1. DATA TABLES
 			
 			b. CATALOG DATA
 				1. METADATA
