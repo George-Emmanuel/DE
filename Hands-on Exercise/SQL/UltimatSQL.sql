@@ -661,5 +661,20 @@ FROM Sales.Employees;
 			FROM Sales.Orders
 		
 		-- 2. LEAD: Provides access to a row at a specified physical offset that follows the current row.
+			SELECT
+				OrderId,
+				OrderDate,
+				ProductId,
+				Sales,
+				LEAD(Sales, 1) OVER(ORDER BY OrderDate) AS Next_Sale
+			FROM Sales.Orders
+
+			SELECT
+				OrderId,
+				OrderDate,
+				ProductId,
+				Sales,
+				LEAD(Sales, 1) OVER(PARTITION BY ProductId ORDER BY OrderDate) AS Next_Sale_By_Product
+			FROM Sales.Orders
 		-- 3. FIRST_VALUE: Returns the first value in an ordered set of values.
 		-- 4. LAST_VALUE: Returns the last value in an ordered set of values.
