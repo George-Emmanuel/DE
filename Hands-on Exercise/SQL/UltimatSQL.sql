@@ -766,19 +766,19 @@ FROM Sales.Employees;
 	/**************************  **************************  **************************  **************************
 
 	DATABASE ENGINE
-		|---- CACHE STORAGE
+		1. CACHE STORAGE
 		
-		|---- DISK STORAGE
-			|---- USER DATA
-				|---- DATA FILES
+		2. DISK STORAGE
+			a. USER DATA
+				1. DATA FILES
 			
-			|---- CATALOG DATA
-				|---- METADATA
-					|---- SCHEMA
-					|---- TABLE DEFINITIONS
-					|---- INDEX DEFINITIONS
+			b. CATALOG DATA
+				1. METADATA
+					1. SCHEMA
+					2. TABLE DEFINITIONS
+					3. INDEX DEFINITIONS
 			
-			|---- TEMP DATA
-				|---- TEMP TABLES
+			c. TEMP DATA
+				1. TEMP TABLES
 	
 	**************************  **************************  **************************  **************************/
