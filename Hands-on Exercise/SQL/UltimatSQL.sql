@@ -902,3 +902,12 @@ FROM Sales.Employees;
 				WHERE 
 					Gender = 'F' AND
 					Salary > ANY(SELECT Salary FROM Sales.Employees WHERE Gender = 'M')
+			
+			-- Example 4
+				SELECT
+					*
+				FROM Sales.Orders o
+				WHERE EXISTS (
+								SELECT * FROM Sales.Customers c 
+								WHERE COUNTRY = 'Germany'
+								AND o.CustomerID = c.CustomerID)
