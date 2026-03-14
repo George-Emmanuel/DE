@@ -774,6 +774,6 @@ FROM Sales.Employees;
 			|-------- SYSTEM DATABASES
 			|-------- USER DATABASES
 			|---- TEMP DATA
-			|-------- TEMP DATABASES
+			|-------- TEMP TABLES
 	
 	**************************  **************************  **************************  **************************/
