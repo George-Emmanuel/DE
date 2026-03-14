@@ -641,3 +641,24 @@ FROM Sales.Employees;
 			Sales,
 			PERCENT_RANK() OVER(ORDER BY Sales) AS Percent_Rank
 		FROM Sales.Orders
+
+	-- Window Value Functions:
+		-- 1. LAG: Provides access to a row at a specified physical offset that comes before the current row.
+			SELECT
+				OrderId,
+				OrderDate,
+				ProductId,
+				Sales,
+				LAG(Sales, 1) OVER(ORDER BY OrderDate) AS Previous_Sale
+			FROM Sales.Orders
+
+			SELECT
+				OrderId,
+				OrderDate,
+				ProductId,
+				Sales,
+				LAG(Sales, 1) OVER(PARTITION BY ProductId ORDER BY OrderDate) AS Previous_Sale_By_Product
+			FROM Sales.Orders
+		-- 2. LEAD: Provides access to a row at a specified physical offset that follows the current row.
+		-- 3. FIRST_VALUE: Returns the first value in an ordered set of values.
+		-- 4. LAST_VALUE: Returns the last value in an ordered set of values.
