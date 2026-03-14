@@ -693,4 +693,5 @@ FROM Sales.Employees;
 				Sales,
 				FIRST_VALUE(Sales) OVER(PARTITION BY ProductId ORDER BY OrderDate) AS First_Sale_By_Product
 			FROM Sales.Orders
+		
 		-- 4. LAST_VALUE: Returns the last value in an ordered set of values.
