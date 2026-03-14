@@ -710,3 +710,19 @@ FROM Sales.Employees;
 				Sales,
 				LAST_VALUE(Sales) OVER(PARTITION BY ProductId ORDER BY OrderDate ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING) AS Last_Sale_By_Product
 			FROM Sales.Orders
+
+		-- Examples:
+		SELECT
+			Month_Of_Sale,
+			Previous_month_Sales,
+			Total_Sales,
+			(Total_Sales - Previous_month_Sales) AS Previous_month_Sales
+		FROM
+		(
+		SELECT
+			MONTH(OrderDate) AS Month_Of_Sale,
+			SUM(Sales) AS Total_Sales,
+			LAG(SUM(Sales), 1, 0) OVER(ORDER BY MONTH(OrderDate)) AS Previous_month_Sales
+		FROM Sales.Orders
+		GROUP BY MONTH(OrderDate)
+		)t
