@@ -744,3 +744,5 @@ FROM Sales.Employees;
 			FROM Sales.Orders
 		)t
 		GROUP BY CustomerID
+
+		-- Method 2: Using LEAD
