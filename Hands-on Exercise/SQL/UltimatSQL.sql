@@ -678,4 +678,19 @@ FROM Sales.Employees;
 			FROM Sales.Orders
 		
 		-- 3. FIRST_VALUE: Returns the first value in an ordered set of values.
+			SELECT
+				OrderId,
+				OrderDate,
+				ProductId,
+				Sales,
+				FIRST_VALUE(Sales) OVER(ORDER BY OrderDate) AS First_Sale
+			FROM Sales.Orders
+
+			SELECT
+				OrderId,
+				OrderDate,
+				ProductId,
+				Sales,
+				FIRST_VALUE(Sales) OVER(PARTITION BY ProductId ORDER BY OrderDate) AS First_Sale_By_Product
+			FROM Sales.Orders
 		-- 4. LAST_VALUE: Returns the last value in an ordered set of values.
