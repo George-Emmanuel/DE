@@ -874,3 +874,16 @@ FROM Sales.Employees;
 						SELECT *
 						FROM Sales.Orders
 						WHERE ProductID IN (SELECT ProductID FROM Sales.Products WHERE Price > 100);
+			
+			-- Examples
+				SELECT
+					c.*,
+					o.Total_Orders
+				FROM Sales.Customers AS c
+				LEFT JOIN 
+				(SELECT
+					CustomerId,
+					COUNT(*) AS Total_Orders
+				FROM Sales.Orders
+				GROUP BY CustomerID) AS o
+				ON c.CustomerID = o.CustomerID
