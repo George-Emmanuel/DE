@@ -819,8 +819,8 @@ FROM Sales.Employees;
 			
 			-- Subquery in FROM Clause: A subquery that serves as a temporary table or view for the outer query.
 			
-			-- Subquery in WHERE Clause: A subquery used to filter rows based on a condition that involves the results 
+			-- Subquery in JOIN Clause: A subquery used to filter rows based on a condition that involves the results 
 			--	of the subquery.
 			
-			-- Subquery in HAVING Clause: A subquery used to filter groups based on a condition that involves the results 
+			-- Subquery in WHERE Clause: A subquery used to filter groups based on a condition that involves the results 
 			--	of the subquery.
