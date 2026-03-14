@@ -770,11 +770,13 @@ FROM Sales.Employees;
 		|---- DISK STORAGE
 			|---- USER DATA
 				|---- DATA FILES
+			
 			|---- CATALOG DATA
 				|---- METADATA
 					|---- SCHEMA
 					|---- TABLE DEFINITIONS
 					|---- INDEX DEFINITIONS
+			
 			|---- TEMP DATA
 				|---- TEMP TABLES
 	
