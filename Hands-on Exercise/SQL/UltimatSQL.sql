@@ -768,5 +768,12 @@ FROM Sales.Employees;
 	DATABASE ENGINE
 		|---- CACHE STORAGE
 		|---- DISK STORAGE
+			|---- USER DATA
+			|-------- DATA FILES
+			|---- CATALOG DATA
+			|-------- SYSTEM DATABASES
+			|-------- USER DATABASES
+			|---- TEMP DATA
+			|-------- TEMP DATABASES
 	
 	**************************  **************************  **************************  **************************/
