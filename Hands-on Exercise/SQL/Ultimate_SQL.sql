@@ -1101,3 +1101,6 @@ FROM Sales.Employees;
 			FROM Sales.Orders
 			GROUP BY DATETRUNC(MONTH, OrderDate)
 		)
+
+	-- USE CASE #2: Hide Complexity -> 
+	--		A view can be used to hide the complexity of underlying data structures and present a simplified interface to users.
