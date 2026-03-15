@@ -1009,6 +1009,7 @@ FROM Sales.Employees;
 
 		-- Recursive CTE:
 			-- A CTE that references itself in its definition, allowing it to perform recursive operations.
+				-- Example: Generating a sequence of numbers from 1 to 10 using a recursive CTE.
 				WITH Series As
 				(
 					SELECT 1 AS Number_Sequence
