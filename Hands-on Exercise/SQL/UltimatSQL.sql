@@ -947,5 +947,60 @@ FROM Sales.Employees;
 				ON lot.CustomerID = c.CustomerID;
 			
 			-- Nested CTE: A CTE that references another CTE within its definition.
+			WITH Total_Sales_Per_Customer AS 
+			(
+				SELECT
+					CustomerId,
+					SUM(Sales) AS Total_Sales_PerCustomer
+				FROM Sales.Orders
+				GROUP BY CustomerId
+			),
+
+			Last_order_Date AS
+			(
+				SELECT
+					CustomerId,
+					MAX(OrderDate) AS Last_order_Date
+				FROM Sales.Orders
+				GROUP BY CustomerId
+			),
+
+			Ranking_Customers AS
+			(
+				SELECT
+					*,
+					DENSE_RANK() OVER(ORDER BY Total_Sales_PerCustomer DESC) AS Customer_Rankings
+				FROM Total_Sales_Per_Customer
+			),
+
+			Segemented_Total_Sales AS
+			(
+				SELECT
+					*,
+					CASE
+						WHEN NTILE(3) OVER(ORDER BY Total_Sales_PerCustomer DESC) = 1  THEN 'High'
+						WHEN NTILE(3) OVER(ORDER BY Total_Sales_PerCustomer DESC) = 2  THEN 'Medium'
+						WHEN NTILE(3) OVER(ORDER BY Total_Sales_PerCustomer DESC) = 3  THEN 'Low'
+					END AS Sales_Category
+				FROM Total_Sales_Per_Customer
+			)
+
+			--SELECT * FROM Segemented_Total_Sales
+
+			SELECT
+				c.*,
+				cts.*,
+				lot.*,
+				rc.Customer_Rankings,
+				sts.Sales_Category	
+			FROM Sales.Customers AS c
+			LEFT JOIN Total_Sales_Per_Customer AS cts
+			ON cts.CustomerID = c.CustomerID
+			LEFT JOIN Last_order_Date AS lot
+			ON lot.CustomerID = c.CustomerID
+			LEFT JOIN Ranking_Customers AS rc
+			ON rc.CustomerId = c.CustomerID
+			LEFT JOIN Segemented_Total_Sales AS sts
+			ON sts.CustomerID = c.CustomerID
 
 		-- Recursive CTE:
