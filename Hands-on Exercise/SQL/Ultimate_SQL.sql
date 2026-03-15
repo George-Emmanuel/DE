@@ -1204,3 +1204,8 @@ FROM Sales.Employees;
 			FROM Sales.Orders
 
 		-- Global Temporary Tables: These tables are prefixed with ## and are visible to all sessions.
+			SELECT
+				DATENAME(month, OrderDate) AS Order_Month,
+				COUNT(OrderID) AS Total_Orders
+			INTO ##MonthlyOrders
+			FROM Sales.Orders
