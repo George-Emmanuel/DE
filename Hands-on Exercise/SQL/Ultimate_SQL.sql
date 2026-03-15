@@ -1210,7 +1210,7 @@ FROM Sales.Employees;
 			INTO ##MonthlyOrders
 			FROM Sales.Orders
 	
-	-- Comparing all (Subquery, Views, CTAS, Temp Tables, CTEs):
+-- Comparing all (Subquery, Views, CTAS, Temp Tables, CTEs):
 | Feature              | Sub Query                      | CTE (Common Table Expression) | Temp Table                              | CTAS (CREATE Table AS Select) | View                        |
 | -------------------- | ------------------------------ | ----------------------------- | --------------------------------------- | ----------------------------- | --------------------------- |
 | **Storage**          | Memory/Cache                   | Memory/Cache                  | Disk Storage                            | Disk Storage                  | No Storage                  |
