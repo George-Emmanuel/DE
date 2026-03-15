@@ -1217,5 +1217,5 @@ FROM Sales.Employees;
 |   LifeTime           | Temporary                      | Temporary                     | Temporary                               | Permanent                     | Permanent                   |
 |   When Deleted       | End of Query                   | End of Query                  | End of Session                          | DDL-DROP                      | DDL-DROP                    |
 |   Scope              | Single Query                   | Single Query                  | Multiple Queries                        | Multiple Queries              | Multiple Queries            |
-|   Reusability        | Very Limited – 1 Place 1 Query | Limited – 1+ Places 1 Query   | Medium – 1+ Places 1+ Queries (session) | High – 1+ Places 1+ Queries   | High – 1+ Places 1+ Queries |
+|   Reusability        | Very Limited - 1 Place 1 Query | Limited - 1+ Places 1 Query   | Medium - 1+ Places 1+ Queries (session) | High - 1+ Places 1+ Queries   | High - 1+ Places 1+ Queries |
 |   Refresh / Update   | Yes                            | Yes                           | No                                      | No                            | Yes                         |
