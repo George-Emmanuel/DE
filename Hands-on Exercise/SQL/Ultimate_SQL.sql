@@ -1157,3 +1157,5 @@ FROM Sales.Employees;
 	-- USE CASE #5: Multiple Languages:
 	--	A view can be used to provide support for multiple languages by creating views that translate data into 
 	-- different languages based on user preferences.
+
+	-- USE CASE #6: Virtual Data Marts in DWH:
