@@ -1003,6 +1003,7 @@ FROM Sales.Employees;
 
 		/* Best Practices:
 			1. Rethink & Refactor CTE before writing a new one.
-			2. 
+			2. More than 5 CTEs, your SQL starts getting hard to read & maintain.
+			3. Avoid using CTEs for simple queries that can be easily achieved with sub
 		*/
 		-- Recursive CTE:
