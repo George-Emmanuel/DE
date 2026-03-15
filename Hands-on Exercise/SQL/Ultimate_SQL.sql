@@ -1022,3 +1022,28 @@ FROM Sales.Employees;
 
 				SELECT * FROM Series
 				OPTION (MAXRECURSION 10)
+				
+				-- Example: Employee Hierarchy
+				WITH CTE_Employee_Hierarchy AS
+				(
+					SELECT
+						EmployeeId,
+						FirstName,
+						LastName,
+						ManagerId,
+						1 AS Level
+					FROM Sales.Employees
+					WHERE ManagerId IS NULL
+					UNION ALL
+					SELECT
+						e.EmployeeId,
+						e.FirstName,
+						e.LastName,
+						e.ManagerId,
+						Level + 1
+					FROM Sales.Employees AS e
+					INNER JOIN CTE_Employee_Hierarchy AS ceh
+					ON e.ManagerID = ceh.EmployeeID
+				)
+
+				SELECT * FROM CTE_Employee_Hierarchy
