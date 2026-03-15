@@ -985,8 +985,6 @@ FROM Sales.Employees;
 				FROM Total_Sales_Per_Customer
 			)
 
-			--SELECT * FROM Segemented_Total_Sales
-
 			SELECT
 				c.*,
 				cts.*,
