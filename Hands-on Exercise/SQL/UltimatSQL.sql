@@ -911,3 +911,34 @@ FROM Sales.Employees;
 								SELECT * FROM Sales.Customers c 
 								WHERE COUNTRY = 'Germany'
 								AND o.CustomerID = c.CustomerID)
+
+-- COMMON TABLE EXPRESSIONS (CTEs)
+	-- Definition: A Common Table Expression (CTE) is a temporary result set that can be referenced within a SELECT, INSERT, UPDATE, or DELETE statement. 
+	-- It is defined using the WITH clause and can be used to simplify complex queries, improve readability, and enable recursive queries.
+
+	-- Syntax:
+		-- Non-Recursive CTE:
+			WITH CTE_Name AS (
+				SELECT column1, column2, ...
+				FROM table_name
+				WHERE condition
+			)
+			SELECT *
+			FROM CTE_Name;
+
+		-- Recursive CTE:
+			WITH RECURSIVE CTE_Name AS (
+				-- Anchor member
+				SELECT column1, column2, ...
+				FROM table_name
+				WHERE condition
+
+				UNION ALL
+
+				-- Recursive member
+				SELECT column1, column2, ...
+				FROM table_name
+				INNER JOIN CTE_Name ON condition
+			)
+			SELECT *
+			FROM CTE_Name;
