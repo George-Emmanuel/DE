@@ -1211,3 +1211,11 @@ FROM Sales.Employees;
 			FROM Sales.Orders
 	
 	-- Comparing all (Subquery, Views, CTAS, Temp Tables, CTEs):
+| Feature              | Sub Query                      | CTE (Common Table Expression) | Temp Table                              | CTAS (CREATE Table AS Select) | View                        |
+| -------------------- | ------------------------------ | ----------------------------- | --------------------------------------- | ----------------------------- | --------------------------- |
+| **Storage**          | Memory/Cache                   | Memory/Cache                  | Disk Storage                            | Disk Storage                  | No Storage                  |
+| **LifeTime**         | Temporary                      | Temporary                     | Temporary                               | Permanent                     | Permanent                   |
+| **When Deleted**     | End of Query                   | End of Query                  | End of Session                          | DDL-DROP                      | DDL-DROP                    |
+| **Scope**            | Single Query                   | Single Query                  | Multiple Queries                        | Multiple Queries              | Multiple Queries            |
+| **Reusability**      | Very Limited – 1 Place 1 Query | Limited – 1+ Places 1 Query   | Medium – 1+ Places 1+ Queries (session) | High – 1+ Places 1+ Queries   | High – 1+ Places 1+ Queries |
+| **Refresh / Update** | Yes                            | Yes                           | No                                      | No                            | Yes                         |
