@@ -1048,6 +1048,18 @@ FROM Sales.Employees;
 
 				SELECT * FROM CTE_Employee_Hierarchy
 
+-- Levels of Architecture:
+	-- 1. Physical Level: This level describes how data is stored in the database, including the file structures, indexing, 
+	--					and access methods. 
+	--					It is concerned with the physical storage of data on disk and the optimization of data retrieval.
+
+	-- 2. Logical Level: This level describes what data is stored in the database and the relationships between different 
+	--					data entities. 
+	--					It focuses on the design of the database schema, including tables, columns, data types, and constraints.
+
+	-- 3. View Level: This level describes how users interact with the database and how data is presented to them. 
+	--				It includes user interfaces, query languages, and application programming interfaces (APIs) that allow users to access and manipulate data.
+
 -- Views
 	-- Definition: A view is a virtual table that is based on the result set of a SELECT statement. 
 	-- It does not store data itself but provides a way to simplify complex queries, enhance security, and present data in a specific format.
