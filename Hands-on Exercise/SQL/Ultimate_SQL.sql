@@ -1159,3 +1159,5 @@ FROM Sales.Employees;
 	-- different languages based on user preferences.
 
 	-- USE CASE #6: Virtual Data Marts in DWH:
+	--	A view can be used to create virtual data marts in a data warehouse, 
+	-- allowing users to access specific subsets of data without needing to create physical tables for each subset.
