@@ -1090,7 +1090,7 @@ FROM Sales.Employees;
 	-- Dropping a View:
 		DROP VIEW MonthlySales;
 
-	-- Updating a View:
+	-- Updating a View: ********** ONLY APPLICABLE FOR SOME DATABASE SYSTEMS **********
 		CREATE OR REPLACE VIEW MonthlySales AS
 		(
 			SELECT
