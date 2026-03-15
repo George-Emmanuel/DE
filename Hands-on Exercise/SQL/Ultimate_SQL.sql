@@ -1179,3 +1179,5 @@ FROM Sales.Employees;
 
 	-- Drop:
 		DROP TABLE Sales.MonthlyOrders;
+
+	-- Refresh CTAS:
