@@ -1209,3 +1209,16 @@ FROM Sales.Employees;
 				COUNT(OrderID) AS Total_Orders
 			INTO ##MonthlyOrders
 			FROM Sales.Orders
+	
+	-- Comparing all 3 (Views, CTAS, Temp Tables):
+		-- Views:
+			-- Pros: Simplifies complex queries, enhances security, and provides a specific format for data presentation.
+			-- Cons: Performance can be an issue with complex views, and they do not store data themselves.
+		
+		-- CTAS:
+			-- Pros: Creates a new table with the results of a query, which can improve performance for large datasets.
+			-- Cons: Requires manual management of the created tables, and may lead to storage issues if not handled properly.
+		
+		-- Temporary Tables:
+			-- Pros: Useful for storing intermediate results during a session, and automatically dropped when no longer needed.
+			-- Cons: Limited to the session that created them (for local temporary tables), and may lead to performance issues if overused.
