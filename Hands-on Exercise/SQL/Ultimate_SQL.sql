@@ -1086,3 +1086,6 @@ FROM Sales.Employees;
 			FROM Sales.Orders
 			GROUP BY DATETRUNC(MONTH, OrderDate)
 		)
+	
+	-- Dropping a View:
+		DROP VIEW MonthlySales;
