@@ -1197,5 +1197,10 @@ FROM Sales.Employees;
 
 	-- Types of Temporary Tables:
 		-- Local Temporary Tables: These tables are prefixed with a single # and are only visible to the session that created them.
+			SELECT
+				DATENAME(month, OrderDate) AS Order_Month,
+				COUNT(OrderID) AS Total_Orders
+			INTO #MonthlyOrders
+			FROM Sales.Orders
 
 		-- Global Temporary Tables: These tables are prefixed with ## and are visible to all sessions.
