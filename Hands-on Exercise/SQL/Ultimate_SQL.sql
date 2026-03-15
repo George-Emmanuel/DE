@@ -1190,3 +1190,12 @@ FROM Sales.Employees;
 		INTO Sales.MonthlyOrders
 		FROM Sales.Orders
 		GROUP BY DATENAME(month, OrderDate);
+
+-- Temporary Tables:
+	-- Definition: Temporary tables are special types of tables that are created and used to store intermediate results during a session. 
+	-- They are automatically dropped when the session ends or when they are no longer needed.
+
+	-- Types of Temporary Tables:
+		-- Local Temporary Tables: These tables are prefixed with a single # and are only visible to the session that created them.
+
+		-- Global Temporary Tables: These tables are prefixed with ## and are visible to all sessions.
