@@ -1008,3 +1008,15 @@ FROM Sales.Employees;
 			*/
 
 		-- Recursive CTE:
+			-- A CTE that references itself in its definition, allowing it to perform recursive operations.
+			-- Example: Calculating the factorial of a number using a recursive CTE.
+				WITH RECURSIVE Factorial_CTE AS
+				(
+					SELECT 1 AS Number, 1 AS Factorial
+					UNION ALL
+					SELECT Number + 1, (Number + 1) * Factorial
+					FROM Factorial_CTE
+					WHERE Number < 10
+				)
+
+				SELECT * FROM Factorial_CTE;
