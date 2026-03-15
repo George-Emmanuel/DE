@@ -1128,6 +1128,7 @@ FROM Sales.Employees;
 	
 	-- USE CASE #3: Data Security -> 
 	--	A view can be used to restrict access to sensitive data by only exposing specific columns or rows to users.
+	--	For example, a view can be created to only show sales data for a specific region or to exclude certain customer information.
 		CREATE VIEW Sales.EU_Sales_Team AS
 		(
 			SELECT
