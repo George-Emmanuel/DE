@@ -1210,4 +1210,4 @@ FROM Sales.Employees;
 			INTO ##MonthlyOrders
 			FROM Sales.Orders
 	
-	-- Comparing all 3 (Views, CTAS, Temp Tables):
+	-- Comparing all (Subquery, Views, CTAS, Temp Tables, CTEs):
