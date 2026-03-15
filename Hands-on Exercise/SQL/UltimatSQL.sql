@@ -928,13 +928,23 @@ FROM Sales.Employees;
 						SUM(Sales) AS Total_Sales_PerCustomer
 					FROM Sales.Orders
 					GROUP BY CustomerId
+				),
+
+				Last_order_Date AS (
+					SELECT
+						CustomerId,
+						MAX(OrderDate) AS Last_order_Date
+					FROM Sales.Orders
+					GROUP BY CustomerId
 				)
 
 				SELECT
 					*
 				FROM Sales.Customers AS c
-				LEFT JOIN Total_Sales_Per_Customer AS t
-				ON t.CustomerID = c.CustomerID;
+				LEFT JOIN Total_Sales_Per_Customer AS cts
+				ON cts.CustomerID = c.CustomerID
+				LEFT JOIN Last_order_Date AS lot
+				ON lot.CustomerID = c.CustomerID;
 			
 			-- Nested CTE: A CTE that references another CTE within its definition.
 
