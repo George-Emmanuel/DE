@@ -1009,3 +1009,14 @@ FROM Sales.Employees;
 
 		-- Recursive CTE:
 			-- A CTE that references itself in its definition, allowing it to perform recursive operations.
+				WITH Series As
+				(
+					SELECT 1 AS Number_Sequence
+					UNION ALL
+					SELECT
+						Number_Sequence + 1
+					FROM Series
+					WHERE Number_Sequence < 20
+				)
+
+				SELECT * FROM Series
