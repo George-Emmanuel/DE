@@ -1163,3 +1163,8 @@ FROM Sales.Employees;
 	-- allowing users to access specific subsets of data without needing to create physical tables for each subset.
 
 -- CTAS & Temp Tables
+	-- Syntax (in SQL Server):
+		SELECT column1, column2, ...
+		INTO new_table
+		FROM existing_table
+		WHERE condition;
