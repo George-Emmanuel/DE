@@ -1001,4 +1001,8 @@ FROM Sales.Employees;
 			LEFT JOIN Segemented_Total_Sales AS sts
 			ON sts.CustomerID = c.CustomerID
 
+		/* Best Practices:
+			1. Rethink & Refactor CTE before writing a new one.
+			2. 
+		*/
 		-- Recursive CTE:
