@@ -1074,3 +1074,15 @@ FROM Sales.Employees;
 
 	-- USE CASE #1: Central Query Logic -> A view can be used to centralize complex query logic, 
 	--				allowing users to access the data through a simplified interface.
+
+	-- CREATING a VIEW:
+		CREATE VIEW MonthlySales AS
+		(
+			SELECT
+				DATETRUNC(MONTH, OrderDate) AS current_month,
+				SUM(Sales) AS Total_Sales,
+				COUNT(OrderID) AS Total_Orders,
+				SUM(Quantity) AS Total_Quantities
+			FROM Sales.Orders
+			GROUP BY DATETRUNC(MONTH, OrderDate)
+		)
