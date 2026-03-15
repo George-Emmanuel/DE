@@ -1063,7 +1063,8 @@ FROM Sales.Employees;
 
 -- Views
 	-- Definition: A view is a virtual table that is based on the result set of a SELECT statement. 
-	-- It does not store data itself but provides a way to simplify complex queries, enhance security, and present data in a specific format.
+	-- It does not store data itself but provides a way to simplify complex queries, enhance security, 
+	-- and present data in a specific format.
 
 	-- Syntax:
 	CREATE VIEW view_name AS
