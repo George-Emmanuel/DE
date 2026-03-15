@@ -921,6 +921,20 @@ FROM Sales.Employees;
 	-- Syntax:
 		-- Non-Recursive CTE:
 			-- Standalone CTE: A CTE that is defined and used within a single query.
+				WITH Total_Sales_Per_Customer AS 
+				(
+					SELECT
+						CustomerId,
+						SUM(Sales) AS Total_Sales_PerCustomer
+					FROM Sales.Orders
+					GROUP BY CustomerId
+				)
+
+				SELECT
+					*
+				FROM Sales.Customers AS c
+				LEFT JOIN Total_Sales_Per_Customer AS t
+				ON t.CustomerID = c.CustomerID;
 			-- Nested CTE: A CTE that references another CTE within its definition.
 
 		-- Recursive CTE:
