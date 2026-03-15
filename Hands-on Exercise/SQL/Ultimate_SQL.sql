@@ -1058,7 +1058,8 @@ FROM Sales.Employees;
 	--					It focuses on the design of the database schema, including tables, columns, data types, and constraints.
 
 	-- 3. View Level: This level describes how users interact with the database and how data is presented to them. 
-	--				It includes user interfaces, query languages, and application programming interfaces (APIs) that allow users to access and manipulate data.
+	--				It includes user interfaces, query languages, and application programming interfaces (APIs) that allow 
+	--				users to access and manipulate data.
 
 -- Views
 	-- Definition: A view is a virtual table that is based on the result set of a SELECT statement. 
