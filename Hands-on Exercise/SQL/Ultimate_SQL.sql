@@ -1071,3 +1071,6 @@ FROM Sales.Employees;
 	SELECT column1, column2, ...
 	FROM table_name
 	WHERE condition;
+
+	-- USE CASE #1: Central Query Logic -> A view can be used to centralize complex query logic, 
+	--				allowing users to access the data through a simplified interface.
