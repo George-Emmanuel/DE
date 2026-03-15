@@ -1123,3 +1123,6 @@ FROM Sales.Employees;
 			LEFT JOIN Sales.Products AS p ON p.ProductID = o.ProductID
 			LEFT JOIN Sales.Employees AS e ON e.EmployeeID = o.SalesPersonID
 		)
+	
+	-- USE CASE #3: Data Security -> 
+	--	A view can be used to restrict access to sensitive data by only exposing specific columns or rows to users.
