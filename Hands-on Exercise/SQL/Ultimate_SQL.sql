@@ -1168,3 +1168,11 @@ FROM Sales.Employees;
 		INTO new_table
 		FROM existing_table
 		WHERE condition;
+
+	-- Create
+		SELECT
+			DATENAME(month, OrderDate) OrderMonth,
+			COUNT(OrderID) TotalOrders
+		INTO Sales.MonthlyOrders
+		FROM Sales.Orders
+		GROUP BY DATENAME(month, OrderDate);
