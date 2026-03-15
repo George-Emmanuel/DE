@@ -1178,4 +1178,4 @@ FROM Sales.Employees;
 		GROUP BY DATENAME(month, OrderDate);
 
 	-- Drop:
-	DROP TABLE Sales.MonthlyOrders;
+		DROP TABLE Sales.MonthlyOrders;
