@@ -935,6 +935,7 @@ FROM Sales.Employees;
 				FROM Sales.Customers AS c
 				LEFT JOIN Total_Sales_Per_Customer AS t
 				ON t.CustomerID = c.CustomerID;
+			
 			-- Nested CTE: A CTE that references another CTE within its definition.
 
 		-- Recursive CTE:
