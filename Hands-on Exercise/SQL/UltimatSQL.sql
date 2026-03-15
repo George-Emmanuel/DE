@@ -920,5 +920,7 @@ FROM Sales.Employees;
 
 	-- Syntax:
 		-- Non-Recursive CTE:
+			-- Standalone CTE:
+			-- Nested CTE:
 
 		-- Recursive CTE:
