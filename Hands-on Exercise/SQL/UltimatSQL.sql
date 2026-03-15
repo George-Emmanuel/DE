@@ -920,7 +920,7 @@ FROM Sales.Employees;
 
 	-- Syntax:
 		-- Non-Recursive CTE:
-			-- Standalone CTE:
+			-- Standalone CTE: A CTE that is defined and used within a single query.
 			-- Nested CTE:
 
 		-- Recursive CTE:
