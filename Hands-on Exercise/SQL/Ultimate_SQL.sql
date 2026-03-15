@@ -1149,3 +1149,7 @@ FROM Sales.Employees;
 			LEFT JOIN Sales.Employees AS e ON e.EmployeeID = o.SalesPersonID
 			WHERE c.Country != 'USA'
 		)
+	
+	-- USE CASE #4: Flexibility & Dynamic:
+	--	A view can be used to provide flexibility in querying data by allowing users to create their own views 
+	-- based on specific requirements.
