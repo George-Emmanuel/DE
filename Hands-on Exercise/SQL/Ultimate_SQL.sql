@@ -1089,3 +1089,15 @@ FROM Sales.Employees;
 	
 	-- Dropping a View:
 		DROP VIEW MonthlySales;
+
+	-- Updating a View:
+		CREATE OR REPLACE VIEW MonthlySales AS
+		(
+			SELECT
+				DATETRUNC(MONTH, OrderDate) AS current_month,
+				SUM(Sales) AS Total_Sales,
+				COUNT(OrderID) AS Total_Orders,
+				SUM(Quantity) AS Total_Quantities
+			FROM Sales.Orders
+			GROUP BY DATETRUNC(MONTH, OrderDate)
+		)
