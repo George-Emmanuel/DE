@@ -1104,3 +1104,22 @@ FROM Sales.Employees;
 
 	-- USE CASE #2: Hide Complexity -> 
 	--		A view can be used to hide the complexity of underlying data structures and present a simplified interface to users.
+		CREATE VIEW Sales.Mega_Table AS
+		(
+			SELECT
+				c.*,
+				o.OrderId,
+				o.OrderDate,
+				o.ShipDate,
+				o.Sales,
+				p.ProductID,
+				P.Product,
+				e.EmployeeID,
+				CONCAT(COALESCE(e.FirstName, ''), COALESCE(e.LastName, '')) AS Employee_Name,
+				e.Gender AS Employee_Gender,
+				e.ManagerId
+			FROM Sales.Customers AS C
+			LEFT JOIN Sales.Orders AS o ON c.CustomerID = o.CustomerID
+			LEFT JOIN Sales.Products AS p ON p.ProductID = o.ProductID
+			LEFT JOIN Sales.Employees AS e ON e.EmployeeID = o.SalesPersonID
+		)
