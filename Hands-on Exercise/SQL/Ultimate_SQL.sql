@@ -1016,7 +1016,8 @@ FROM Sales.Employees;
 					SELECT
 						Number_Sequence + 1
 					FROM Series
-					WHERE Number_Sequence < 20
+					WHERE Number_Sequence < 11
 				)
 
 				SELECT * FROM Series
+				OPTION (MAXRECURSION 10)
