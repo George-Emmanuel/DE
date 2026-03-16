@@ -1238,3 +1238,16 @@ FROM Sales.Employees;
 
 		EXEC USA_Customer_Overview
 	/***************************************************************/
+
+	ALTER PROCEDURE USA_Customer_Overview @Country NVARCHAR(50) AS
+	BEGIN
+		SELECT
+			COUNT(*) AS Customers_in_USA,
+			AVG(Score) AS Avg_Score
+		FROM Sales.Customers
+		WHERE Country = @Country
+	END
+
+	EXEC USA_Customer_Overview @Country = 'INDIA'
+	
+	/***************************************************************/
