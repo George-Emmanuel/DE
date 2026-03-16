@@ -1234,3 +1234,5 @@ FROM Sales.Employees;
 			FROM Sales.Customers
 			WHERE Country = 'USA'
 		END
+
+		EXEC USA_Customer_Overview
