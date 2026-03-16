@@ -1293,3 +1293,35 @@ FROM Sales.Employees;
 	EXEC USA_Customer_Overview
 
 	-- Control of Flow Statements in Stored Procedures:
+
+	ALTER PROCEDURE USA_Customer_Overview @Country NVARCHAR(50) = 'USA'
+	AS
+	BEGIN
+
+		DECLARE @TotalCustomers INT, @AvgScore FLOAT;
+
+		IF EXISTS (SELECT 1 FROM Sales.Customers WHERE SCORE IS NULL)
+		BEGIN
+			PRINT 'Scores updated to 0 for the country ' + @Country;
+			UPDATE Sales.Customers
+			SET Score = 0
+			WHERE SCORE IS NULL;
+		END
+
+		ELSE
+		BEGIN
+			PRINT 'No NULL Scores found for the country ' + @Country;
+		END
+
+		SELECT
+			@TotalCustomers = COUNT(*),
+			@AvgScore = AVG(Score)
+		FROM Sales.Customers
+		WHERE Country = @Country;
+
+		PRINT 'Total Customers in the country ' + @Country + ' : ' + CAST(@TotalCustomers AS NVARCHAR);
+		PRINT 'Average Score in the country ' + @Country + ' : ' + CAST(@AvgScore AS NVARCHAR);
+
+	END
+
+	EXEC USA_Customer_Overview @Country = 'Germany'
