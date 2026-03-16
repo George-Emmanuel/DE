@@ -1219,3 +1219,4 @@ FROM Sales.Employees;
 |   Scope              | Single Query                   | Single Query                  | Multiple Queries                        | Multiple Queries              | Multiple Queries            |
 |   Reusability        | Very Limited - 1 Place 1 Query | Limited - 1+ Places 1 Query   | Medium - 1+ Places 1+ Queries (session) | High - 1+ Places 1+ Queries   | High - 1+ Places 1+ Queries |
 |   Refresh / Update   | Yes                            | Yes                           | No                                      | No                            | Yes                         |
+
