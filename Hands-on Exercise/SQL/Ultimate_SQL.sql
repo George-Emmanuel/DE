@@ -1226,6 +1226,7 @@ FROM Sales.Employees;
 	-- They can accept parameters, perform complex operations, and return results.
 
 	-- Syntax:
+	/***************************************************************/
 		CREATE PROCEDURE USA_Customer_Overview AS
 		BEGIN
 			SELECT
@@ -1236,3 +1237,4 @@ FROM Sales.Employees;
 		END
 
 		EXEC USA_Customer_Overview
+	/***************************************************************/
