@@ -1270,3 +1270,5 @@ FROM Sales.Employees;
 	END
 
 	/***************************************************************/
+
+	-- Variables in Stored Procedures:
