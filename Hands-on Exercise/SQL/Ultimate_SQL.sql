@@ -1227,6 +1227,7 @@ FROM Sales.Employees;
 
 	-- Syntax:
 	/***************************************************************/
+		-- Getting Customer Overview for USA
 		CREATE PROCEDURE USA_Customer_Overview AS
 		BEGIN
 			SELECT
@@ -1239,6 +1240,7 @@ FROM Sales.Employees;
 		EXEC USA_Customer_Overview
 	/***************************************************************/
 
+	-- Getting Customer Overview for any Country (Dynamic):
 	ALTER PROCEDURE USA_Customer_Overview @Country NVARCHAR(50) AS
 	BEGIN
 		SELECT
