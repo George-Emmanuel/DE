@@ -1226,3 +1226,11 @@ FROM Sales.Employees;
 	-- They can accept parameters, perform complex operations, and return results.
 
 	-- Syntax:
+		CREATE PROCEDURE USA_Customer_Overview AS
+		BEGIN
+			SELECT
+				COUNT(*) AS Customers_in_USA,
+				AVG(Score) AS Avg_Score
+			FROM Sales.Customers
+			WHERE Country = 'USA'
+		END
