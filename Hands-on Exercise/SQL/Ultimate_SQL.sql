@@ -1258,3 +1258,13 @@ FROM Sales.Employees;
 	DROP PROCEDURE USA_Customer_Overview
 
 	/***************************************************************/
+
+	-- Geeting Customer Overview for any Country when Country is not specified (Dynamic with Default Value):
+	ALTER PROCEDURE USA_Customer_Overview @Country NVARCHAR(50) = 'USA' AS
+	BEGIN
+		SELECT
+			COUNT(*) AS Customers_in_USA,
+			AVG(Score) AS Avg_Score
+		FROM Sales.Customers
+		WHERE Country = @Country
+	END
