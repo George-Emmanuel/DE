@@ -1272,3 +1272,22 @@ FROM Sales.Employees;
 	/***************************************************************/
 
 	-- Variables in Stored Procedures:
+
+	ALTER PROCEDURE USA_Customer_Overview @Country NVARCHAR(50) = 'USA'
+	AS
+	BEGIN
+
+		DECLARE @TotalCustomers INT, @AvgScore FLOAT;
+
+		SELECT
+			@TotalCustomers = COUNT(*),
+			@AvgScore = AVG(Score)
+		FROM Sales.Customers
+		WHERE Country = @Country;
+
+		PRINT 'Total Customers in the country ' + @Country + ' : ' + CAST(@TotalCustomers AS NVARCHAR);
+		PRINT 'Average Score in the country ' + @Country + ' : ' + CAST(@AvgScore AS NVARCHAR);
+
+	END
+
+	EXEC USA_Customer_Overview
