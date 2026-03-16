@@ -1221,7 +1221,8 @@ FROM Sales.Employees;
 |   Refresh / Update   | Yes                            | Yes                           | No                                      | No                            | Yes                         |
 
 -- Stored Procedures
-	-- Definition: A stored procedure is a precompiled collection of SQL statements and optional control-of-flow statements that are stored under a name and processed as a unit. 
+	-- Definition: A stored procedure is a precompiled collection of SQL statements and optional control-of-flow statements 
+	-- 				that are stored under a name and processed as a unit. 
 	-- They can accept parameters, perform complex operations, and return results.
 
 	-- Syntax:
