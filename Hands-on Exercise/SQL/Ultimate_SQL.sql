@@ -1220,3 +1220,8 @@ FROM Sales.Employees;
 |   Reusability        | Very Limited - 1 Place 1 Query | Limited - 1+ Places 1 Query   | Medium - 1+ Places 1+ Queries (session) | High - 1+ Places 1+ Queries   | High - 1+ Places 1+ Queries |
 |   Refresh / Update   | Yes                            | Yes                           | No                                      | No                            | Yes                         |
 
+-- Stored Procedures
+	-- Definition: A stored procedure is a precompiled collection of SQL statements and optional control-of-flow statements that are stored under a name and processed as a unit. 
+	-- They can accept parameters, perform complex operations, and return results.
+
+	-- Syntax:
