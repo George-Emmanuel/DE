@@ -1249,5 +1249,7 @@ FROM Sales.Employees;
 	END
 
 	EXEC USA_Customer_Overview @Country = 'INDIA'
-	
+
 	/***************************************************************/
+
+	DROP PROCEDURE USA_Customer_Overview
