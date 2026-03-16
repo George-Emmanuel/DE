@@ -1254,6 +1254,7 @@ FROM Sales.Employees;
 
 	/***************************************************************/
 
+	-- Dropping a Stored Procedure:
 	DROP PROCEDURE USA_Customer_Overview
 
 	/***************************************************************/
