@@ -1385,7 +1385,7 @@ FROM Sales.Employees;
 	-- Definition: An index is a database object that improves the speed of data retrieval operations on a table at 
 	-- the cost of additional storage space and maintenance overhead. 
 
-	-- Types of INDEXES:
+	/* Types of INDEXES:
 		|
 		| -- Based on STRUCTURE:
 				1. CLUSTERED INDEX: A clustered index determines the physical order of data in a table. 
@@ -1397,3 +1397,4 @@ FROM Sales.Employees;
 		| -- Based on Storage:
 		|
 		| -- Based On Functions:
+	*/
