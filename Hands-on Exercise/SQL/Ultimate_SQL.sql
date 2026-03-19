@@ -1435,3 +1435,14 @@ FROM Sales.Employees;
 
 	-- Example:
 	CREATE CLUSTERED INDEX idx_CustomerID ON Sales.Customers (CustomerID);
+
+-- Non-Clustered Index:
+	-- Definition: A non-clustered index is a separate structure from the data rows, containing a copy of the indexed columns 
+	--				and a pointer to the actual data rows. 
+	--				There can be multiple non-clustered indexes on a table, allowing for different access paths to the data.
+
+	-- Syntax:
+	CREATE NONCLUSTERED INDEX index_name ON table_name (column1, column2, ...);
+
+	-- Example:
+	CREATE NONCLUSTERED INDEX idx_CustomerName ON Sales.Customers (FirstName, LastName);
