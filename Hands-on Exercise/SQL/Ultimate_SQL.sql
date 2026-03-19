@@ -1446,3 +1446,13 @@ FROM Sales.Employees;
 
 	-- Example:
 	CREATE NONCLUSTERED INDEX idx_CustomerName ON Sales.Customers (FirstName, LastName);
+
+/*********************************************************************************************************************************************************************************************************
+| Aspect                 | Clustered Index                                                                                 | Non-Clustered Index                                                                  |
+| ---------------------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| **Definition**         | Physically sorts and stores rows                                                                | Separate structure with pointers to the data                                         |
+| **Number of Indexes**  | One index per table                                                                             | Multiple indexes allowed                                                             |
+| **Read Performance**   | Faster                                                                                          | Slower                                                                               |
+| **Write Performance**  | Slower (due to potential row reordering)                                                        | Faster (physical order unaffected)                                                   |
+| **Storage Efficiency** | More storage-efficient                                                                          | Requires additional storage space                                                    |
+| **Use Case**           | - Unique column  <br> - Not frequently modified column  <br> - Improves range query performance | - Columns frequently used in search conditions and joins  <br> - Exact match queries |
