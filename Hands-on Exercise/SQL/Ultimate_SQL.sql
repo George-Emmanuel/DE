@@ -1459,3 +1459,14 @@ FROM Sales.Employees;
 | **Use Case**           | - Unique column  <br> - Not frequently modified column  <br> - Improves range query performance | - Columns frequently used in search conditions and joins  <br> - Exact match queries |
 
 ******************************************************************************************************************************************************************************************************************/
+
+-- Composite Index:
+	-- Definition: A composite index is an index that includes multiple columns. 
+	--				It can be either clustered or non-clustered and is used to improve query performance when 
+	-- 				filtering or sorting by multiple columns.
+
+	-- Syntax:
+	CREATE INDEX index_name ON table_name (column1, column2, ...);
+
+	-- Example:
+	CREATE NONCLUSTERED INDEX idx_CustomerName_Country ON Sales.Customers (FirstName, LastName, Country);
