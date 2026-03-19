@@ -1397,6 +1397,8 @@ FROM Sales.Employees;
 		| -- Based on Storage:
 		|		1. ROWSTORE INDEX: An index that is stored in a row-based format, where each index entry corresponds to 
 		|							a single row in the table.
+		|		2. COLUMNSTORE INDEX: An index that is stored in a column-based format, where each index entry corresponds to
+		|							a single column in the table. Columnstore indexes are optimized for analytical queries.
 		|
 		| -- Based On Functions:
 	*/
