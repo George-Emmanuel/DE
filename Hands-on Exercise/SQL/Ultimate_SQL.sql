@@ -1335,6 +1335,9 @@ FROM Sales.Employees;
 	-- Types of Triggers:
 		-- DML Triggers: These triggers are executed in response to Data Manipulation Language (DML) events 
 		-- such as INSERT, UPDATE, or DELETE.
+			-- After Triggers: These triggers are executed after the triggering DML event has occurred and the data has been modified.
+			
+			-- Instead of Triggers: These triggers are executed instead of the triggering DML event
 
 		-- DDL Triggers: These triggers are executed in response to Data Definition Language (DDL) events 
 		-- such as CREATE, ALTER, or DROP.
