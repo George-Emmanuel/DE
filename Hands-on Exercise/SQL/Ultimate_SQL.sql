@@ -1351,3 +1351,5 @@ FROM Sales.Employees;
 			BEGIN
 				-- Trigger logic goes here
 			END
+
+		-- Example
