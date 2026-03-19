@@ -1327,3 +1327,20 @@ FROM Sales.Employees;
 	EXEC USA_Customer_Overview @Country = 'Germany'
 
 -- Triggers:
+	-- Definition: A trigger is a special type of stored procedure that automatically executes in response 
+	-- to certain events on a particular table or view. 
+	
+	-- Triggers can be used to enforce business rules, maintain data integrity, and perform auditing tasks.
+
+	-- Types of Triggers:
+		-- DML Triggers: These triggers are executed in response to Data Manipulation Language (DML) events such as INSERT, UPDATE, or DELETE.
+			-- Example: Creating a trigger that updates the LastUpdated column in the Sales.Orders table whenever a record is updated.
+			CREATE TRIGGER Update_LastUpdated
+			ON Sales.Orders
+			AFTER UPDATE
+			AS
+			BEGIN
+				UPDATE Sales.Orders
+				SET LastUpdated = GETDATE()
+				WHERE OrderID IN (SELECT DISTINCT OrderID FROM inserted)
+			END
