@@ -1411,6 +1411,7 @@ FROM Sales.Employees;
 
 	-- PAGE: A page is the basic unit of data storage in a database. 
 	-- 		It is a fixed-size block of memory (usually 8 KB) that contains rows of data.
+	
 	-- Types of Pages:
 		-- Data Page: A page that contains actual data rows from a table.
 			-- Header
