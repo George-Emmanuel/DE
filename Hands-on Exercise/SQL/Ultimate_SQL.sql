@@ -1368,6 +1368,7 @@ FROM Sales.Employees;
 		-- Example 2:
 			-- This trigger logs the addition of new employees in the Sales.Employees table by inserting a record into the 
 			-- Sales.EmployeeLogs table with the EmployeeID, a log message, and the current date and time.
+			
 			CREATE TRIGGER trg_AfterInsertEmployee ON Sales.Employees
 			AFTER INSERT
 			AS
