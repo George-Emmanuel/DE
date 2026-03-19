@@ -1364,3 +1364,5 @@ FROM Sales.Employees;
 				SET Score = Score + 10
 				WHERE CustomerID IN (SELECT DISTINCT CustomerID FROM inserted)
 			END
+
+		-- Example 2:
