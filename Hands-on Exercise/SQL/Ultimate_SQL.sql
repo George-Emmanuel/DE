@@ -1344,3 +1344,5 @@ FROM Sales.Employees;
 
 		-- Logon Triggers: These triggers are executed in response to LOGON events, which occur when a user
 		-- attempts to connect to the database.
+
+		-- Syntax
