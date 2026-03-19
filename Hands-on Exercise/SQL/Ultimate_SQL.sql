@@ -1384,3 +1384,12 @@ FROM Sales.Employees;
 -- INDEXES:
 	-- Definition: An index is a database object that improves the speed of data retrieval operations on a table at 
 	-- the cost of additional storage space and maintenance overhead. 
+
+	-- Types of INDEXES:
+		|
+		| -- Based on STRUCTURE:
+		|
+		| -- Based on Storage:
+		|
+		|
+		|
