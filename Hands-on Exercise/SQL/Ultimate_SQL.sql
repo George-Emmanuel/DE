@@ -1419,3 +1419,7 @@ FROM Sales.Employees;
 			-- Row Offsets
 			
 		-- Index Page: A page that contains index entries, which are pointers to data rows in the table.
+	
+	-- HEAP: A heap is a table that does not have a clustered index.
+	--		The data rows in a heap are not stored in any particular order, and there is no structure to optimize data retrieval.
+	--		Heaps can lead to slower query performance, as the database engine may need to scan the entire table to find specific rows.
