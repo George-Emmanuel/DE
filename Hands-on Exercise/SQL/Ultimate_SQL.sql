@@ -1405,5 +1405,6 @@ FROM Sales.Employees;
 		|		1. UNIQUE INDEX: An index that enforces the uniqueness of values in the indexed columns, 
 		|						ensuring that no duplicate values are allowed.
 		|
-		|		2. FULLTEXT INDEX: An index that is used to perform full-text searches on character-based columns,
+		|		2. FILTERED INDEX: An index that is created with a WHERE clause to include only a subset of rows in the table,
+		|						allowing for more efficient indexing of specific data subsets.
 	*/
