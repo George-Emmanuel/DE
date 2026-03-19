@@ -1333,14 +1333,5 @@ FROM Sales.Employees;
 	-- Triggers can be used to enforce business rules, maintain data integrity, and perform auditing tasks.
 
 	-- Types of Triggers:
-		-- DML Triggers: These triggers are executed in response to Data Manipulation Language (DML) events such as INSERT, UPDATE, or DELETE.
-			-- Example: Creating a trigger that updates the LastUpdated column in the Sales.Orders table whenever a record is updated.
-			CREATE TRIGGER Update_LastUpdated
-			ON Sales.Orders
-			AFTER UPDATE
-			AS
-			BEGIN
-				UPDATE Sales.Orders
-				SET LastUpdated = GETDATE()
-				WHERE OrderID IN (SELECT DISTINCT OrderID FROM inserted)
-			END
+		-- DML Triggers: These triggers are executed in response to Data Manipulation Language (DML) events 
+		-- such as INSERT, UPDATE, or DELETE.
