@@ -1395,6 +1395,8 @@ FROM Sales.Employees;
 		|						containing a copy of the indexed columns and a pointer to the actual data rows.
 		|
 		| -- Based on Storage:
+		|		1. ROWSTORE INDEX: An index that is stored in a row-based format, where each index entry corresponds to 
+		|							a single row in the table.
 		|
 		| -- Based On Functions:
 	*/
