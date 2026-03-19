@@ -1425,3 +1425,5 @@ FROM Sales.Employees;
 	--		2. Heaps can lead to slower query performance, as the database engine may need to scan the entire table to find 
 	-- 			specific rows.
 	--  	3. Slow Read and Fast Write (Full Table scan)
+
+-- Clustered Index:
