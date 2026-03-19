@@ -1424,4 +1424,4 @@ FROM Sales.Employees;
 	--		1. The data rows in a heap are not stored in any particular order, and there is no structure to optimize data retrieval.
 	--		2. Heaps can lead to slower query performance, as the database engine may need to scan the entire table to find 
 	-- 			specific rows.
-	--  	3. Slow Read and Fast Write
+	--  	3. Slow Read and Fast Write (Full Table scan)
