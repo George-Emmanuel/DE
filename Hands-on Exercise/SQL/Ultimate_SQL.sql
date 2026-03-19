@@ -1487,8 +1487,8 @@ FROM Sales.Employees;
 	CREATE COLUMNSTORE INDEX idx_Sales_CustomerID ON Sales.Orders (CustomerID);
 
 	-- Process:
-	-- 1. Data is divided into row groups, which are collections of rows that are stored together.
-	-- 2. Each column in a row group is stored separately, allowing for efficient compression and retrieval of data.
+	-- 1. Rwo Groups: Data is divided into row groups, which are collections of rows that are stored together
+	-- 2. Column Segemnt: Each column in a row group is stored separately
 	-- 3. When a query is executed, only the relevant columns are read from the
 
 -- Rowstore Index:
