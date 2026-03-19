@@ -1325,3 +1325,5 @@ FROM Sales.Employees;
 	END
 
 	EXEC USA_Customer_Overview @Country = 'Germany'
+
+-- Triggers:
