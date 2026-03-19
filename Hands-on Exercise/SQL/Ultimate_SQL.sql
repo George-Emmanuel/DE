@@ -1402,4 +1402,6 @@ FROM Sales.Employees;
 		|							a single column in the table. Columnstore indexes are optimized for analytical queries.
 		|
 		| -- Based On Functions:
+		|		1. UNIQUE INDEX: An index that enforces the uniqueness of values in the indexed columns, 
+		|						ensuring that no duplicate values are allowed.
 	*/
