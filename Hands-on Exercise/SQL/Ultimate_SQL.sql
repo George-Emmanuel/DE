@@ -1338,3 +1338,6 @@ FROM Sales.Employees;
 
 		-- DDL Triggers: These triggers are executed in response to Data Definition Language (DDL) events 
 		-- such as CREATE, ALTER, or DROP.
+
+		-- Logon Triggers: These triggers are executed in response to LOGON events, which occur when a user
+		-- attempts to connect to the database.
