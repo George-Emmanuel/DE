@@ -1352,4 +1352,12 @@ FROM Sales.Employees;
 				-- Trigger logic goes here
 			END
 
-		-- Example:
+		-- Example: 
+			CREATE TRIGGER trg_Update_Customer_Score ON Sales.Customers
+			AFTER UPDATE
+			AS
+			BEGIN
+				UPDATE Sales.Customers
+				SET Score = Score + 10
+				WHERE CustomerID IN (SELECT DISTINCT CustomerID FROM inserted)
+			END
