@@ -1352,7 +1352,10 @@ FROM Sales.Employees;
 				-- Trigger logic goes here
 			END
 
-		-- Example: 
+		-- Example:
+			-- This trigger updates the Score of customers by adding 10 points whenever their information is updated in the 
+			-- Sales.Customers table.
+			
 			CREATE TRIGGER trg_Update_Customer_Score ON Sales.Customers
 			AFTER UPDATE
 			AS
