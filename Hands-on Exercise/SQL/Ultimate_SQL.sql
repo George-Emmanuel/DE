@@ -1408,3 +1408,6 @@ FROM Sales.Employees;
 		|		2. FILTERED INDEX: An index that is created with a WHERE clause to include only a subset of rows in the table,
 		|						allowing for more efficient indexing of specific data subsets.
 	*/
+
+	-- Clustered Index:
+		1. 
