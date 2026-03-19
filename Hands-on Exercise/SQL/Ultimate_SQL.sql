@@ -1486,6 +1486,11 @@ FROM Sales.Employees;
 	-- Example:
 	CREATE COLUMNSTORE INDEX idx_Sales_CustomerID ON Sales.Orders (CustomerID);
 
+	-- Process:
+	-- 1. Data is divided into row groups, which are collections of rows that are stored together.
+	-- 2. Each column in a row group is stored separately, allowing for efficient compression and retrieval of data.
+	-- 3. When a query is executed, only the relevant columns are read from the
+
 -- Rowstore Index:
 	-- Definition: A rowstore index is a type of index that is stored in a row-based format, where each index entry corresponds to a single row in the table. 
 	--				Rowstore indexes are optimized for transactional queries and can improve performance for point lookups and small result sets.
