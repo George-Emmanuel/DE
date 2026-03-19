@@ -1413,4 +1413,8 @@ FROM Sales.Employees;
 	-- 		It is a fixed-size block of memory (usually 8 KB) that contains rows of data.
 	-- Types --> 
 		-- Data Page: A page that contains actual data rows from a table.
+			-- Header
+			-- Row Data
+			-- Row Offsets
+			
 		-- Index Page: A page that contains index entries, which are pointers to data rows in the table.
