@@ -1475,3 +1475,15 @@ FROM Sales.Employees;
 	-- 	1. The order of columns in a composite index must match the order of columns in the query, otherwise
 	-- 		the index will not be used by the query optimizer.
 	-- 	2. Index works if the leftmost column(s) of the index are used in the query's WHERE clause or JOIN condition.
+
+-- Columnstore Index:
+	-- Definition: A columnstore index is a type of index that is stored in a column-based format, where each index entry corresponds to a single column in the table. 
+	--				Columnstore indexes are optimized for analytical queries and can significantly improve performance for large datasets.
+
+	-- Syntax:
+	CREATE COLUMNSTORE INDEX index_name ON table_name (column1, column2, ...);
+
+	-- Example:
+	CREATE COLUMNSTORE INDEX idx_Sales_CustomerID ON Sales.Orders (CustomerID);
+
+--
