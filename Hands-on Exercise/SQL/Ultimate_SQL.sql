@@ -1409,5 +1409,5 @@ FROM Sales.Employees;
 		|						allowing for more efficient indexing of specific data subsets.
 	*/
 
-	-- Clustered Index:
-		1. 
+	-- PAGE: A page is the basic unit of data storage in a database. 
+	-- 		It is a fixed-size block of memory (usually 8 KB) that contains rows of data.
