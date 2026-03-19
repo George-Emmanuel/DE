@@ -1388,6 +1388,11 @@ FROM Sales.Employees;
 	-- Types of INDEXES:
 		|
 		| -- Based on STRUCTURE:
+				1. CLUSTERED INDEX: A clustered index determines the physical order of data in a table. 
+								There can be only one clustered index per table, as the data rows can be sorted in only one order.
+				
+				2. NON-CLUSTERED INDEX: A non-clustered index is a separate structure from the data rows,
+								containing a copy of the indexed columns and a pointer to the actual data rows.
 		|
 		| -- Based on Storage:
 		|
