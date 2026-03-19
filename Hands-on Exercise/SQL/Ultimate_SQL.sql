@@ -1347,3 +1347,4 @@ FROM Sales.Employees;
 
 		-- Syntax:
 			CREATE TRIGGER trigger_name ON table_name
+			AFTER|INSTEAD OF|BEFORE INSERT|UPDATE|DELETE
