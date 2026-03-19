@@ -1427,3 +1427,11 @@ FROM Sales.Employees;
 	--  	3. Slow Read and Fast Write (Full Table scan)
 
 -- Clustered Index:
+	-- Definition: A clustered index is a type of index that determines the physical order of data in a table. 
+	--				There can be only one clustered index per table, as the data rows can be sorted in only one order.
+
+	-- Syntax:
+	CREATE CLUSTERED INDEX index_name ON table_name (column1, column2, ...);
+
+	-- Example:
+	CREATE CLUSTERED INDEX idx_CustomerID ON Sales.Customers (CustomerID);
