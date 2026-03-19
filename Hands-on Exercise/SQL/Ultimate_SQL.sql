@@ -1352,4 +1352,4 @@ FROM Sales.Employees;
 				-- Trigger logic goes here
 			END
 
-		-- Example
+		-- Example:
