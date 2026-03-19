@@ -1391,5 +1391,4 @@ FROM Sales.Employees;
 		|
 		| -- Based on Storage:
 		|
-		|
-		|
+		| -- Based On Functions:
