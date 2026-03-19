@@ -1346,3 +1346,5 @@ FROM Sales.Employees;
 		-- attempts to connect to the database.
 
 		-- Syntax:
+			CREATE TRIGGER trigger_name
+			ON table_name
