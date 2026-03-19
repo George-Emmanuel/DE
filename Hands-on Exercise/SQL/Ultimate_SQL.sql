@@ -1489,7 +1489,8 @@ FROM Sales.Employees;
 	-- Process:
 	-- 1. Rwo Groups: Data is divided into row groups, which are collections of rows that are stored together
 	-- 2. Column Segemnt: Each column in a row group is stored separately
-	-- 3. When a query is executed, only the relevant columns are read from the
+	-- 3. Compression: Columnstore indexes use advanced compression techniques to reduce storage space & improve query performance.
+	-- 4. Store: 
 
 -- Rowstore Index:
 	-- Definition: A rowstore index is a type of index that is stored in a row-based format, where each index entry corresponds to a single row in the table. 
