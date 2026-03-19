@@ -1470,3 +1470,5 @@ FROM Sales.Employees;
 
 	-- Example:
 	CREATE NONCLUSTERED INDEX idx_CustomerName_Country ON Sales.Customers (FirstName, LastName, Country);
+
+	-- Rule: The order of columns in a composite index must match the order of columns in the query.
