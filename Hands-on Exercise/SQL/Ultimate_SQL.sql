@@ -1381,4 +1381,4 @@ FROM Sales.Employees;
 				FROM INSERTED
 			END
 
--- INDEXES
+-- INDEXES:
