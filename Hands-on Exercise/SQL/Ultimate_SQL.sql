@@ -1474,3 +1474,4 @@ FROM Sales.Employees;
 	-- Rule: 
 	-- 	1. The order of columns in a composite index must match the order of columns in the query, otherwise
 	-- 		the index will not be used by the query optimizer.
+	-- 	2. Index works if the leftmost column(s) of the index are used in the query's WHERE clause or JOIN condition.
