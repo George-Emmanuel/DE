@@ -1796,6 +1796,9 @@ Every index has a cost:
 		-- Fragmentation Methods:
 			-- 1. REORGANIZE: This method defragments the leaf level of the index by physically reordering the pages 
 			--				to match the logical order.
+
+			-- 2. REBUILD: This method drops and recreates the index, which can be more effective for heavily fragmented indexes, 
+			--				but it is more resource-intensive and can cause downtime.
 		
 		SELECT
 			OBJECT_NAME(ips.object_id) AS TableName,
