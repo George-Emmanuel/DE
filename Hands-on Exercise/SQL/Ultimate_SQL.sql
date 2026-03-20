@@ -1618,16 +1618,10 @@ What it does:
 	3. Sorted (ORDER BY created_at)
 
 ### How to design them:
-
-#### A) Single-column index
-
-Good for simple filters:
-
-```sql
-CREATE INDEX ix_users_email ON users(email);
-```
-
-#### B) Composite index (multi-column)
+	1. Single-column index (Good for simple filters):
+		CREATE INDEX ix_users_email ON users(email);
+	
+	2. Composite index (multi-column)
 
 For combined conditions:
 
