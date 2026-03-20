@@ -1826,5 +1826,10 @@ Every index has a cost:
 -- 	2. Index Scan
 -- 	3. Index Seek
 
+-- Join Algorithms:
+--	1. Nested Loops
+--	2. HASH Match
+--	3. MERGE Join
+
 -- 		1. If the predictions from ESTIMATED EXECUTION PLAN dont match the ACTUAL EXECUTION PLAN, this indicates issues like
 -- 			  inacurate statistics or outdated indexes, leading to poor performance.
