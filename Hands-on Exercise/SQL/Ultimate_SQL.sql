@@ -1522,3 +1522,9 @@ FROM Sales.Employees;
 	-- UNIQUE Index:
 	-- Definition: A unique index is an index that enforces the uniqueness of values in the indexed columns, 
 	-- ensuring that no duplicate values are allowed.
+
+	-- Syntax:
+	CREATE UNIQUE INDEX index_name ON table_name (column1, column2, ...);
+
+	-- Example:
+	CREATE UNIQUE INDEX idx_Unique_CustomerID ON Sales.Customers (CustomerID);
