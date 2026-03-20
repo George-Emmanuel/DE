@@ -1674,7 +1674,7 @@ Use when:
 ### Switch when:
 	* Table is very large
 	* Queries are:
-		* Aggregations (`SUM`, `COUNT`, `GROUP BY`)
+		* Aggregations (SUM, COUNT, GROUP BY)
 		* Scanning many rows
 
 ### Example:
