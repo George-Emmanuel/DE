@@ -1785,4 +1785,7 @@ Every index has a cost:
 		-- Ex3: Update statistics for all tables in the database
 		EXEC sp_updatestats; 
 
+		-- Benefits of Updating Statistics:
+		--
+
 	-- Monitor Fragmentations
