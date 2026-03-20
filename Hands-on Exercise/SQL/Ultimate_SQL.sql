@@ -1581,10 +1581,9 @@ Avoid heaps when:
 
 -------------------------------------------------------------------------------------
 
-### Use a **Clustered Index** when:
-
-* Table is part of **OLTP workload**
-* You query data regularly
+### Use a Clustered Index when:
+	* Table is part of OLTP workload
+	* You query data regularly
 
 **What it does:**
 
