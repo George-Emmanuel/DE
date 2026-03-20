@@ -1746,6 +1746,9 @@ Every index has a cost:
 		SELECT * FROM sys.dm_db_missing_index_groups
 	
 	-- Monitor Duplicate Indexes
+		-- A duplicate index is an index that has the same key columns as another index on the same table, 
+		-- but may differ in included columns or other properties.
+
 		SELECT
 			tbl.name AS Table_name,
 			col.name AS Column_name,
