@@ -1575,10 +1575,9 @@ Why:
 	* No index maintenance → fastest writes
 	* No ordering → minimal overhead
 
-**Avoid heaps when:**
-
-* Queries need frequent lookups → leads to expensive scans or RID lookups
-* Table persists long-term
+Avoid heaps when:
+	* Queries need frequent lookups → leads to expensive scans or RID lookups
+	* Table persists long-term
 
 ---
 
