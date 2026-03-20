@@ -1496,7 +1496,7 @@ FROM Sales.Employees;
 	-- Definition: A rowstore index is a type of index that is stored in a row-based format, where each index entry corresponds to a single row in the table. 
 	--				Rowstore indexes are optimized for transactional queries and can improve performance for point lookups and small result sets.
 
-	-- Syntax:
+	-- Syntax: (Same as Clustered & Non-Clustered Index)
 	CREATE CLUSTERED INDEX index_name ON table_name (column1, column2, ...);
 
 	-- Example:
