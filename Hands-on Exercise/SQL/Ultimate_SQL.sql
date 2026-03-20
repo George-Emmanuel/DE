@@ -1593,36 +1593,15 @@ What it does:
 
 # Step 2 — Choose the Right Clustered Index
 
-This is the **most important decision**.
-
 ### Good clustered index characteristics:
-
-1. **Frequently used in range queries**
-
-   ```sql
-   WHERE created_at BETWEEN ...
-   ```
-
-2. **Monotonically increasing values**
-
-   * `IDENTITY`
-   * `timestamp`
-     → avoids page splits and fragmentation
-
-3. **Used for sorting**
-
-   ```sql
-   ORDER BY created_at
-   ```
-
----
+	1. Frequently used in range queries
+	2. Monotonically increasing values
+	3. Used for sorting
 
 ### Bad clustered index choices:
-
 * Random values (e.g., GUIDs)
-
-  * Causes page splits
-  * Degrades insert performance
+	* Causes page splits
+	* Degrades insert performance
 * Wide keys
 
   * Increases size of all non-clustered indexes
