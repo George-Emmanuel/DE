@@ -1647,39 +1647,27 @@ Result:
 ---
 
 ## 4.2 Filtered Index (Targeted Optimization)
+	Use when queries hit a subset of data
+		Query --> WHERE status = 'active'
+		index --> CREATE INDEX ix_active_users ON users(email) WHERE status = 'active';
 
-Use when queries hit a **subset of data**
-
-```sql
-WHERE status = 'active'
-```
-
-```sql
-CREATE INDEX ix_active_users
-ON users(email)
-WHERE status = 'active';
-```
-
-**Benefits:**
-
-* Smaller index
-* Faster scans
-* Lower maintenance cost
+Benefits:
+	* Smaller index
+	* Faster scans
+	* Lower maintenance cost
 
 ---
 
 ## 4.3 Unique Index
+	
+	Syntax --> CREATE UNIQUE INDEX ix_email ON users(email);
 
-```sql
-CREATE UNIQUE INDEX ix_email ON users(email);
-```
 
 Use when:
+	* Data must be unique
+	* Helps optimizer assume 1 row → better plans
 
-* Data must be unique
-* Helps optimizer assume 1 row → better plans
-
----
+-------------------------------------------------------------------------------------
 
 # Step 5 — Use Columnstore for Analytics
 
