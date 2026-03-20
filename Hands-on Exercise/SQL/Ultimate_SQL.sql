@@ -1757,5 +1757,6 @@ Every index has a cost:
 		JOIN sys.index_columns ic ON idx.object_id = ic.object_id
 		JOIN sys.columns col ON idx.object_id = col.object_id
 		ORDER BY ColumnCount DESC
+	
 	-- Update Statistics
 	-- Monitor Fragmentations
