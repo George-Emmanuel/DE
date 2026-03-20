@@ -1512,4 +1512,5 @@ FROM Sales.Employees;
 | **I/O Efficiency**          | Lower (retrieves all columns)                                                   | Higher (retrieves specific columns)                                            |
 | **Best For**                | OLTP (Transactional): commerce, banking, financial systems, order processing    | OLAP (Analytical): data warehouse, business intelligence, reporting, analytics |
 | **Use Case**                | - High-frequency transaction applications<br>- Quick access to complete records | - Big data analytics<br>- Scanning large datasets<br>- Fast aggregation        |
+
 **************************************************************************************************************************************************************************************************/
