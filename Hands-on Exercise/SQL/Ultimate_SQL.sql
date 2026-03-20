@@ -1528,3 +1528,10 @@ FROM Sales.Employees;
 
 	-- Example:
 	CREATE UNIQUE INDEX idx_Unique_CustomerID ON Sales.Customers (CustomerID);
+
+	-- Benefits:
+	-- 1. Data Integrity: Unique indexes ensure that duplicate values are not allowed in the indexed columns,
+	-- 	maintaining data integrity and consistency.
+	-- 2. Performance: Unique indexes can improve query performance by allowing the database engine to quickly locate specific rows based on the unique values.
+	-- 3. Enforcing Business Rules: Unique indexes can be used to enforce business rules, such as ensuring that 
+	-- 	email addresses or social security numbers are unique within a table.
