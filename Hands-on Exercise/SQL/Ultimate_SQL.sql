@@ -1715,12 +1715,7 @@ Every index has a cost:
 
 ### 5. Large analytics workload? ----> Consider Columnstore
 
----
-
 # Key Principle
 
 > Indexes should reflect **how queries access data**, not how tables are designed.
 
----
-
-If needed, provide a query and table schema for a concrete index recommendation.
