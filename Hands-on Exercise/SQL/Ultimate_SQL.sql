@@ -1792,6 +1792,10 @@ Every index has a cost:
 	-- Monitor Fragmentations
 		-- Fragmentation occurs when the logical order of data pages does not match the physical order on disk, 
 		-- leading to inefficient I/O operations.
+
+		-- Fragmentation Methods:
+			-- 1. REORGANIZE: This method defragments the leaf level of the index by physically reordering the pages 
+			--				to match the logical order.
 		
 		SELECT
 			OBJECT_NAME(ips.object_id) AS TableName,
