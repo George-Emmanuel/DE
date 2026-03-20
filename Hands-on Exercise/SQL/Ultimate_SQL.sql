@@ -1503,6 +1503,7 @@ FROM Sales.Employees;
 	CREATE NONCLUSTERED ROWSTORE INDEX idx_OrderDate ON Sales.Orders (OrderDate);
 
 /*************************************************************************************************************************************************************************************************
+
 | Aspect                      | Rowstore Index                                                                  | Columnstore Index                                                              |
 | --------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
 | **Definition**              | Organizes and stores data **row by row**                                        | Organizes and stores data **column by column**                                 |
