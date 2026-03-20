@@ -1640,12 +1640,10 @@ What it does:
 
 	Query --> SELECT name, email FROM users WHERE email = ?
 	Index --> CREATE INDEX ix_users_email ON users(email) INCLUDE (name);
-```
 
-**Result:**
-
-* Query satisfied entirely from index
-* No table access → faster
+Result:
+	* Query satisfied entirely from index
+	* No table access which means faster performance
 
 ---
 
