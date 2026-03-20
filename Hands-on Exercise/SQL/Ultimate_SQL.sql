@@ -1721,6 +1721,7 @@ Every index has a cost:
 
 -- INDEX monitoring and Management
 	-- Monitor Index Usage
+	--		1. List 
 	-- Monitor Missing Indexes
 	-- Monitor Duplicate Indexes
 	-- Update Statistics
