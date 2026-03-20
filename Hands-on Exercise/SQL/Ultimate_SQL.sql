@@ -1485,7 +1485,7 @@ FROM Sales.Employees;
 	CREATE CLUSTERED COLUMNSTORE INDEX index_name ON table_name;
 
 	-- Example:
-	CREATE COLUMNSTORE INDEX idx_Sales_CustomerID ON Sales.Orders (CustomerID);
+	CREATE NONCLUSTERED COLUMNSTORE INDEX idx_Sales_CustomerID ON Sales.Orders (CustomerID);
 
 	-- Process:
 	-- 1. Rwo Groups: Data is divided into row groups, which are collections of rows that are stored together
