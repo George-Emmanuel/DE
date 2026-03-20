@@ -1481,7 +1481,8 @@ FROM Sales.Employees;
 	--				Columnstore indexes are optimized for analytical queries and can significantly improve performance for large datasets.
 
 	-- Syntax:
-	CREATE COLUMNSTORE INDEX index_name ON table_name (column1, column2, ...);
+	CREATE NONCLUSTERED COLUMNSTORE INDEX index_name ON table_name (column1, column2, ...);
+	CREATE CLUSTERED COLUMNSTORE INDEX index_name ON table_name;
 
 	-- Example:
 	CREATE COLUMNSTORE INDEX idx_Sales_CustomerID ON Sales.Orders (CustomerID);
