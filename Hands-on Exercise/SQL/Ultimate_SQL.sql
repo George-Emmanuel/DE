@@ -1672,14 +1672,10 @@ Use when:
 # Step 5 — Use Columnstore for Analytics
 
 ### Switch when:
-
-* Table is **very large**
-* Queries are:
-
-  * Aggregations (`SUM`, `COUNT`, `GROUP BY`)
-  * Scanning many rows
-
----
+	* Table is very large
+	* Queries are:
+		* Aggregations (`SUM`, `COUNT`, `GROUP BY`)
+		* Scanning many rows
 
 ### Example:
 
