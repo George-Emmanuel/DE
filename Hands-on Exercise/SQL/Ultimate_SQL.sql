@@ -1617,8 +1617,6 @@ What it does:
 	2. Joins (JOIN orders o ON o.user_id = u.id)
 	3. Sorting (ORDER BY created_at)
 
----
-
 ### How to design them:
 
 #### A) Single-column index
