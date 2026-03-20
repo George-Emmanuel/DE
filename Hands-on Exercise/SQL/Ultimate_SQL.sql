@@ -1539,3 +1539,11 @@ CREATE UNIQUE [CLUSTERED | NONCLUSTERED] COLUMNSTORE INDEX idx_Unique_CustomerID
 -- Filtered Index:
 -- Definition: A filtered index is an index that is created with a WHERE clause to include only a subset of rows in the table, 
 -- allowing for more efficient indexing of specific data subsets.
+
+-- Syntax:
+CREATE UNIQUE [CLUSTERED | NONCLUSTERED] COLUMNSTORE INDEX index_name ON table_name (column1, column2, ...)
+WHERE condition;
+
+-- Example:
+CREATE UNIQUE [CLUSTERED | NONCLUSTERED] COLUMNSTORE INDEX idx_Unique_CustomerID ON Sales.Customers (CustomerID)
+WHERE Sa = 'USA';
