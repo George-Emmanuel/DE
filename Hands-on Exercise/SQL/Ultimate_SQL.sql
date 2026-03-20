@@ -1704,9 +1704,7 @@ Every index has a cost:
 
 ### 1. Is this staging/temp data? ----> Use Heap
 
-### 2. Otherwise:
-
-→ Create **Clustered Index** based on access pattern
+### 2. Otherwise ----> Create **Clustered Index** based on access pattern
 
 ### 3. Identify slow queries:
 
