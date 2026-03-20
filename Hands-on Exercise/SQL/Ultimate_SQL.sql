@@ -1777,6 +1777,6 @@ Every index has a cost:
 		ORDER BY sp.modification_counter DESC;
 
 		UPDATE STATISTICS Sales.Customers;
-		UPDATE STATISTICS Sales.Customers
+		UPDATE STATISTICS Sales.Customers _WA_Sys_00000002_00000000;
 
 	-- Monitor Fragmentations
