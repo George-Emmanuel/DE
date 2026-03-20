@@ -1615,26 +1615,10 @@ What it does:
 
 # Step 3 — Add Non-Clustered Indexes (Access Optimization)
 
-### Use for:
-
-#### 1) Filtering
-
-```sql
-WHERE email = ?
-WHERE status = 'active'
-```
-
-#### 2) Joins
-
-```sql
-JOIN orders o ON o.user_id = u.id
-```
-
-#### 3) Sorting
-
-```sql
-ORDER BY created_at
-```
+### Use Non-Clustered Indexes for:
+	1. Filtering (WHERE email = ? ... or... WHERE status = 'active')
+	2. Joins (JOIN orders o ON o.user_id = u.id)
+	3. Sorting (ORDER BY created_at)
 
 ---
 
