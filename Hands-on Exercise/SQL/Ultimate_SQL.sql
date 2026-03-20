@@ -1823,6 +1823,7 @@ Every index has a cost:
 
 -- Types of Scans:
 -- 	1. Table Scan
+-- 	2. Index Scan
 
 -- 		1. If the predictions from ESTIMATED EXECUTION PLAN dont match the ACTUAL EXECUTION PLAN, this indicates issues like
 -- 			  inacurate statistics or outdated indexes, leading to poor performance.
