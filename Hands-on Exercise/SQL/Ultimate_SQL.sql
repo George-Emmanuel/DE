@@ -1809,3 +1809,6 @@ Every index has a cost:
 		INNER JOIN sys.tables tbl ON s.object_id = tbl.object_id
 		INNER JOIN sys.indexes AS idx ON idx.object_id = s.object_id AND idx.index_id = s.index_id
 		ORDER BY s.avg_fragmentation_in_percent DESC;
+
+		-- When to DeFragment:
+		
