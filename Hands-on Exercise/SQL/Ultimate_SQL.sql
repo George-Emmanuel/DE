@@ -1561,3 +1561,4 @@ WHERE Status = 'Active';
 
 /* *********************** !!!!!!!!!!! IMPORTANT IMPORTANT IMPORTANT !!!!!!!!!!! ************************
 
+Choosing the right index type is crucial for optimizing query performance and ensuring efficient data retrieval.
