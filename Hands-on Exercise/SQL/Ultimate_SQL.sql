@@ -1576,7 +1576,7 @@ Why:
 	* No ordering → minimal overhead
 
 Avoid heaps when:
-	* Queries need frequent lookups → leads to expensive scans or RID lookups
+	* Queries need frequent lookups -> leads to expensive scans or RID lookups
 	* Table persists long-term
 
 ---
