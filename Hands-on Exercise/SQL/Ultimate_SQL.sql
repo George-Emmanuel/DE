@@ -1599,11 +1599,11 @@ What it does:
 	3. Used for sorting
 
 ### Bad clustered index choices:
-* Random values (e.g., GUIDs)
-	* Causes page splits
-	* Degrades insert performance
-* Wide keys
-	* Increases size of all non-clustered indexes
+	1. Random values (e.g., GUIDs)
+		* Causes page splits
+		* Degrades insert performance
+	2. Wide keys
+		* Increases size of all non-clustered indexes
 
 ---
 
