@@ -1566,11 +1566,10 @@ Choosing the RIGHT INDEX for optimizing query performance and ensuring efficient
 
 # Step 1 — Choose Table Structure (Heap vs Clustered)
 
-### Use a Heap when:
-
-* Data is **temporary or staging**
-* You perform **bulk inserts** (ETL loads)
-* You rarely read the data before transforming/moving it
+Use a Heap when:
+	* Data is **temporary or staging**
+	* You perform **bulk inserts** (ETL loads)
+	* You rarely read the data before transforming/moving it
 
 **Why:**
 
