@@ -1718,3 +1718,5 @@ Every index has a cost:
 	> Indexes should reflect **how queries access data**, not how tables are designed.
 
 ***************************** !!!!!!!!!!! IMPORTANT IMPORTANT IMPORTANT !!!!!!!!!!! ****************************** */
+
+-- INDEX monitoring and Management
