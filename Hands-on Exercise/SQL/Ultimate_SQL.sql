@@ -1585,10 +1585,9 @@ Avoid heaps when:
 	* Table is part of OLTP workload
 	* You query data regularly
 
-**What it does:**
-
-* Physically orders the table by the clustered key
-* Every table should usually have one
+What it does:
+	* Physically orders the table by the clustered key
+	* Every table should usually have one
 
 ---
 
