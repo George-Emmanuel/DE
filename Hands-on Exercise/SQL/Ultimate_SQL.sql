@@ -1637,7 +1637,6 @@ What it does:
 # Step 4 — Optimize with Advanced Techniques
 
 ## 4.1 Covering Index (High Impact) [Avoid extra lookups]
-
 	Query --> SELECT name, email FROM users WHERE email = ?
 	Index --> CREATE INDEX ix_users_email ON users(email) INCLUDE (name);
 
