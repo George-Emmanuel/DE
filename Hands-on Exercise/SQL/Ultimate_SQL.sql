@@ -1621,28 +1621,16 @@ What it does:
 	1. Single-column index (Good for simple filters):
 		CREATE INDEX ix_users_email ON users(email);
 	
-	2. Composite index (multi-column)
+	2. Composite index (multi-column) For combined conditions:
+		a. WHERE status = 'active' AND created_at > ...
+		b. CREATE INDEX ix ON table(status, created_at);
 
-For combined conditions:
-
-```sql
-WHERE status = 'active' AND created_at > ...
-```
-
-```sql
-CREATE INDEX ix ON table(status, created_at);
-```
-
-**Order matters:**
-
-* Left-most column must match query usage
-
----
+### Order matters:
+	* Left-most column must match query usage
 
 ### Avoid:
-
-* Indexing every column
-* Indexing low-selectivity columns alone (e.g., `is_active`)
+	* Indexing every column
+	* Indexing low-selectivity columns alone (e.g., 'is_active')
 
 ---
 
