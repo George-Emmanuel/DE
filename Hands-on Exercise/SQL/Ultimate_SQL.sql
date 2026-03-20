@@ -1546,4 +1546,4 @@ WHERE condition;
 
 -- Example:
 CREATE UNIQUE [CLUSTERED | NONCLUSTERED] COLUMNSTORE INDEX idx_Unique_CustomerID ON Sales.Customers (CustomerID)
-WHERE Sa = 'USA';
+WHERE Status = 'Active';
