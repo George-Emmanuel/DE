@@ -1511,6 +1511,6 @@ FROM Sales.Employees;
 |   Read/Write Optimization   | Fair speed for read & write operations                                          | Fast read performance, slow write performance                                  |
 |   I/O Efficiency            | Lower (retrieves all columns)                                                   | Higher (retrieves specific columns)                                            |
 |   Best For                  | OLTP (Transactional): commerce, banking, financial systems, order processing    | OLAP (Analytical): data warehouse, business intelligence, reporting, analytics |
-|   Use Case                  | - High-frequency transaction applications<br>- Quick access to complete records | - Big data analytics<br>- Scanning large datasets<br>- Fast aggregation        |
+|   Use Case                  | - High-frequency transaction applications <br>- Quick access to complete records| - Big data analytics<br>- Scanning large datasets<br>- Fast aggregation        |
 
 **************************************************************************************************************************************************************************************************/
