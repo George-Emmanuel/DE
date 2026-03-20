@@ -1761,6 +1761,7 @@ Every index has a cost:
 		ORDER BY ColumnCount DESC
 	
 	-- Update Statistics
+		-- Statistics are essential for the query optimizer to make informed decisions about query execution plans.
 		SELECT
 			SCHEMA_NAME(t.schema_id) AS SchemaName,
 			t.name AS TableName,
