@@ -1559,7 +1559,7 @@ WHERE Status = 'Active';
 -- 1. You cannot use a filtered index on a clustered index.
 -- 2. You cannot use a filtered index on a columstore index.
 
-/* *********************** !!!!!!!!!!! IMPORTANT IMPORTANT IMPORTANT !!!!!!!!!!! ************************
+/* ***************************** !!!!!!!!!!! IMPORTANT IMPORTANT IMPORTANT !!!!!!!!!!! ******************************
 
 Choosing the RIGHT INDEX for optimizing query performance and ensuring efficient data retrieval.
 
@@ -1719,3 +1719,4 @@ Every index has a cost:
 
 > Indexes should reflect **how queries access data**, not how tables are designed.
 
+***************************** !!!!!!!!!!! IMPORTANT IMPORTANT IMPORTANT !!!!!!!!!!! ****************************** */
