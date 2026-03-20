@@ -1742,6 +1742,9 @@ Every index has a cost:
 				ORDER BY tbl.name, idx.name
 	
 	-- Monitor Missing Indexes
+		SELECT * FROM sys.dm_db_missing_index_details
+		SELECT * FROM sys.dm_db_missing_index_groups
+	
 	-- Monitor Duplicate Indexes
 	-- Update Statistics
 	-- Monitor Fragmentations
