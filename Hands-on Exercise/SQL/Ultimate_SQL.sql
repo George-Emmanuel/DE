@@ -1713,9 +1713,7 @@ Every index has a cost:
 			* Covering indexes
 			* Filtered indexes
 
-### 5. Large analytics workload?
-
-→ Consider **Columnstore**
+### 5. Large analytics workload? ----> Consider Columnstore
 
 ---
 
