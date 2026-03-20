@@ -1708,9 +1708,10 @@ Every index has a cost:
 
 ### 3. Identify slow queries ----> Add Non-Clustered Indexes
 
-### 4. Still slow?  ----> Add:
-							* Covering indexes
-							* Filtered indexes
+### 4. Still slow?  ----> 
+		Add:
+			* Covering indexes
+			* Filtered indexes
 
 ### 5. Large analytics workload?
 
