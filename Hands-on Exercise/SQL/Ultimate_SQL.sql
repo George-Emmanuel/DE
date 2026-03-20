@@ -1786,6 +1786,7 @@ Every index has a cost:
 		EXEC sp_updatestats; 
 
 		-- Best Practices:
-		--
+		--	1. Weekly or Monthly updates for large tables with frequent modifications
+		--	2. After significant data changes i.e Bulk Updates / Data Migrations
 
 	-- Monitor Fragmentations
