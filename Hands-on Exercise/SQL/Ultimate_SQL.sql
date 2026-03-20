@@ -1702,9 +1702,7 @@ Every index has a cost:
 
 # Step 7 — Simple Decision Flow
 
-### 1. Is this staging/temp data?
-
-→ Use **Heap**
+### 1. Is this staging/temp data? ----> Use Heap
 
 ### 2. Otherwise:
 
