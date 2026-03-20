@@ -1721,7 +1721,26 @@ Every index has a cost:
 
 -- INDEX monitoring and Management
 	-- Monitor Index Usage
-	--		1. List 
+	--		1. List indexes on a specific table
+				-- Syntax --> sp_helpindex table_name
+				-- Example:
+					sp_helpindex 'Sales.Customers'
+	
+	--		2. Query to get Tables, INdexes & User usage summary
+				SELECT
+					idx.OBJECT_ID,
+					tbl.name AS Table_Name,
+					idx.name AS Index_Name,
+					idx.type_desc AS Index_Type,
+					idx.is_primary_key AS IsPrimaryKey,
+					idx.is_unique AS isUnique,
+					idx.is_disabled AS isDisabled,
+					dmv.*
+				FROM sys.indexes idx
+				INNER JOIN sys.tables tbl ON idx.object_id = tbl.object_id
+				LEFT JOIN sys.dm_db_index_usage_stats dmv ON idx.object_id = dmv.object_id AND idx.index_id = dmv.index_id
+				ORDER BY tbl.name, idx.name
+	
 	-- Monitor Missing Indexes
 	-- Monitor Duplicate Indexes
 	-- Update Statistics
