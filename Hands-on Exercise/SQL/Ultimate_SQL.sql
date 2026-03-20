@@ -1497,7 +1497,7 @@ FROM Sales.Employees;
 	--				Rowstore indexes are optimized for transactional queries and can improve performance for point lookups and small result sets.
 
 	-- Syntax:
-	CREATE ROWSTORE INDEX index_name ON table_name (column1, column2, ...);
+	CREATE CLUSTERED INDEX index_name ON table_name (column1, column2, ...);
 
 	-- Example:
 	CREATE NONCLUSTERED ROWSTORE INDEX idx_OrderDate ON Sales.Orders (OrderDate);
