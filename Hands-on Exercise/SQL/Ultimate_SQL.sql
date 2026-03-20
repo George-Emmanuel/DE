@@ -1547,3 +1547,10 @@ WHERE condition;
 -- Example:
 CREATE UNIQUE [CLUSTERED | NONCLUSTERED] COLUMNSTORE INDEX idx_Unique_CustomerID ON Sales.Customers (CustomerID)
 WHERE Status = 'Active';
+
+-- Benefits:
+-- 1. Improved Performance: Filtered indexes can significantly improve query performance by 
+--		indexing only a subset of rows that are relevant to specific queries, reducing the size of the index and 
+-- 		improving search efficiency.
+-- 2. Reduced Storage: Filtered indexes require less storage space compared to full indexes, 
+-- 		as they only include a subset of rows.
