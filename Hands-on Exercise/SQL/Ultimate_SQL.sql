@@ -1606,7 +1606,6 @@ What it does:
 		* Increases size of all non-clustered indexes
 
 ### Rule of thumb:
-
 > Pick a column that matches how data is read, not just the primary key.
 
 -------------------------------------------------------------------------------------
