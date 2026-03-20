@@ -1589,7 +1589,7 @@ What it does:
 	* Physically orders the table by the clustered key
 	* Every table should usually have one
 
----
+-------------------------------------------------------------------------------------
 
 # Step 2 — Choose the Right Clustered Index
 
