@@ -1677,16 +1677,6 @@ Use when:
 		* Aggregations (SUM, COUNT, GROUP BY)
 		* Scanning many rows
 
-### Example:
-
-```sql
-SELECT region, SUM(sales)
-FROM fact_sales
-GROUP BY region;
-```
-
----
-
 ### Benefits:
 
 * High compression
