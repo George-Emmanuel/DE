@@ -1524,10 +1524,10 @@ FROM Sales.Employees;
 	-- ensuring that no duplicate values are allowed.
 
 	-- Syntax:
-	CREATE UNIQUE INDEX index_name ON table_name (column1, column2, ...);
+	CREATE UNIQUE CLUSTERED | NONCLUSTERED INDEX index_name ON table_name (column1, column2, ...);
 
 	-- Example:
-	CREATE UNIQUE INDEX idx_Unique_CustomerID ON Sales.Customers (CustomerID);
+	CREATE UNIQUE CLUSTERED | NONCLUSTERED INDEX idx_Unique_CustomerID ON Sales.Customers (CustomerID);
 
 	-- Benefits:
 	-- 1. Data Integrity: Unique indexes ensure that duplicate values are not allowed in the indexed columns,
