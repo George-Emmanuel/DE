@@ -1506,7 +1506,7 @@ FROM Sales.Employees;
 
 | Aspect                      | Rowstore Index                                                                  | Columnstore Index                                                              |
 | --------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| **Definition**              | Organizes and stores data **row by row**                                        | Organizes and stores data **column by column**                                 |
+|   Definition                | Organizes and stores data **row by row**                                        | Organizes and stores data **column by column**                                 |
 | **Storage Efficiency**      | Less efficient in storage                                                       | Highly efficient with compression                                              |
 | **Read/Write Optimization** | Fair speed for read & write operations                                          | Fast read performance, slow write performance                                  |
 | **I/O Efficiency**          | Lower (retrieves all columns)                                                   | Higher (retrieves specific columns)                                            |
