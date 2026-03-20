@@ -1818,3 +1818,5 @@ Every index has a cost:
 		ALTER INDEX idx_CustomerName_Country ON Sales.Customers REBUILD
 
 		ALTER INDEX idx_CustomerName_Country ON Sales.Customers REORGANIZE
+
+-- Execution Plan
