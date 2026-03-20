@@ -1811,4 +1811,6 @@ Every index has a cost:
 		ORDER BY s.avg_fragmentation_in_percent DESC;
 
 		-- When to DeFragment:
-		
+		-- 	if avg_fragmentation_in_percent	< 10%       ===> No Action Required
+		--	if avg_fragmentation_in_percent 10% - 30%   ===> Need to REORGANIZE
+		--	if avg_fragmentation_in_percent < 30%       ===> Need to REBUILD
