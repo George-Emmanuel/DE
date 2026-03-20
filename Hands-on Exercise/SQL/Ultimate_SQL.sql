@@ -1632,7 +1632,7 @@ What it does:
 	* Indexing every column
 	* Indexing low-selectivity columns alone (e.g., 'is_active')
 
----
+-------------------------------------------------------------------------------------
 
 # Step 4 — Optimize with Advanced Techniques
 
