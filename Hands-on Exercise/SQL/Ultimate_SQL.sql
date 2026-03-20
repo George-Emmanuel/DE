@@ -1518,3 +1518,7 @@ FROM Sales.Employees;
 |   Use Case                  | - High-frequency transaction applications <br>- Quick access to complete records| - Big data analytics<br>- Scanning large datasets<br>- Fast aggregation        |
 
 **************************************************************************************************************************************************************************************************/
+
+	-- UNIQUE Index:
+	-- Definition: A unique index is an index that enforces the uniqueness of values in the indexed columns, 
+	-- ensuring that no duplicate values are allowed.
