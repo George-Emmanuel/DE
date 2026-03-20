@@ -1500,7 +1500,7 @@ FROM Sales.Employees;
 	CREATE CLUSTERED INDEX index_name ON table_name (column1, column2, ...);
 
 	-- Example:
-	CREATE NONCLUSTERED ROWSTORE INDEX idx_OrderDate ON Sales.Orders (OrderDate);
+	CREATE NONCLUSTERED INDEX idx_OrderDate ON Sales.Orders (OrderDate);
 
 /*************************************************************************************************************************************************************************************************
 
