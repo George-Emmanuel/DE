@@ -1571,10 +1571,9 @@ Use a Heap when:
 	* You perform **bulk inserts** (ETL loads)
 	* You rarely read the data before transforming/moving it
 
-**Why:**
-
-* No index maintenance → fastest writes
-* No ordering → minimal overhead
+Why:
+	* No index maintenance → fastest writes
+	* No ordering → minimal overhead
 
 **Avoid heaps when:**
 
