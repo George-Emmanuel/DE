@@ -1685,7 +1685,7 @@ Use when:
 	* Frequent single-row lookups
 	* Heavy OLTP writes
 
----
+-------------------------------------------------------------------------------------
 
 # Step 6 — Always Consider Tradeoffs
 
@@ -1698,7 +1698,7 @@ Every index has a cost:
 | DELETE    | Slower    |
 | Storage   | Increased |
 
----
+-------------------------------------------------------------------------------------
 
 # Step 7 — Simple Decision Flow
 
