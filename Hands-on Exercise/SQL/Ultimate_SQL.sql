@@ -1801,10 +1801,11 @@ Every index has a cost:
 			--				but it is more resource-intensive and can cause downtime.
 		
 		SELECT
-			OBJECT_NAME(ips.object_id) AS TableName,
-			i.name AS IndexName,
-			ips.index_type_desc AS IndexType,
-			ips.avg_fragmentation_in_percent AS FragmentationPercent,
-			ips.page_count AS PageCount
-		FROM sys.dm_db_index_physical_stats(DB_ID(), NULL, NULL, NULL, 'DETAILED') AS ips
-		JOIN sys.indexes AS i ON ips.object_id = i.object_id AND ips.index_id = i.index_id
+			tbl.name AS TableName,
+			idx.name AS IndexName,
+			s.avg_fragmentation_in_percent,
+			s.page_count
+		FROM sys.dm_db_index_physical_stats(DB_ID(), NULL, NULL, NULL, 'DETAILED') AS s
+		INNER JOIN sys.tables tbl ON s.object_id = tbl.object_id
+		INNER JOIN sys.indexes AS idx ON idx.object_id = s.object_id AND idx.index_id = s.index_id
+		ORDER BY s.avg_fragmentation_in_percent DESC;
