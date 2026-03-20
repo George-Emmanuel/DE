@@ -1776,6 +1776,7 @@ Every index has a cost:
 		CROSS APPLY sys.dm_db_stats_properties(s.object_id, s.stats_id) AS sp
 		ORDER BY sp.modification_counter DESC;
 
+		UPDATE STATISTICS Sales.Customers;
 		UPDATE STATISTICS Sales.Customers
-		
+
 	-- Monitor Fragmentations
