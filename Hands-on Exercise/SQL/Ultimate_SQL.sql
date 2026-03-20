@@ -1603,8 +1603,7 @@ What it does:
 	* Causes page splits
 	* Degrades insert performance
 * Wide keys
-
-  * Increases size of all non-clustered indexes
+	* Increases size of all non-clustered indexes
 
 ---
 
