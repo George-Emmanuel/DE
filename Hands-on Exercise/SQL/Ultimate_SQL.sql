@@ -1605,17 +1605,15 @@ What it does:
 	2. Wide keys
 		* Increases size of all non-clustered indexes
 
----
+-------------------------------------------------------------------------------------
 
 ### Rule of thumb:
 
-> Pick a column that matches **how data is read**, not just the primary key.
+> Pick a column that matches how data is read, not just the primary key.
 
----
+-------------------------------------------------------------------------------------
 
 # Step 3 — Add Non-Clustered Indexes (Access Optimization)
-
-Add these **only for real query patterns**.
 
 ### Use for:
 
