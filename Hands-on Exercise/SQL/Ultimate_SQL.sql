@@ -1678,16 +1678,12 @@ Use when:
 		* Scanning many rows
 
 ### Benefits:
-
-* High compression
-* Batch execution (faster scans)
-
----
+	* High compression
+	* Batch execution (faster scans)
 
 ### Avoid when:
-
-* Frequent single-row lookups
-* Heavy OLTP writes
+	* Frequent single-row lookups
+	* Heavy OLTP writes
 
 ---
 
