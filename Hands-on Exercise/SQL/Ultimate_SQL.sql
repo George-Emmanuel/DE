@@ -1782,7 +1782,7 @@ Every index has a cost:
 		-- Ex2: Update Statistics for a specific index
 		UPDATE STATISTICS Sales.Customers _WA_Sys_00000002_00000000;
 
-		-- Update statistics for all tables in the database
+		-- Ex3: Update statistics for all tables in the database
 		EXEC sp_updatestats; 
 
 	-- Monitor Fragmentations
