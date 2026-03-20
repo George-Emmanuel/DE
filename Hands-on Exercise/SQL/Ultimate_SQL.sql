@@ -1579,8 +1579,6 @@ Avoid heaps when:
 	* Queries need frequent lookups -> leads to expensive scans or RID lookups
 	* Table persists long-term
 
----
-
 ### Use a **Clustered Index** when:
 
 * Table is part of **OLTP workload**
