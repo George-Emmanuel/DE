@@ -1535,3 +1535,7 @@ CREATE UNIQUE [CLUSTERED | NONCLUSTERED] COLUMNSTORE INDEX idx_Unique_CustomerID
 -- 2. Performance: Unique indexes can improve query performance by allowing the database engine to quickly locate specific rows based on the unique values.
 -- 3. Enforcing Business Rules: Unique indexes can be used to enforce business rules, such as ensuring that 
 -- 	email addresses or social security numbers are unique within a table.
+
+-- Filtered Index:
+-- Definition: A filtered index is an index that is created with a WHERE clause to include only a subset of rows in the table, 
+-- allowing for more efficient indexing of specific data subsets.
