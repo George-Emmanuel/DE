@@ -1493,7 +1493,8 @@ FROM Sales.Employees;
 	-- 3. Compression: Columnstore indexes use advanced compression techniques to reduce storage space & improve query performance.
 	-- 4. Store: LoB data types are stored separately from the columnstore index & pointers to the LoB data are stored in the index.
 
-	-- Rule: Do not mention column name while creating clustered columnstore index, as it automatically includes all columns in the table.
+	-- Rule: Do not mention column name while creating clustered columnstore index, 
+	-- as it automatically includes all columns in the table.
 
 -- Rowstore Index:
 	-- Definition: A rowstore index is a type of index that is stored in a row-based format, where each index entry corresponds to a single row in the table. 
