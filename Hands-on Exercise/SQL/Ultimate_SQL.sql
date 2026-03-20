@@ -1636,15 +1636,10 @@ What it does:
 
 # Step 4 — Optimize with Advanced Techniques
 
-## 4.1 Covering Index (High Impact)
+## 4.1 Covering Index (High Impact) [Avoid extra lookups]
 
-Goal: **Avoid extra lookups**
+	SQL --> SELECT name, email FROM users WHERE email = ?
 
-```sql
-SELECT name, email
-FROM users
-WHERE email = ?
-```
 
 ```sql
 CREATE INDEX ix_users_email
