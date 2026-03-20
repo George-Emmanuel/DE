@@ -1638,13 +1638,8 @@ What it does:
 
 ## 4.1 Covering Index (High Impact) [Avoid extra lookups]
 
-	SQL --> SELECT name, email FROM users WHERE email = ?
-
-
-```sql
-CREATE INDEX ix_users_email
-ON users(email)
-INCLUDE (name);
+	Query --> SELECT name, email FROM users WHERE email = ?
+	Index --> CREATE INDEX ix_users_email ON users(email) INCLUDE (name);
 ```
 
 **Result:**
