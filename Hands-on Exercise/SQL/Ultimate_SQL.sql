@@ -1559,5 +1559,5 @@ WHERE Status = 'Active';
 -- 1. You cannot use a filtered index on a clustered index.
 -- 2. You cannot use a filtered index on a columstore index.
 
--- *********************** !!!!!!!!!!! IMPORTANT IMPORTANT IMPORTANT !!!!!!!!!!! ************************
+/* *********************** !!!!!!!!!!! IMPORTANT IMPORTANT IMPORTANT !!!!!!!!!!! ************************
 
