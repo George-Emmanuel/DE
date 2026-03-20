@@ -1706,16 +1706,11 @@ Every index has a cost:
 
 ### 2. Otherwise ----> Create **Clustered Index** based on access pattern
 
-### 3. Identify slow queries:
+### 3. Identify slow queries ----> Add Non-Clustered Indexes
 
-→ Add **Non-Clustered Indexes**
-
-### 4. Still slow?
-
-→ Add:
-
-* Covering indexes
-* Filtered indexes
+### 4. Still slow?  ----> Add:
+							* Covering indexes
+							* Filtered indexes
 
 ### 5. Large analytics workload?
 
