@@ -1541,11 +1541,11 @@ CREATE UNIQUE [CLUSTERED | NONCLUSTERED] COLUMNSTORE INDEX idx_Unique_CustomerID
 -- allowing for more efficient indexing of specific data subsets.
 
 -- Syntax:
-CREATE UNIQUE [CLUSTERED | NONCLUSTERED] COLUMNSTORE INDEX index_name ON table_name (column1, column2, ...)
+CREATE UNIQUE NONCLUSTERED COLUMNSTORE INDEX index_name ON table_name (column1, column2, ...)
 WHERE condition;
 
 -- Example:
-CREATE UNIQUE [CLUSTERED | NONCLUSTERED] COLUMNSTORE INDEX idx_Unique_CustomerID ON Sales.Customers (CustomerID)
+CREATE UNIQUE NONCLUSTERED COLUMNSTORE INDEX idx_Unique_CustomerID ON Sales.Customers (CustomerID)
 WHERE Status = 'Active';
 
 -- Benefits:
