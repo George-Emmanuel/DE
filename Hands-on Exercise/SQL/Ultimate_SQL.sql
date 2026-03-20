@@ -1554,3 +1554,7 @@ WHERE Status = 'Active';
 -- 		improving search efficiency.
 -- 2. Reduced Storage: Filtered indexes require less storage space compared to full indexes, 
 -- 		as they only include a subset of rows.
+
+-- Rules:
+-- 1. You cannot use a filtered index on a clustered index.
+-- 2. You cannot use a filtered index on a columstore index.
