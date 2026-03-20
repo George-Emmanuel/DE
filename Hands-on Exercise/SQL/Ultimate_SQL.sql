@@ -1662,7 +1662,6 @@ Benefits:
 	
 	Syntax --> CREATE UNIQUE INDEX ix_email ON users(email);
 
-
 Use when:
 	* Data must be unique
 	* Helps optimizer assume 1 row → better plans
