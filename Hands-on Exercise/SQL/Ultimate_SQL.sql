@@ -1720,3 +1720,8 @@ Every index has a cost:
 ***************************** !!!!!!!!!!! IMPORTANT IMPORTANT IMPORTANT !!!!!!!!!!! ****************************** */
 
 -- INDEX monitoring and Management
+	-- Monitor Index Usage
+	-- Monitor Missing Indexes
+	-- Monitor Duplicate Indexes
+	-- Update Statistics
+	-- Monitor Fragmentations
