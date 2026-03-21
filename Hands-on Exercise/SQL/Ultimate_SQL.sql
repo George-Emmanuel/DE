@@ -1887,4 +1887,23 @@ Every index has a cost:
 	--			d. Update Statistics
 	--			e. Monitor Fragmentations
 
--- SQL PARTITIONING (PARTITIOn)
+-- SQL PARTITIONING (PARTITION):
+	-- Definition: Partitioning is a database design technique that involves dividing a large table into smaller, more manageable pieces called partitions. 
+	--				Each partition can be stored separately and can be accessed independently, which can improve query performance and manageability.
+
+	-- Types of Partitioning:
+		-- Range Partitioning: Data is partitioned based on a range of values in a specified column. 
+							For example, you could partition a sales table by year, with each partition containing data for a specific year.
+		
+		-- List Partitioning: Data is partitioned based on a list of discrete values in a specified column. 
+							For example, you could partition a customer table by country, with each partition containing data for customers from a specific country.
+
+		-- Hash Partitioning: Data is partitioned based on the result of a hash function applied to a specified column. 
+							This method distributes data evenly across partitions but does not allow for range queries.
+
+	-- Syntax:
+	CREATE TABLE table_name (
+	column1 datatype,
+	column2 datatype,
+	...
+	)
