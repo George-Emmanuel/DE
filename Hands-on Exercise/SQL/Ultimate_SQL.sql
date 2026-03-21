@@ -1901,3 +1901,4 @@ Every index has a cost:
 		-- Hash Partitioning: Data is partitioned based on the result of a hash function applied to a specified column. 
 						--	This method distributes data evenly across partitions but does not allow for range queries.
 
+	-- Creating Partition Function: Define the logic on how to divide your data into partitions !
