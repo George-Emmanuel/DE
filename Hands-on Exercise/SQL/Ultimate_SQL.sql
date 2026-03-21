@@ -1949,3 +1949,7 @@ Every index has a cost:
 			sys.master_files mf ON fg.data_space_id = mf.data_space_id
 		WHERE
 			mf.database_id = DB_ID('SalesDB');
+	
+	-- STEP 4:
+	-- Creating Partition Scheme: A partition scheme maps the partitions defined by the partition function to specific filegroups, 
+		-- allowing you to control where each partition's data is stored.
