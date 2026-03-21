@@ -1886,3 +1886,5 @@ Every index has a cost:
 	--			c. Monitor Duplicate Indexes
 	--			d. Update Statistics
 	--			e. Monitor Fragmentations
+
+-- SQL PARTITIONING (PARTITIOn)
