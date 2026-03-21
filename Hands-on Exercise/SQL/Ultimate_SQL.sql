@@ -1893,17 +1893,11 @@ Every index has a cost:
 
 	-- Types of Partitioning:
 		-- Range Partitioning: Data is partitioned based on a range of values in a specified column. 
-							For example, you could partition a sales table by year, with each partition containing data for a specific year.
+						--	For example, you could partition a sales table by year, with each partition containing data for a specific year.
 		
 		-- List Partitioning: Data is partitioned based on a list of discrete values in a specified column. 
-							For example, you could partition a customer table by country, with each partition containing data for customers from a specific country.
+						--	For example, you could partition a customer table by country, with each partition containing data for customers from a specific country.
 
 		-- Hash Partitioning: Data is partitioned based on the result of a hash function applied to a specified column. 
-							This method distributes data evenly across partitions but does not allow for range queries.
+						--	This method distributes data evenly across partitions but does not allow for range queries.
 
-	-- Syntax:
-	CREATE TABLE table_name (
-	column1 datatype,
-	column2 datatype,
-	...
-	)
