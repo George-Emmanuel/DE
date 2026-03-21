@@ -1901,11 +1901,13 @@ Every index has a cost:
 		-- Hash Partitioning: Data is partitioned based on the result of a hash function applied to a specified column. 
 						--	This method distributes data evenly across partitions but does not allow for range queries.
 
+	-- STEP 1:
 	-- Creating Partition Function: Define the logic on how to divide your data into partitions & its based on PARTITION KEY ...
 		-- Syntax:
 		CREATE PARTITION FUNCTION PartitionByYear (DATE)
 		AS RANGE LEFT FOR VALUES ('2024-12-31', '2025-12-31', '2026-12-31')
 
+	-- DTEP 2:
 	-- Creating Filegroup: A filegroup is a logical container for database objects, including partitions. 
 		--				Each partition can be assigned to a specific filegroup, allowing for better management and performance.
 		-- Syntax:
@@ -1916,6 +1918,23 @@ Every index has a cost:
 	-- Creating Data Files: Data files are physical files on disk that store the data for a filegroup. 
 		--				Each filegroup must have at least one data file associated with it.
 		-- Syntax:
-		ALTER DATABASE YourDatabaseName ADD FILE (NAME = 'PartitionFG1_2024', FILENAME = 'C:\Data\PartitionFG1_2024.ndf', SIZE = 10MB) TO FILEGROUP PartitionFG1FG_2024
-		ALTER DATABASE YourDatabaseName ADD FILE (NAME = 'PartitionFG2_2025', FILENAME = 'C:\Data\PartitionFG2_2025.ndf', SIZE = 10MB) TO FILEGROUP PartitionFG2FG_2025
-		ALTER DATABASE YourDatabaseName ADD FILE (NAME = 'PartitionFG3_2026', FILENAME = 'C:\Data\PartitionFG3_2026.ndf', SIZE = 10MB) TO FILEGROUP PartitionFG3FG_2026
+		ALTER DATABASE YourDatabaseName ADD FILE 
+		(
+			NAME = 'PartitionFG1_2024', 
+			FILENAME = 'C:\Data\PartitionFG1_2024.ndf', 
+			SIZE = 10MB
+		) TO FILEGROUP PartitionFG1FG_2024
+		
+		ALTER DATABASE YourDatabaseName ADD FILE 
+		(
+			NAME = 'PartitionFG2_2025', 
+			FILENAME = 'C:\Data\PartitionFG2_2025.ndf', S
+			IZE = 10MB
+		) TO FILEGROUP PartitionFG2FG_2025
+		
+		ALTER DATABASE YourDatabaseName ADD FILE 
+		(
+			NAME = 'PartitionFG3_2026', 
+			FILENAME = 'C:\Data\PartitionFG3_2026.ndf', 
+			SIZE = 10MB
+		) TO FILEGROUP PartitionFG3FG_2026
