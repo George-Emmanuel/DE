@@ -1879,4 +1879,5 @@ Every index has a cost:
 	--			b. Check your Execution Plan
 	--			c. Choose the Right INDEX (Refer Above from Line number 1562)
 	--			d. Test & Compare the Execution Plans
+	
 	--		4. Monitoring & Maintainance
