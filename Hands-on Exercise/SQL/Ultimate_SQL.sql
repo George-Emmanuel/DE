@@ -1975,3 +1975,6 @@ Every index has a cost:
 		JOIN sys.partition_functions pf ON ps.function_id = pf.function_id
 		JOIN sys.destination_data_spaces ds ON ps.data_space_id = ds.partition_scheme_id
 		JOIN sys.filegroups fg ON ds.data_space_id = fg.data_space_id
+
+	-- STEP 5:
+	-- Creating a PARTITIONED Table
