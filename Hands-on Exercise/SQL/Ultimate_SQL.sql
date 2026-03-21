@@ -1833,3 +1833,5 @@ Every index has a cost:
 
 -- If the predictions from ESTIMATED EXECUTION PLAN dont match the ACTUAL EXECUTION PLAN, this indicates issues like
 -- inacurate statistics or outdated indexes, leading to poor performance.
+
+-- SQL Hints: 
