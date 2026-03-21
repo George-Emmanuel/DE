@@ -1880,7 +1880,7 @@ Every index has a cost:
 	--			c. Choose the Right INDEX (Refer Above from Line number 1562)
 	--			d. Test & Compare the Execution Plans
 	
-	--		4. Monitoring & Maintainance (Refer Line NUmbers From 1722 - 1820)
+	--		4. Monitoring & Maintainance (Refer Line Numbers From 1722 - 1820)
 	--			a. Monitor Index Usage 
 	--			b. Monitor Missing Indexes
 	--			c. Monitor Duplicate Indexes
