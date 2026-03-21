@@ -1850,3 +1850,5 @@ Every index has a cost:
 		SELECT * FROM Sales.Orders o
 		JOIN Sales.Customers c WITH (INDEX(index_name))
 		ON o.CustomerId = c.CustomerId
+
+-- Indexing Strategy:
