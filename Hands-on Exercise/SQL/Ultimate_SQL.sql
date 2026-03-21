@@ -1921,7 +1921,7 @@ Every index has a cost:
 		-- Syntax:
 		ALTER DATABASE YourDatabaseName ADD FILE 
 		(
-			NAME = 'PartitionFG1_2024', 
+			NAME = 'PartitionFG1_2024', -- Logical Name
 			FILENAME = 'C:\Data\PartitionFG1_2024.ndf', 
 			SIZE = 10MB
 		) TO FILEGROUP FG_2024
