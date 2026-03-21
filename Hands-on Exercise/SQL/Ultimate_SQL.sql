@@ -1845,3 +1845,8 @@ Every index has a cost:
 		SELECT * FROM Sales.Orders o
 		JOIN Sales.Customers c WITH (FORCESEEK)
 		ON o.CustomerId = c.CustomerId
+
+	-- Example 3:
+		SELECT * FROM Sales.Orders o
+		JOIN Sales.Customers c WITH (INDEX(index_name))
+		ON o.CustomerId = c.CustomerId
