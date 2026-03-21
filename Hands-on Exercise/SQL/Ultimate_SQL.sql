@@ -1928,14 +1928,14 @@ Every index has a cost:
 		
 		ALTER DATABASE YourDatabaseName ADD FILE 
 		(
-			NAME = 'PartitionFG2_2025', 
+			NAME = 'PartitionFG2_2025', -- Logical Name
 			FILENAME = 'C:\Data\PartitionFG2_2025.ndf', S
 			IZE = 10MB
 		) TO FILEGROUP FG_2025
 		
 		ALTER DATABASE YourDatabaseName ADD FILE 
 		(
-			NAME = 'PartitionFG3_2026', 
+			NAME = 'PartitionFG3_2026', -- Logical Name
 			FILENAME = 'C:\Data\PartitionFG3_2026.ndf', 
 			SIZE = 10MB
 		) TO FILEGROUP FG_2026
