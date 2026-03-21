@@ -1953,3 +1953,7 @@ Every index has a cost:
 	-- STEP 4:
 	-- Creating Partition Scheme: A partition scheme maps the partitions defined by the partition function to specific filegroups, 
 		-- allowing you to control where each partition's data is stored.
+
+		-- Syntax:
+			CREATE PARTITION SCHEME PartitionSchemeByYear
+			AS PARTITION PartitionByYear TO (FG_2024, FG_2025, FG_2026)
