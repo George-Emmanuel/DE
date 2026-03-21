@@ -1912,3 +1912,10 @@ Every index has a cost:
 		ALTER DATABASE YourDatabaseName ADD FILEGROUP PartitionFG1FG_2024
 		ALTER DATABASE YourDatabaseName ADD FILEGROUP PartitionFG2FG_2025
 		ALTER DATABASE YourDatabaseName ADD FILEGROUP PartitionFG3FG_2026
+
+	-- Creating Data Files: Data files are physical files on disk that store the data for a filegroup. 
+		--				Each filegroup must have at least one data file associated with it.
+		-- Syntax:
+		ALTER DATABASE YourDatabaseName ADD FILE (NAME = 'PartitionFG1_2024', FILENAME = 'C:\Data\PartitionFG1_2024.ndf', SIZE = 10MB) TO FILEGROUP PartitionFG1FG_2024
+		ALTER DATABASE YourDatabaseName ADD FILE (NAME = 'PartitionFG2_2025', FILENAME = 'C:\Data\PartitionFG2_2025.ndf', SIZE = 10MB) TO FILEGROUP PartitionFG2FG_2025
+		ALTER DATABASE YourDatabaseName ADD FILE (NAME = 'PartitionFG3_2026', FILENAME = 'C:\Data\PartitionFG3_2026.ndf', SIZE = 10MB) TO FILEGROUP PartitionFG3FG_2026
