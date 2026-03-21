@@ -1909,4 +1909,4 @@ Every index has a cost:
 	-- Creating Filegroup: A filegroup is a logical container for database objects, including partitions. 
 		--				Each partition can be assigned to a specific filegroup, allowing for better management and performance.
 		-- Syntax:
-		CREATE FILEGROUP FG_2024
+		ALTER DATABASE YourDatabaseName ADD FILEGROUP PartitionFG1
