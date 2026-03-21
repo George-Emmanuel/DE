@@ -1875,4 +1875,7 @@ Every index has a cost:
 	--			c. Test Your Index
 
 	--		3. Scenario-Based Indexing
+	--			a. IOdentify SLOW Queries
+	--			b. Check your Execution Plan
+	--			c. Choose the Right INDEX (Refer Above from Line number 1562)
 	--		4. Monitoring & Maintainance
