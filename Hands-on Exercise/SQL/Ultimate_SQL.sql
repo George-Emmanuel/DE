@@ -1853,4 +1853,4 @@ Every index has a cost:
 
 -- Indexing Strategy:
 
-	GOLDEN RULE -> AVIOD OVER INDEXING
+	GOLDEN RULE -> AVOID OVER INDEXING
