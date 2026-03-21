@@ -1836,7 +1836,7 @@ Every index has a cost:
 
 -- SQL Hints: If for some reason SQL does not use the optimal Index/JOIN/Nested loops (due to outdated statics etc...), 
 --				we can give it a hint in order to choose the right approach.
-	-- Example:
+	-- Example 1:
 		SELECT * FROM Sales.Orders o
 		JOIN Sales.Customers c ON o.CustomerId = c.CustomerId
 		OPTION (HASH JOIN)
