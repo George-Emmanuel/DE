@@ -1902,5 +1902,11 @@ Every index has a cost:
 						--	This method distributes data evenly across partitions but does not allow for range queries.
 
 	-- Creating Partition Function: Define the logic on how to divide your data into partitions & its based on PARTITION KEY ...
+		-- Syntax:
 		CREATE PARTITION FUNCTION PartitionByYear (DATE)
 		AS RANGE LEFT FOR VALUES ('2024-12-31', '2025-12-31', '2026-12-31')
+
+	-- Creating Filegroup: A filegroup is a logical container for database objects, including partitions. 
+		--				Each partition can be assigned to a specific filegroup, allowing for better management and performance.
+		-- Syntax:
+		CREATE FILEGROUP FG_2024
