@@ -1852,3 +1852,5 @@ Every index has a cost:
 		ON o.CustomerId = c.CustomerId
 
 -- Indexing Strategy:
+
+	GOLDEN RULE -> AVIOD OVER INDEXING
