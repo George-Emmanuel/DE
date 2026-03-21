@@ -1907,7 +1907,7 @@ Every index has a cost:
 		CREATE PARTITION FUNCTION PartitionByYear (DATE)
 		AS RANGE LEFT FOR VALUES ('2024-12-31', '2025-12-31', '2026-12-31')
 
-	-- DTEP 2:
+	-- STEP 2:
 	-- Creating Filegroup: A filegroup is a logical container for database objects, including partitions. 
 		--				Each partition can be assigned to a specific filegroup, allowing for better management and performance.
 		-- Syntax:
@@ -1915,6 +1915,7 @@ Every index has a cost:
 		ALTER DATABASE YourDatabaseName ADD FILEGROUP PartitionFG2FG_2025
 		ALTER DATABASE YourDatabaseName ADD FILEGROUP PartitionFG3FG_2026
 
+	-- STEP 3:
 	-- Creating Data Files: Data files are physical files on disk that store the data for a filegroup. 
 		--				Each filegroup must have at least one data file associated with it.
 		-- Syntax:
