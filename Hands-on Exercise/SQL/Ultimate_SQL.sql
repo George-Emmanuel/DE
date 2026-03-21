@@ -2425,7 +2425,7 @@ Tip 23: Use NOT NULL If possible
 =============================================================================
 Tip 24: Make sure all tables have a CLUSTERED PRIMARY KEY
 =============================================================================
-Tip 25: Creeate Nonclustered Index on Foreign Key if they are frequently used
+Tip 25: Create Nonclustered Index on Foreign Key if they are frequently used
 =============================================================================
 */
 -- Bad Practice 
