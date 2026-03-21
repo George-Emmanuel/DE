@@ -1854,3 +1854,9 @@ Every index has a cost:
 -- Indexing Strategy:
 
 	GOLDEN RULE -> AVOID OVER INDEXING
+
+	-- Phases of Project / Indexing Strategy
+	--		1. Initial Indexing Strategy
+	--		2. Usage Patterns Indexing
+	--		3. Scenario-Based Indexing
+	--		4. Monitoring & Maintainance
