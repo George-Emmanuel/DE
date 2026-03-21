@@ -1885,4 +1885,4 @@ Every index has a cost:
 	--			b. Monitor Missing Indexes
 	--			c. Monitor Duplicate Indexes
 	--			d. Update Statistics
-	--			e. 
+	--			e. Monitor Fragmentations
