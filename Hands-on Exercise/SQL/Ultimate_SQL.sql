@@ -1882,7 +1882,7 @@ Every index has a cost:
 	
 	--		4. Monitoring & Maintainance
 	--			a. Monitor Index Usage 
-	--			b. 
+	--			b. Monitor Missing Indexes
 	--			c. 
 	--			d. 
 	--			e. 
