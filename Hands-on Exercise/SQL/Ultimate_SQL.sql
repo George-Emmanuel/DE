@@ -1929,7 +1929,7 @@ Every index has a cost:
 		ALTER DATABASE YourDatabaseName ADD FILE 
 		(
 			NAME = 'Partition_2025', -- Logical Name
-			FILENAME = 'C:\Program Files\Microsoft SQL Server\MSSQL17.SQLEXPRESS\MSSQL\DATA\Partition_2025.ndf', S
+			FILENAME = 'C:\Program Files\Microsoft SQL Server\MSSQL17.SQLEXPRESS\MSSQL\DATA\Partition_2025.ndf',
 			SIZE = 10MB
 		) TO FILEGROUP FG_2025
 		
