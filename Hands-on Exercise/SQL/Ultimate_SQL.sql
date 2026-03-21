@@ -1902,3 +1902,5 @@ Every index has a cost:
 						--	This method distributes data evenly across partitions but does not allow for range queries.
 
 	-- Creating Partition Function: Define the logic on how to divide your data into partitions & its based on PARTITION KEY ...
+		CREATE PARTITION FUNCTION PartitionByYear (DATE)
+		AS RANGE LEFT FOR VALUES ('2024-12-31', '2025-12-31', '2026-12-31')
