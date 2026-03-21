@@ -1871,7 +1871,7 @@ Every index has a cost:
 							- The primary purpose of the column's usage (e.g., filtering, joining, grouping, aggregating).
 						Sort the tables in descending order based on their total usage.
 						*/
-	--			b. Choose the Right INDEX (Refer Above from Line #s)
+	--			b. Choose the Right INDEX (Refer Above from Line number 1562)
 
 	--		3. Scenario-Based Indexing
 	--		4. Monitoring & Maintainance
