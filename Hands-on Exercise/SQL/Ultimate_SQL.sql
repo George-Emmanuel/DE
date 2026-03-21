@@ -1963,4 +1963,4 @@ Every index has a cost:
 
 		-- Syntax:
 			CREATE PARTITION SCHEME PartitionSchemeByYear
-			AS PARTITION PartitionByYear TO (FG_2024, FG_2025, FG_2026)
+			AS PARTITION PartitionByYear TO (FG_2024, FG_2025, FG_2026, FG_2027)
