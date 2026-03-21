@@ -1978,3 +1978,19 @@ Every index has a cost:
 
 	-- STEP 5:
 	-- Creating a PARTITIONED Table
+		CREATE TABLE Sales.Orders_Partitioned
+		(
+			OrderID INT PRIMARY KEY,
+			CustomerID INT,
+			OrderDate DATE,
+			TotalAmount DECIMAL(10, 2)
+		)
+		ON PartitionSchemeByYear (OrderDate)
+
+	-- STEP 6:
+	-- Inserting Data into Partitioned Table
+		INSERT INTO Sales.Orders_Partitioned (OrderID, CustomerID, OrderDate, TotalAmount)
+		VALUES (1, 101, '2024-05-15', 250.00),
+			   (2, 102, '2025-07-20', 150.00),
+			   (3, 103, '2026-09-10', 300.00),
+			   (4, 104, '2027-11-25', 400.00)
