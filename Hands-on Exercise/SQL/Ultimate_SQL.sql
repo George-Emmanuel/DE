@@ -1914,6 +1914,7 @@ Every index has a cost:
 		ALTER DATABASE YourDatabaseName ADD FILEGROUP FG_2024
 		ALTER DATABASE YourDatabaseName ADD FILEGROUP FG_2025
 		ALTER DATABASE YourDatabaseName ADD FILEGROUP FG_2026
+		ALTER DATABASE YourDatabaseName ADD FILEGROUP FG_2027
 
 	-- STEP 3:
 	-- Creating Data Files: Data files are physical files on disk that store the data for a filegroup. 
