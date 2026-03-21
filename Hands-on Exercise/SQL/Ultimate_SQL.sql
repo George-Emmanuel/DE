@@ -1965,7 +1965,7 @@ Every index has a cost:
 			CREATE PARTITION SCHEME PartitionSchemeByYear
 			AS PARTITION PartitionByYear TO (FG_2024, FG_2025, FG_2026, FG_2027)
 	
-	-- Query lists all Partition Scheme
+	-- Query to list all Partition Scheme
 		SELECT
 			ps.name AS PartitionSchemeName,
 			pf.name AS PartitionFunctionName,
