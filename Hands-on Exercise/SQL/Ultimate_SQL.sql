@@ -1842,5 +1842,5 @@ Every index has a cost:
 		OPTION (HASH JOIN)
 	-- Example 2:
 		SELECT * FROM Sales.Orders o
-		JOIN Sales.Customers c ON o.CustomerId = c.CustomerId
-		OPTION (HASH JOIN)
+		JOIN Sales.Customers c 
+		ON o.CustomerId = c.CustomerId
