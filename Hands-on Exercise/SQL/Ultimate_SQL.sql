@@ -1872,7 +1872,7 @@ Every index has a cost:
 						Sort the tables in descending order based on their total usage.
 						*/
 	--			b. Choose the Right INDEX (Refer Above from Line number 1562)
-	--			c. Test Your INdex
+	--			c. Test Your Index
 
 	--		3. Scenario-Based Indexing
 	--		4. Monitoring & Maintainance
