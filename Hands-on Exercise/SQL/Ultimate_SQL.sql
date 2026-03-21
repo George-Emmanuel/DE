@@ -1938,6 +1938,12 @@ Every index has a cost:
 			FILENAME = 'C:\Program Files\Microsoft SQL Server\MSSQL17.SQLEXPRESS\MSSQL\DATA\Partition_2026.ndf', 
 		) TO FILEGROUP FG_2026
 
+		ALTER DATABASE YourDatabaseName ADD FILE 
+		(
+			NAME = 'Partition_2027', -- Logical Name
+			FILENAME = 'C:\Program Files\Microsoft SQL Server\MSSQL17.SQLEXPRESS\MSSQL\DATA\Partition_2027.ndf', 
+		) TO FILEGROUP FG_2027
+
 	-- Query to check the newly created Data Files
 		SELECT
 			fg.name AS FilegroupName,
