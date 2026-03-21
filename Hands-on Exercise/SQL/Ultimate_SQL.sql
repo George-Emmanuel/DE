@@ -1921,21 +1921,21 @@ Every index has a cost:
 		-- Syntax:
 		ALTER DATABASE YourDatabaseName ADD FILE 
 		(
-			NAME = 'PartitionFG1_2024', -- Logical Name
-			FILENAME = 'C:\Data\PartitionFG1_2024.ndf', 
+			NAME = 'Partition1_2024', -- Logical Name
+			FILENAME = 'C:\Program Files\Microsoft SQL Server\MSSQL17.SQLEXPRESS\MSSQL\DATA\PartitionFG1_2024.ndf', 
 			SIZE = 10MB
 		) TO FILEGROUP FG_2024
 		
 		ALTER DATABASE YourDatabaseName ADD FILE 
 		(
-			NAME = 'PartitionFG2_2025', -- Logical Name
-			FILENAME = 'C:\Data\PartitionFG2_2025.ndf', S
+			NAME = 'Partition2_2025', -- Logical Name
+			FILENAME = 'C:\Program Files\Microsoft SQL Server\MSSQL17.SQLEXPRESS\MSSQL\DATA\PartitionFG2_2025.ndf', S
 			IZE = 10MB
 		) TO FILEGROUP FG_2025
 		
 		ALTER DATABASE YourDatabaseName ADD FILE 
 		(
-			NAME = 'PartitionFG3_2026', -- Logical Name
-			FILENAME = 'C:\Data\PartitionFG3_2026.ndf', 
+			NAME = 'Partition3_2026', -- Logical Name
+			FILENAME = 'C:\Program Files\Microsoft SQL Server\MSSQL17.SQLEXPRESS\MSSQL\DATA\PartitionFG3_2026.ndf', 
 			SIZE = 10MB
 		) TO FILEGROUP FG_2026
