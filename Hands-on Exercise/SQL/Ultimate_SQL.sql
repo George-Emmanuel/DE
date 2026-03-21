@@ -1834,4 +1834,9 @@ Every index has a cost:
 -- If the predictions from ESTIMATED EXECUTION PLAN dont match the ACTUAL EXECUTION PLAN, this indicates issues like
 -- inacurate statistics or outdated indexes, leading to poor performance.
 
--- SQL Hints: 
+-- SQL Hints: If for some reason SQL does not use the optimal Index/JOIN/Nested loops (due to outdated statics etc...), 
+--				we can give it a hint in order to choose the right approach.
+	-- Example:
+		SELECT * FROM Sales.Orders o
+		JOIN Sales.Customers c ON o.CustomerId = c.CustomerId
+		OPTION (HASH JOIN)
