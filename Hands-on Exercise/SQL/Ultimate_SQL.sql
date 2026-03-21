@@ -1930,7 +1930,7 @@ Every index has a cost:
 		(
 			NAME = 'Partition_2025', -- Logical Name
 			FILENAME = 'C:\Program Files\Microsoft SQL Server\MSSQL17.SQLEXPRESS\MSSQL\DATA\Partition_2025.ndf', S
-			IZE = 10MB
+			SIZE = 10MB
 		) TO FILEGROUP FG_2025
 		
 		ALTER DATABASE YourDatabaseName ADD FILE 
