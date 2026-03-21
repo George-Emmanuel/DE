@@ -1864,10 +1864,10 @@ Every index has a cost:
 				-- Prompt to get Usge Patters from the Queries:
 					/*
 					Analyze the following SQL queries and generate a report on table and column usage statistics. For each table, provide:
-					* The total number of times the table is used across all queries.
-					* A breakdown of each column in the table, showing:
-						* The number of times each column appears.
-						* The primary purpose of the column's usage (e.g., filtering, joining, grouping, aggregating).
+					- The total number of times the table is used across all queries.
+					- A breakdown of each column in the table, showing:
+						- The number of times each column appears.
+						- The primary purpose of the column's usage (e.g., filtering, joining, grouping, aggregating).
 					Sort the tables in descending order based on their total usage.
 					*/
 
