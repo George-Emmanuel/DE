@@ -1881,3 +1881,8 @@ Every index has a cost:
 	--			d. Test & Compare the Execution Plans
 	
 	--		4. Monitoring & Maintainance
+	--			a. Monitor Index Usage 
+	--			b. 
+	--			c. 
+	--			d. 
+	--			e. 
