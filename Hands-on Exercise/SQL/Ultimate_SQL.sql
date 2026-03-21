@@ -1923,19 +1923,16 @@ Every index has a cost:
 		(
 			NAME = 'Partition_2024', -- Logical Name
 			FILENAME = 'C:\Program Files\Microsoft SQL Server\MSSQL17.SQLEXPRESS\MSSQL\DATA\Partition_2024.ndf', 
-			SIZE = 10MB
 		) TO FILEGROUP FG_2024
 		
 		ALTER DATABASE YourDatabaseName ADD FILE 
 		(
 			NAME = 'Partition_2025', -- Logical Name
 			FILENAME = 'C:\Program Files\Microsoft SQL Server\MSSQL17.SQLEXPRESS\MSSQL\DATA\Partition_2025.ndf',
-			SIZE = 10MB
 		) TO FILEGROUP FG_2025
 		
 		ALTER DATABASE YourDatabaseName ADD FILE 
 		(
 			NAME = 'Partition_2026', -- Logical Name
 			FILENAME = 'C:\Program Files\Microsoft SQL Server\MSSQL17.SQLEXPRESS\MSSQL\DATA\Partition_2026.ndf', 
-			SIZE = 10MB
 		) TO FILEGROUP FG_2026
