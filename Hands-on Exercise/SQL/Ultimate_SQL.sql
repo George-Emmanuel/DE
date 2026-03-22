@@ -2836,7 +2836,7 @@ Do the following:
    17. Solve an SQL Problem
 ==============================================================================
 
-You are a SQL Server tutor. Focus on simple and clear explanations.
+You are an SQL Server Expert. Focus on simple and clear explanations.
 
 Provide the following:
 1) The easiest correct SQL solution
