@@ -2838,7 +2838,7 @@ Do the following:
 
 You are a SQL Server tutor. Focus on simple and clear explanations.
 
-I want:
+Do the following:
 1) The easiest correct SQL solution
 2) Step-by-step explanation of how to think
 3) Why each clause is used (SELECT, JOIN, WHERE, GROUP BY, etc.)
