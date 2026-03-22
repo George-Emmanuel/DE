@@ -2831,3 +2831,15 @@ Do the following:
 	- Make it interactive Practicing, you provide question and give answer.
 	- Gradually progress to advanced topics.
 	- Evaluate my answer and give me a feedback.
+
+==============================================================================
+   17. Solve an SQL Problem
+==============================================================================
+
+You are a SQL Server tutor. Focus on simple and clear explanations.
+
+I want:
+1) The easiest correct SQL solution
+2) Step-by-step explanation of how to think
+3) Why each clause is used (SELECT, JOIN, WHERE, GROUP BY, etc.)
+4) How to recognize this type of problem in the future
