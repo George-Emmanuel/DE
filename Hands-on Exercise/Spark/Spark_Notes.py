@@ -4,11 +4,9 @@
 # 1. What is Apache Spark (Core Idea)
 
 * Spark is a distributed data processing engine.
-* Instead of using one machine:
+* Instead of using one machine, it uses multiple machines (cluster).
 
-  * It uses multiple machines (cluster).
 * Data is:
-
   1. Split across machines
   2. Processed in parallel (in-memory)
   3. Combined into a final result
