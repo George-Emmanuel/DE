@@ -177,7 +177,7 @@ Instead:
 
 ## Option 1: Databricks (Managed)
 
-* You don’t manage infrastructure
+* You don't manage infrastructure
 
 * No need to:
 
