@@ -65,8 +65,8 @@ Parallel processing across multiple machines → faster big data processing.
   * Monitors cluster health
 
 Important:
-    * Used mainly at the start
-    * After that, driver talks directly to executors
+  * Used mainly at the start
+  * After that, driver talks directly to executors
 
 ---
 
