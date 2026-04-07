@@ -160,7 +160,7 @@ Instead:
 
 * Executors finish processing
 * Results sent back to driver
-* Driver outputs result (e.g., via `show()`)
+* Driver outputs result (e.g., via 'show()')
 
 ---
 
