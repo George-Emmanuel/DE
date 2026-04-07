@@ -159,8 +159,9 @@ result = (
 
 result.show()
 
+'''
 
-**What happens internally:**
+### What happens internally:
 
 1. Spark session starts
 2. Transformations recorded (lazy)
@@ -177,3 +178,5 @@ If needed, next step can be:
 * Interview Q&A based on this
 * Hands-on mini project to solidify concepts
 * Internal execution plan (`explain()`) breakdown
+
+'''
