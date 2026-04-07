@@ -6,10 +6,10 @@
 
 spark = SparkSession.builder.appName("Example").getOrCreate()
 
-* Triggers creation of:
+# Triggers creation of:
 
-  * Driver
-  * Cluster communication
+  # Driver
+  # Cluster communication
 
 # ----------------------------
 
@@ -21,8 +21,8 @@ filtered = df.filter(df.age > 25)
 grouped = filtered.groupBy("country").count()
 
 
-* Nothing executes yet
-* Spark builds a **logical plan**
+# Nothing executes yet
+# Spark builds a **logical plan**
 
 # ----------------------------
 
@@ -31,10 +31,10 @@ grouped = filtered.groupBy("country").count()
 grouped.show()
 
 
-* Now Spark:
+# Now Spark:
 
-  * Optimizes plan
-  * Executes tasks
+  # Optimizes plan
+  # Executes tasks
 
 # ----------------------------
 
@@ -44,8 +44,8 @@ df.rdd.getNumPartitions()
 df = df.repartition(4)
 
 
-* Data split into partitions
-* Each partition = one task
+# Data split into partitions
+# Each partition = one task
 
 # ----------------------------
 
@@ -53,14 +53,14 @@ df = df.repartition(4)
 
 df.show()
 
-Behind the scenes:
+### Behind the scenes:
 
-* Driver:
+# Driver:
 
-  * Plans execution
-* Executors:
+  # Plans execution
+# Executors:
 
-  * Process partitions
+  # Process partitions
 
 # ----------------------------
 
@@ -75,8 +75,8 @@ result = (
 )
 
 
-* Chain of transformations
-* Still lazy
+# Chain of transformations
+# Still lazy
 
 # ----------------------------
 
@@ -85,10 +85,10 @@ result = (
 df.groupBy("country").count()
 
 
-* Causes shuffle:
+# Causes shuffle:
 
-  * Data redistributed across nodes
-  * Same keys grouped together
+  # Data redistributed across nodes
+  # Same keys grouped together
 
 # ----------------------------
 
@@ -111,8 +111,8 @@ df.cache()
 df.count()
 
 
-* Stores data in memory
-* Avoids recomputation
+# Stores data in memory
+# Avoids recomputation
 
 # ----------------------------
 
