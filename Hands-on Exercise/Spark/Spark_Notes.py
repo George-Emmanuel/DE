@@ -26,6 +26,7 @@ Parallel processing across multiple machines → faster big data processing.
   * Builds execution plan
   * Optimizes logic
   * Coordinates tasks
+
 * Does NOT execute heavy computations
 
 ---
