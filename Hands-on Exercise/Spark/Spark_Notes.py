@@ -11,7 +11,7 @@
   2. Processed in parallel (in-memory)
   3. Combined into a final result
 
-**Key takeaway:**
+Key takeaway:
 Parallel processing across multiple machines → faster big data processing.
 
 ---
@@ -20,13 +20,13 @@ Parallel processing across multiple machines → faster big data processing.
 
 ## 2.1 Driver (Brain)
 
-* The **central controller** of Spark.
+* The central controller of Spark.
 * Responsibilities:
 
   * Builds execution plan
   * Optimizes logic
   * Coordinates tasks
-* Does **NOT execute heavy computations**
+* Does NOT execute heavy computations
 
 ---
 
@@ -48,7 +48,7 @@ Parallel processing across multiple machines → faster big data processing.
 
   * Execute tasks
   * Use machine resources
-* Each executor handles **multiple tasks**
+* Each executor handles multiple tasks
 
 ---
 
@@ -62,16 +62,16 @@ Parallel processing across multiple machines → faster big data processing.
   * Launches executors
   * Monitors cluster health
 
-**Important:**
+Important:
 
-* Used mainly **at the start**
+* Used mainly at the start
 * After that, driver talks directly to executors
 
 ---
 
 ## 2.5 Cluster (Definition)
 
-* A **group of machines working together as one system**
+* A group of machines working together as one system
 
 ---
 
@@ -100,14 +100,14 @@ Examples:
 
 ## 3.2 Lazy Evaluation (Critical Concept)
 
-* Spark is **lazy**
+* Spark is lazy
 * It does NOT execute immediately
 
 Instead:
 
 1. Reads all transformations
 2. Builds a logical plan
-3. Waits for an **action**
+3. Waits for an action
 
 ---
 
@@ -129,9 +129,9 @@ Instead:
 
 2. Data is divided into:
 
-   * **Partitions**
+   * Partitions
 
-3. Each partition = **one task**
+3. Each partition = one task
 
 4. Driver assigns tasks to executors
 
@@ -176,7 +176,7 @@ Instead:
 
 ## Option 1: Databricks (Managed)
 
-* You **don’t manage infrastructure**
+* You don’t manage infrastructure
 
 * No need to:
 
@@ -188,7 +188,7 @@ Instead:
 
   * Number of workers
 
-**Focus:** writing code
+Focus: writing code
 
 ---
 
@@ -202,7 +202,7 @@ Instead:
   * Cluster manager
   * Resource allocation
 
-**Requires deeper understanding**
+Requires deeper understanding
 
 ---
 
@@ -271,14 +271,14 @@ Instead:
 * Java
 * R
 
-**Important:**
+Important:
 All languages → eventually use Spark Core
 
 ---
 
 # 6. Why Spark is Powerful
 
-* Not just an engine → **full platform**
+* Not just an engine → full platform
 * Combines:
 
   * Distributed processing
@@ -296,7 +296,7 @@ All languages → eventually use Spark Core
 * Learn:
 
   * Basic Spark Core concepts
-  * **Spark SQL (main focus)**
+  * Spark SQL (main focus)
 
 ---
 
@@ -332,7 +332,7 @@ All languages → eventually use Spark Core
   * TensorFlow
   * PyTorch
 
-**Use Spark mainly for:**
+Use Spark mainly for:
 
 * Data preparation
 * Feature engineering
@@ -341,7 +341,7 @@ All languages → eventually use Spark Core
 
 # 8. Most Important Component
 
-* **Spark SQL**
+* Spark SQL
 
   * Easy (SQL-like)
   * Powerful
