@@ -56,13 +56,9 @@ df1.join(df2, on="id", how="left")
 
 ### 1.9 Writing Data
 
-'''python
 df.write.csv("output/")
 df.write.parquet("output/")
 df.write.mode("overwrite").save("output/")
-'''
-
----
 
 ### 1.10 SQL Usage
 
