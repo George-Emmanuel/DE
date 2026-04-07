@@ -15,7 +15,6 @@ spark = SparkSession.builder.appName("Example").getOrCreate()
 
 ### 2.2 Lazy Evaluation
 
-
 df = spark.read.csv("data.csv", header=True)
 
 filtered = df.filter(df.age > 25)
@@ -29,7 +28,6 @@ grouped = filtered.groupBy("country").count()
 
 ### 2.3 Action → Execution Starts
 
-
 grouped.show()
 
 
@@ -42,7 +40,6 @@ grouped.show()
 
 ### 2.4 Partitions → Parallelism
 
-
 df.rdd.getNumPartitions()
 df = df.repartition(4)
 
@@ -54,9 +51,7 @@ df = df.repartition(4)
 
 ### 2.5 Driver vs Executors
 
-
 df.show()
-
 
 Behind the scenes:
 
@@ -70,7 +65,6 @@ Behind the scenes:
 # ----------------------------
 
 ### 2.6 Transformations Pipeline
-
 
 df = spark.read.csv("sales.csv", header=True)
 
@@ -88,7 +82,6 @@ result = (
 
 ### 2.7 Shuffle Example
 
-
 df.groupBy("country").count()
 
 
@@ -100,7 +93,6 @@ df.groupBy("country").count()
 # ----------------------------
 
 ### 2.8 SQL Equivalent
-
 
 df.createOrReplaceTempView("sales")
 
@@ -115,7 +107,6 @@ GROUP BY country
 
 ### 2.9 Caching (Optimization)
 
-
 df.cache()
 df.count()
 
@@ -126,7 +117,6 @@ df.count()
 # ----------------------------
 
 ### 2.10 Writing Output
-
 
 result.write.mode("overwrite").parquet("output/")
 
@@ -139,7 +129,7 @@ result.write.mode("overwrite").parquet("output/")
 ## 3. Concept → Code Mapping (Quick Table)
 
 | Concept        | Code Example                         |
-| # ----------------------------# ----------------------------# ----------------------------# ------------------------------ | # ----------------------------# ----------------------------# ----------------------------# ----------------------------# ----------------------------# ----------------------------# ----------------------------# ----------------------------# ----------------------------# ----------------------------# ----------------------------# ---------------------------- |
+| # ----------------------------# ----------------------------
 | Spark Session  | `SparkSession.builder.getOrCreate()` |
 | Lazy Eval      | `df.filter(...).select(...)`         |
 | Action         | `df.show()`                          |
@@ -153,7 +143,6 @@ result.write.mode("overwrite").parquet("output/")
 # ----------------------------
 
 ## 4. Minimal End-to-End Example
-
 
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col
