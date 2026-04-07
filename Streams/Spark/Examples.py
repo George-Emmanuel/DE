@@ -29,7 +29,6 @@ grouped = filtered.groupBy("country").count()
 
 grouped.show()
 
-
 # Now Spark:
 
   # Optimizes plan
