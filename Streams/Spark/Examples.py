@@ -41,7 +41,6 @@ grouped.show()
 df.rdd.getNumPartitions()
 df = df.repartition(4)
 
-
 # Data split into partitions
 # Each partition = one task
 
@@ -54,10 +53,9 @@ df.show()
 ### Behind the scenes:
 
 # Driver:
-
   # Plans execution
-# Executors:
 
+# Executors:
   # Process partitions
 
 # ----------------------------
