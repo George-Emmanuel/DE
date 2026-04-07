@@ -288,7 +288,7 @@ All languages → eventually use Spark Core
   * ML
   * Graph processing
 
----
+---------------------------------------------------------------------------------------------------------
 
 # 7. How to Learn Spark (Practical Guidance)
 
