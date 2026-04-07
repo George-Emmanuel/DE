@@ -34,10 +34,10 @@ Parallel processing across multiple machines → faster big data processing.
 ## 2.2 Workers (Machines / Muscles)
 
 * Physical machines with:
-
   * CPU
   * Memory
   * Disk
+
 * Perform actual computation
 
 ---
