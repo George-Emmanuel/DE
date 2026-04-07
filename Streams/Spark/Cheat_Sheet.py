@@ -46,12 +46,8 @@ df.groupBy("country").agg(avg("salary"))
 
 ### 1.7 Sorting
 
-'''python
 df.orderBy("age")
 df.orderBy(col("age").desc())
-'''
-
----
 
 ### 1.8 Joins
 
