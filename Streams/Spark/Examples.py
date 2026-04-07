@@ -7,7 +7,6 @@
 spark = SparkSession.builder.appName("Example").getOrCreate()
 
 # Triggers creation of:
-
   # Driver
   # Cluster communication
 
@@ -30,7 +29,6 @@ grouped = filtered.groupBy("country").count()
 grouped.show()
 
 # Now Spark:
-
   # Optimizes plan
   # Executes tasks
 
@@ -70,7 +68,6 @@ result = (
       .sum("amount")
 )
 
-
 # Chain of transformations
 # Still lazy
 
@@ -80,9 +77,7 @@ result = (
 
 df.groupBy("country").count()
 
-
 # Causes shuffle:
-
   # Data redistributed across nodes
   # Same keys grouped together
 
