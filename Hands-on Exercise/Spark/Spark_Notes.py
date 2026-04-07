@@ -57,17 +57,16 @@ Parallel processing across multiple machines → faster big data processing.
 ## 2.4 Cluster Manager (Manager)
 
 * Resource allocator
-* Responsibilities:
 
+* Responsibilities:
   * Finds available workers
   * Allocates CPU & memory
   * Launches executors
   * Monitors cluster health
 
 Important:
-
-* Used mainly at the start
-* After that, driver talks directly to executors
+    * Used mainly at the start
+    * After that, driver talks directly to executors
 
 ---
 
