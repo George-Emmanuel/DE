@@ -68,18 +68,14 @@ spark.sql("SELECT * FROM people WHERE age > 25").show()
 
 ### 1.11 Actions vs Transformations
 
-**Transformations (Lazy):**
+# Transformations (Lazy):
 
 df.filter(df.age > 25)
 df.select("name")
 
-**Actions (Trigger Execution):**
+# Actions (Trigger Execution):
 
-'''python
 df.show()
 df.collect()
 df.count()
-'''
-
----
 
