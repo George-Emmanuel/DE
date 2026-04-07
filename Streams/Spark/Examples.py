@@ -116,6 +116,7 @@ result.write.mode("overwrite").parquet("output/")
 # ----------------------------
 
 ## 3. Concept → Code Mapping (Quick Table)
+
 '''
 | Concept        | Code Example                         |
 | # ----------------------------# ----------------------------
@@ -128,6 +129,7 @@ result.write.mode("overwrite").parquet("output/")
 | Executor Work  | Happens during '.show()'             |
 | SQL            | 'spark.sql()'                        |
 | Cache          | 'df.cache()'                         |
+'''
 
 # ----------------------------
 
