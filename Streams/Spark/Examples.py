@@ -130,15 +130,15 @@ result.write.mode("overwrite").parquet("output/")
 
 | Concept        | Code Example                         |
 | # ----------------------------# ----------------------------
-| Spark Session  | `SparkSession.builder.getOrCreate()` |
-| Lazy Eval      | `df.filter(...).select(...)`         |
-| Action         | `df.show()`                          |
-| Partition      | `df.repartition(4)`                  |
-| Transformation | `filter`, `select`, `groupBy`        |
-| Shuffle        | `groupBy`, `join`                    |
-| Executor Work  | Happens during `.show()`             |
-| SQL            | `spark.sql()`                        |
-| Cache          | `df.cache()`                         |
+| Spark Session  | 'SparkSession.builder.getOrCreate()' |
+| Lazy Eval      | 'df.filter(...).select(...)'         |
+| Action         | 'df.show()'                          |
+| Partition      | 'df.repartition(4)'                  |
+| Transformation | 'filter', 'select', 'groupBy'        |
+| Shuffle        | 'groupBy', 'join'                    |
+| Executor Work  | Happens during '.show()'             |
+| SQL            | 'spark.sql()'                        |
+| Cache          | 'df.cache()'                         |
 
 # ----------------------------
 
