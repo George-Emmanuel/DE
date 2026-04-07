@@ -116,7 +116,7 @@ result.write.mode("overwrite").parquet("output/")
 # ----------------------------
 
 ## 3. Concept → Code Mapping (Quick Table)
-
+'''
 | Concept        | Code Example                         |
 | # ----------------------------# ----------------------------
 | Spark Session  | 'SparkSession.builder.getOrCreate()' |
