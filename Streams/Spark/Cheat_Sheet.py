@@ -70,10 +70,8 @@ spark.sql("SELECT * FROM people WHERE age > 25").show()
 
 **Transformations (Lazy):**
 
-'''python
 df.filter(df.age > 25)
 df.select("name")
-'''
 
 **Actions (Trigger Execution):**
 
