@@ -25,25 +25,17 @@ df.describe().show()
 
 ### 1.4 Select / Filter
 
-'''python
 df.select("name", "age")
 
 df.filter(df.age > 25)
 df.where("age > 25")
-'''
-
----
 
 ### 1.5 Column Operations
 
-'''python
 from pyspark.sql.functions import col
 
 df.select(col("name"), col("age") + 1)
 df.withColumn("age_plus_one", col("age") + 1)
-'''
-
----
 
 ### 1.6 GroupBy & Aggregations
 
