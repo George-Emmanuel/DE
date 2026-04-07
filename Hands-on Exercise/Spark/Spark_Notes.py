@@ -1,6 +1,4 @@
 '''
-Below is a **clean, structured, detailed version** of everything explained in the video, organized for notes. Content is derived directly from your file. 
-
 ---
 
 # 1. What is Apache Spark (Core Idea)
