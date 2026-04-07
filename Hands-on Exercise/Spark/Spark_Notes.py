@@ -171,7 +171,7 @@ Instead:
 * Executors → execute tasks
 * Partitions → unit of parallelism
 
----
+---------------------------------------------------------------------------------------------------------
 
 # 4. How to Use Spark in Practice
 
