@@ -120,7 +120,6 @@ df.count()
 
 result.write.mode("overwrite").parquet("output/")
 
-
 # Final result saved
 # Action triggers execution if not already run
 
