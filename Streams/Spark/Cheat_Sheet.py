@@ -39,14 +39,10 @@ df.withColumn("age_plus_one", col("age") + 1)
 
 ### 1.6 GroupBy & Aggregations
 
-'''python
 df.groupBy("country").count()
 
 from pyspark.sql.functions import avg
 df.groupBy("country").agg(avg("salary"))
-'''
-
----
 
 ### 1.7 Sorting
 
