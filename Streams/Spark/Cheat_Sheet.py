@@ -62,13 +62,9 @@ df.write.mode("overwrite").save("output/")
 
 ### 1.10 SQL Usage
 
-'''python
 df.createOrReplaceTempView("people")
 
 spark.sql("SELECT * FROM people WHERE age > 25").show()
-'''
-
----
 
 ### 1.11 Actions vs Transformations
 
