@@ -101,7 +101,6 @@ GROUP BY country
 df.cache()
 df.count()
 
-
 # Stores data in memory
 # Avoids recomputation
 
