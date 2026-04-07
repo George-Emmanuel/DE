@@ -51,12 +51,8 @@ df.orderBy(col("age").desc())
 
 ### 1.8 Joins
 
-'''python
 df1.join(df2, on="id", how="inner")
 df1.join(df2, on="id", how="left")
-'''
-
----
 
 ### 1.9 Writing Data
 
