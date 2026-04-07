@@ -205,7 +205,7 @@ Focus: writing code
 
 Requires deeper understanding
 
----
+---------------------------------------------------------------------------------------------------------
 
 # 5. Spark Ecosystem
 
