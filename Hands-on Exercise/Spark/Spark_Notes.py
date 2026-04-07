@@ -275,7 +275,7 @@ Requires deeper understanding
 Important:
 All languages → eventually use Spark Core
 
----
+---------------------------------------------------------------------------------------------------------
 
 # 6. Why Spark is Powerful
 
