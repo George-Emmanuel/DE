@@ -45,10 +45,11 @@ Parallel processing across multiple machines → faster big data processing.
 ## 2.3 Executors
 
 * Processes running on worker nodes.
-* Responsibilities:
 
+* Responsibilities:
   * Execute tasks
   * Use machine resources
+
 * Each executor handles multiple tasks
 
 ---
