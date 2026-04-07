@@ -21,8 +21,8 @@ Parallel processing across multiple machines → faster big data processing.
 ## 2.1 Driver (Brain)
 
 * The central controller of Spark.
-* Responsibilities:
 
+* Responsibilities:
   * Builds execution plan
   * Optimizes logic
   * Coordinates tasks
