@@ -20,9 +20,8 @@ df = spark.read.csv("data.csv", header=True)
 filtered = df.filter(df.age > 25)
 grouped = filtered.groupBy("country").count()
 
-
 # Nothing executes yet
-# Spark builds a **logical plan**
+# Spark builds a logical plan
 
 # ----------------------------
 
