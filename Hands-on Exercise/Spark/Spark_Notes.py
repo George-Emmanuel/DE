@@ -114,7 +114,7 @@ Instead:
 
 ## 3.3 Action Triggers Execution
 
-* Example: `show()`, `collect()`
+* Example: 'show()', 'collect()'
 * Once action appears:
 
   * Spark starts execution
