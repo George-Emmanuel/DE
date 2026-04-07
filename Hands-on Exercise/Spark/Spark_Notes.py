@@ -14,7 +14,7 @@
 Key takeaway:
 Parallel processing across multiple machines → faster big data processing.
 
----
+---------------------------------------------------------------------------------------------------------
 
 # 2. Spark Architecture (Core Components)
 
