@@ -165,18 +165,10 @@ result.show()
 
 1. Spark session starts
 2. Transformations recorded (lazy)
-3. `.show()` triggers execution
+3. '.show()' triggers execution
 4. Data split into partitions
 5. Executors process in parallel
 6. Shuffle occurs (groupBy)
 7. Result returned to driver
-
-# ----------------------------
-
-If needed, next step can be:
-
-* Interview Q&A based on this
-* Hands-on mini project to solidify concepts
-* Internal execution plan (`explain()`) breakdown
 
 '''
